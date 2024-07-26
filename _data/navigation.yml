@@ -1,0 +1,12 @@
+header:
+  - titles:
+      # @start locale config
+      en      : &EN       Blog
+      # @end locale config
+    url: /blog.md
+
+  - titles:
+      # @start locale config
+      en      : &EN       About
+      # @end locale config
+    url: /about.html

@@ -1,4 +1,5 @@
-title: "Jekyll Actions Demo"
+title: "My Jekyll Demo Page"
 plugins:
   - jekyll-timeago
 
+theme: jekyll-text-theme
