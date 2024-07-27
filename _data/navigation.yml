@@ -1,12 +1,11 @@
-header:
-  - titles:
-      # @start locale config
-      en      : &EN       Blog
-      # @end locale config
-    url: /blog.md
 
-  - titles:
-      # @start locale config
-      en      : &EN       About
-      # @end locale config
+header:
+
+  - title: Le a pázsittal!
+    url: /pazsit.html
+
+  - title: Blog
+    url: /blog.html
+
+  - title: About
     url: /about.html

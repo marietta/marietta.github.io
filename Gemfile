@@ -14,3 +14,4 @@ gem "sinatra", ">= 3", "< 4"
 
 gem "minima"
 gem "jekyll-text-theme"
+gem 'jekyll-toc'

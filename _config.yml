@@ -1,5 +1,9 @@
 title: "My Jekyll Demo Page"
 plugins:
   - jekyll-timeago
+  - jekyll-toc
+  - kramdown
 
 theme: jekyll-text-theme
+timezone: Europe/Budapest
+

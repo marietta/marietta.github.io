@@ -1,5 +1,4 @@
 ---
 layout: home
-header:
-  theme: light
+full_width: true
 ---
