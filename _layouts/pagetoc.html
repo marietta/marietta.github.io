@@ -11,7 +11,19 @@ type: article
 <div class="layout--article">
   {%- include article/top/custom.html -%}
 
-  <div class="article__content" itemprop="articleBody">{% include toc.html html=content %}{{ content }}</div>
+  <div class="article__content" itemprop="articleBody">
+    
+    <div class="wrapper">
+        <div class="toc">
+            {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" %}
+        </div>
+        <div class="content">
+            {{ content }}
+        </div>
+    </div>
+
+
+  </div>
 
   {%- if _sharing -%}
     <section class="article__sharing d-print-none">{%- include sharing.html -%}</section>

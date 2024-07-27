@@ -1,9 +1,11 @@
 ---
 layout: pagetoc
+toc: true
 ---
-Le a pázsittal!
 
-### A növényzet kialakulása. A szukcesszió
+# Le a pázsittal!
+
+## A növényzet kialakulása. A szukcesszió
 
 ahol nem volt növényzet: primer szukcesszió
 
@@ -13,7 +15,7 @@ a szukcessziós folyamatok korai stádiumának fajai, a pionír fajok általába
 
 ökológiai megközelítés: a gyomok a talaj „bolygatásához”, műveléséhez legjobban alkalmazkodó növények. A növénytermesztés során a vegetációs idő alatt többször is bolygatják a talajt, így azok a növényfajok, melyek a háborítatlan talajt igénylik, nem tudnak megélni, viszont olyan növények szaporodnak el, amelyek rövidebb tenyészidejűek, gyors fejlődésűek, vagy olyan évelő fajok, melyek mélyen ülő gyökerei a talajművelés során okozott feldarabolódást nem sínylik meg, sőt az vegetatív szaporodásukat segíti. Ilyen módon a gyomnövények a másodlagos szukcesszió pionír fajainak tekinthetők.
 
-### Pannonian Climate
+## Pannonian Climate
 
 [https://www.eea.europa.eu/publications/report_2002_0524_154909/biogeographical-regions-in-europe/pannonian.pdf](https://www.eea.europa.eu/publications/report_2002_0524_154909/biogeographical-regions-in-europe/pannonian.pdf)
 
@@ -25,7 +27,7 @@ According to the Köppen classification, most of Pannonia used to have a tempera
 
 Hardiness zones indicate how cold the winters are. Traditionally Hungary and the Pannonian Basin used to be on the border of zones 6-7, but in the recent years our climate is changed so much that we don't see winters colder than zone 8.
 
-### Őshonos növények Magyarországon
+## Őshonos növények Magyarországon
 
 Az egyes erdészeti tájakon őshonos fajok jegyzéke, 2. számú melléklet a 153/2009. (XI. 13.) FVM rendelethez [https://njt.hu/jogszabaly/2009-153-20-82](https://njt.hu/jogszabaly/2009-153-20-82)
 
@@ -60,7 +62,7 @@ Az egyszikű (Liliopsida), perjevirágúak (Poales) rendje, perjefélék/pázsit
 -   cérnatippan (Agrostis)
     
 
-### Gyep, pázsit, talajtakaró
+## Gyep, pázsit, talajtakaró
 
 Gyep és pázsit. A gyep tömöttsége. A tarackkal terjedő fajták jól záródó pázsitot alkotnak, de igényesek. A csomósan terjedő fajták rosszul záródó pázsitot képeznek, de szárazságtűrőbbek, igénytelenebbek. A legtömöttebb gyepet a vörös csenkesz és a tarackos tippan adja, őket követi a sorban az angol perje és a réti perje.
 
@@ -116,11 +118,11 @@ Virágzó talajtakarók
 
 [https://gazigazito.hu/mit-kezdjunk-a-levagott-fuvel-1053981](https://gazigazito.hu/mit-kezdjunk-a-levagott-fuvel-1053981)
 
-### A vadvirágos rét. A méhlegelő.
+## A vadvirágos rét. A méhlegelő.
 
 milyen egy méhbarát kert? [https://kert.tv/milyen-egy-mehbarat-kert/](https://kert.tv/milyen-egy-mehbarat-kert/)
 
-### Az erdőkert. A permakultúra. Az ökológiai gazdálkodás.
+## Az erdőkert. A permakultúra. Az ökológiai gazdálkodás.
 
 A biodiverzitás fontossága [https://sokszinuvidek.24.hu/kertunk-portank/2021/04/16/erdokert-biodiverzitas-tervezes/](https://sokszinuvidek.24.hu/kertunk-portank/2021/04/16/erdokert-biodiverzitas-tervezes/)
 
@@ -144,11 +146,11 @@ permakultúra és erdőkert
 
 [https://archive2020.szie.hu/file/tti/archivum/Dorner_Zita_ertekezes.pdf](https://archive2020.szie.hu/file/tti/archivum/Dorner_Zita_ertekezes.pdf)
 
-### Hasznos
+# Hasznos
 
 Darazsak ellen: a fodormenta, a kakukkfű, az eukaliptusz, az üröm és a citromfű
 
-### Ajánló
+# Ajánló
 
 [https://www.inaturalist.org/places/hungary](https://www.inaturalist.org/places/hungary)
 
