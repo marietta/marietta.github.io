@@ -1,0 +1,4 @@
+---
+layout: taxonomy
+taxonomy: Paeoniaceae
+---

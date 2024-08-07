@@ -8,7 +8,23 @@ plugins:
 theme: jekyll-text-theme
 timezone: Europe/Budapest
 
+baseurl: ""
+url: "https://marietta.github.io"
+
 jekyll-toc:
   toc_levels: 1..6
   with_front_matter_toc: false
 
+collections:
+  species:
+    output: true
+  taxonomy:
+    output: true
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/cover.png

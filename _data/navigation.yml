@@ -1,5 +1,10 @@
-
 header:
+  - title: taxonomy
+    url: /generated.html
+
+  - title: ideas
+    url: /ideas.html
+
   - title: Le a pázsittal!
     url: /pazsit.html
 

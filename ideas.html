@@ -1,0 +1,35 @@
+---
+layout: page
+---
+<div class="masonry-container">
+{% assign pages = site.pages %}
+{% for page in pages %}
+{% if page.dir == '/ideas/' %}
+<section>
+    <div class="card">
+        <div class="card__content">
+            <div class="card__header">
+                {{page.name | filename_cleaner }}
+            </div>
+    {{ page.content | markdownify }}
+        </div>
+    </div>
+</section>
+{% endif %}
+{% endfor %}
+</div>
+<!-- -&#45;&#45;-->
+<!--{% assign ideas_files = site.pages | where: "path", "/ideas/" | sort: "modified" %}-->
+<!--{% for file in ideas_files %}-->
+<!--    <div class="card">-->
+<!--        <div class="card__content">-->
+<!--            <div class="card__header">-->
+<!--                <h4><a href="{{ file.url }}">{{ file.s }}</a></h4>-->
+<!--                <p class="date">{{ file.date | date: "%B %d, %Y" }}</p> &lt;!&ndash; Display the last modified date &ndash;&gt;-->
+<!--            </div>-->
+<!--            <div class="card__body">-->
+<!--                {{ file.content | markdownify }}  &lt;!&ndash; Render the full content of the Markdown file &ndash;&gt;-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--{% endfor %}-->

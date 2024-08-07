@@ -7,22 +7,20 @@ type: article
   target = site.data.variables.default.page.sharing
   source0=layout.sharing source1=page.sharing -%}
 {%- assign _sharing = __return -%}
-
+<script src="/assets/toc.js" defer></script>
 <div class="layout--article">
   {%- include article/top/custom.html -%}
 
   <div class="article__content" itemprop="articleBody">
-    
+
     <div class="wrapper">
         <div class="toc">
-            {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" %}
+            {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" item_class="toc-entry" %}
         </div>
         <div class="content">
             {{ content }}
         </div>
     </div>
-
-
   </div>
 
   {%- if _sharing -%}

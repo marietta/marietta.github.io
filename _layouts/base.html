@@ -1,8 +1,8 @@
 ---
 layout: none
 ---
-<!DOCTYPE html>
 {%- include snippets/get-lang.html -%}
+
 <html lang="{{ __return }}">
   <head>
     {%- include analytics.html -%}
@@ -13,8 +13,9 @@ layout: none
       {%- include scripts/lib/lazyload.js -%}
     </script>
     {%- include scripts/variables.html -%}
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap">
-  </head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap">
+    <title>{{page.name| filename_cleaner}}</title>
+      </head>
   <body>
     <div class="root" data-is-touch="false">
       {{ content }}

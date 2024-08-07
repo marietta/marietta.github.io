@@ -5,7 +5,9 @@ toc: true
 
 # Le a pázsittal!
 
-## A növényzet kialakulása. A szukcesszió
+# A növényzet kialakulása. A szukcesszió
+
+<img src="assets/images/succession.jpg" alt="szukcesszió ecological succession">
 
 ahol nem volt növényzet: primer szukcesszió
 
@@ -14,6 +16,7 @@ ahol volt, de eltűnt: szekunder szukcesszió - talajban nyugvó magvak, vegetat
 a szukcessziós folyamatok korai stádiumának fajai, a pionír fajok általában gyors növekedésűek, kis termetűek, rövid életűek, nagy területre képesek szaporítóképleteiket eljuttatni (r-stratégisták).
 
 ökológiai megközelítés: a gyomok a talaj „bolygatásához”, műveléséhez legjobban alkalmazkodó növények. A növénytermesztés során a vegetációs idő alatt többször is bolygatják a talajt, így azok a növényfajok, melyek a háborítatlan talajt igénylik, nem tudnak megélni, viszont olyan növények szaporodnak el, amelyek rövidebb tenyészidejűek, gyors fejlődésűek, vagy olyan évelő fajok, melyek mélyen ülő gyökerei a talajművelés során okozott feldarabolódást nem sínylik meg, sőt az vegetatív szaporodásukat segíti. Ilyen módon a gyomnövények a másodlagos szukcesszió pionír fajainak tekinthetők.
+
 
 ## Pannonian Climate
 
@@ -49,17 +52,12 @@ Az egyszikű (Liliopsida), perjevirágúak (Poales) rendje, perjefélék/pázsit
 
 ### Fűfélék a kertben
 
--   perje (Lolium)
-    
--   réti perje (Poa)
-    
--   csenkesz (Festuca)
-    
--   komócsin (Phleum)
-    
--   nádtippan (Calamagrostis)
-    
--   cérnatippan (Agrostis)
+* perje (Lolium)
+* réti perje (Poa)
+* csenkesz (Festuca)
+* komócsin (Phleum)
+* nádtippan (Calamagrostis)
+* cérnatippan (Agrostis)
     
 
 ## Gyep, pázsit, talajtakaró
@@ -84,32 +82,21 @@ Hogyan alakíts ki alacsony növésű, minimális törődést igénylő gyepet t
 
 Gyephelyettesítő talajtakarók
 
--   fehér here
-    
--   kúszó pázsitszulák, dichondra repens
-    
--   moha
-    
+* fehér here
+* kúszó pázsitszulák, dichondra repens
+* moha
 
 Virágzó talajtakarók
 
--   pénzlevelű lizinka (Lysimachia)
-    
--   apró szulák (Convolvulus)
-    
--   kakukkfű, creeping thyme
-    
--   kis/nagy meténg, vinca minor/major
-    
--   veronika
-    
--   illatos gólyaorr (Geranium)
-    
--   pázsitviola (Aubtieta)
-    
--   Creeping Phlox
-    
--   macskamenta (Nepeta)
+* pénzlevelű lizinka (Lysimachia)
+* apró szulák (Convolvulus)
+* kakukkfű, creeping thyme
+* kis/nagy meténg, vinca minor/major
+* veronika
+* illatos gólyaorr (Geranium)
+* pázsitviola (Aubtieta)
+* Creeping Phlox
+* macskamenta (Nepeta)
     
 
 ### A mulcsozás
@@ -149,6 +136,8 @@ permakultúra és erdőkert
 # Hasznos
 
 Darazsak ellen: a fodormenta, a kakukkfű, az eukaliptusz, az üröm és a citromfű
+
+Szúnyogok ellen
 
 # Ajánló
 

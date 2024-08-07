@@ -1,0 +1,129 @@
+- name: Kingdom Plantae · Növények · Plants
+  sub:
+    - name: Phylum Bryophyta · Mohák · Mosses
+      sub:
+        - name: Subphylum Bryophytina
+          sub:
+            - name: Class Bryopsida · Valódi Lombosmohák · Joint-toothed Mosses
+              sub: [ ]
+        - name: Subphylum Sphagnophytina
+          sub:
+            - name: Class Sphagnopsida · Tőzegmohák · Peat mosses
+              sub: [ ]
+
+    - name: Phylum Tracheophyta · Szövetes Növények · Vascular Plants
+      sub:
+        - name: Subphylum Angiospermae · or Magnoliophyta · Zárvatermők · Flowering Plants
+          sub:
+            - name: Class Liliopsida  · Egyszikűek · Monocots
+              sub:
+                - name: Order Poales · Perjevirágúak · Grasses, Sedges, Cattails, and Allies
+                  sub:
+                    - name: Family Poaceae · Pázsitfüvek · Grasses
+                      sub:
+                        - name: Genus Sesleria · Nyúlfarkfű
+                          sub: [ ]
+                - name: Order Asparagales · Aszparáguszvirágúak · Agaves, Orchids, Irises, and Allies
+                  sub:
+                    - name: Family Amaryllidaceaee · Amarilliszfélék · Amaryllis, Onions, and Allies
+                    - name: Family Asparagaceae · Spárgafélék · Agave and Allies
+                    - name: Family Asphodelaceae · Fűfafélék · Asphodels
+                    - name: Family Iridaceae · Nősziromfélék · Irises and Allies
+                    - name: Family Orchidaceae · Kosborfélék · Orchids
+                - name: Order Liliales · Liliomvirágúak · Lilies, Supplejacks, and Allies
+                  sub:
+                    - name: Family Colchicaceae · Kikericsfélék · Bellworts and Allies
+            - name: Class Magnoliopsida · Kétszikűek · Dicots
+              sub:
+                - name: Order Brassicales Repcevirágúak · Mustards, Capers, and Allies
+                  sub:
+                    - name: Family Brassicaceae Keresztesvirágúak · Mustard Family
+                      sub:
+                        - name: Genus Hesperis Estike
+                          sub: [ ]
+                - name: Order Saxifragales · Kőtörőfűvirágúak · Saxifrages, Stonecrops, and Allies
+                  sub:
+                    - name: Family Paeoniaceae · Peonies
+                      sub:
+                        - name: Genus Paeonia · Peonies
+                          sub: [ ]
+        - name: Subphylum Lycophyta · Club mosses
+          sub:
+            - name: Class Lycopodiopsida · Valódi Korpafüvek · Club mosses
+              sub:
+                - name: Order Selaginellales · Spikemosses
+                  sub:
+                    - name: Family Selaginellaceae · Spikemosses
+                      sub:
+                        - name: Genus Selaginella · Spikemosses
+                - name: Order Lycopodiales · Clubmosses and Firmosses
+                  sub:
+                    - name: Family Lycopodiaceae · Clubmosses and Firmosses
+                      sub:
+                        - name: Subfamily Lycopodioideae
+                          sub:
+                            - name: Genus Lycopodium · Ground and Creeping Clubmosses
+
+        - name: Subphylum Psilophyta · Whisk ferns
+          sub:
+            - name: Class Psilotopsida · Whisk ferns
+        - name: Subphylum Pterophyta · Ferns
+          sub:
+            - name: Class Polypodiopsida · Páfrányok · Ferns
+        - name: Subphylum Sphenophyta or Equisetophyta· Horsetails
+          sub:
+            - name: Class Equisetopsida · Horsetails
+        - name: Division Gymnospermae
+          sub:
+            - name: Division Ginkgophyta · Ginkgos
+              sub:
+                - name: Class Ginkgoopsida · Páfrányfenyők · Ginkgos
+            - name: Division Pinophyta · Conifers
+              sub:
+                - name: Class Pinopsida · Tűlevelűek · Conifers
+
+- name: Kingdom Fungi · Gombák
+  sub:
+    - name: Phylum Ascomycota · Tömlősgombák · Ascomycete Fungi
+      sub:
+        - name: Class Saccharomycetes (Yeasts)
+          sub: [ ]
+        - name: Class Pezizomycetes (Cup Fungi)
+          sub: [ ]
+        - name: Class Sordariomycetes
+          sub: [ ]
+        - name: Class Leotiomycetes
+          sub: [ ]
+        - name: Class Eurotiomycetes
+          sub: [ ]
+    - name: Phylum Basidiomycota · Bazídiumos gombák · Club Fungi
+      sub:
+        - name: Class Agaricomycetes · Mushrooms
+          sub:
+            - name: Order Agaricales · Csiperke-Alkatúak · Common Gilled Mushrooms and Allies
+              sub:
+              - name: Family Mycenaceae · Kígyógombafélék
+                sub:
+                - name: Genus Mycena Kígyógombák · Bonnets
+                  sub: [ ]
+        - name: Class Ustilaginomycetes · Smut Fungi
+          sub: [ ]
+        - name: Class Pucciniomycetes · Rust Fungi
+          sub: [ ]
+    - name: Phylum Chytridiomycota · Rajzóspórás gombák · Chytrids
+      sub:
+        - name: Class Chytridiomycetes
+          sub: [ ]
+    - name: Phylum Deuteromycota · Imperfect Fungi
+      sub:
+        - name: Class Deuteromycetes
+          sub: [ ]
+    - name: Phylum Glomeromycota · Endomikorrhiza gombák · Mycorrhizal Fungi
+      sub:
+        - name: Class Glomeromycetes
+          sub: [ ]
+    - name: Phylum Zygomycota · Járomspórás gombák · Conjugated Fungi
+      sub:
+        - name: Class Zygomycetes
+          sub: [ ]
+

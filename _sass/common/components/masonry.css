@@ -1,0 +1,11 @@
+.masonry-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 16px;
+}
+
+@media (max-width: 600px) {
+  .masonry-container {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
+}

@@ -1,6 +1,7 @@
 .wrapper {
     display: flex; /* Use flexbox for layout */
     flex-wrap: wrap; /* Allow the TOC and content to wrap if needed */
+    margin-top: 2rem;
 }
 
 .toc {
@@ -9,14 +10,16 @@
     border: 1px solid #ddd;
     box-sizing: border-box;
     position: sticky; /* Make TOC sticky */
-    padding: 10px;
-    top: 20px; /* Offset from the top */
-    max-height: calc(100vh - 40px); /* Limit the height to viewport height minus offset */
+    padding: 10px 10px 10px 0;
+    top: 5rem; /* Offset from the top */
     overflow-y: auto; /* Add vertical scrollbar if needed */
+    height: fit-content;
+    font-weight: 500;
+    margin-top: 2rem;
 }
 
 .toc ul {
-    list-style-type: disc; /* Add dots in front of items */
+    list-style-type: none; /* Add dots in front of items */
     padding-left: 20px; /* Add padding to align the dots */
     margin: 0; /* Remove default margin */
 }
@@ -25,12 +28,14 @@
     margin: 0.1em 0; /* Space between items */
 }
 
-.toc li.active {
-    font-weight: bold; /* Make active item bold */
+.toc-entry.active > a{
+    color: #446500;
+    font-weight: 600; /* Make active item bold */
 }
 
 .content {
     width: 70%; /* width for the main content */
-    padding: 20px; /* Add padding for content */
+    /* Add padding: top right bottom left */
+    padding: 0 20px 150px 40px;
     box-sizing: border-box; /* Include padding in width */
 }
