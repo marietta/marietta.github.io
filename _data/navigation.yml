@@ -1,9 +1,12 @@
 header:
-  - title: taxonomy
-    url: /generated.html
+  - title: tags
+    url: /tags.html
 
-  - title: ideas
-    url: /ideas.html
+  - title: taxonomy
+    url: /taxonomy.html
+
+  - title: notes
+    url: /notes.html
 
   - title: Le a pázsittal!
     url: /pazsit.html

@@ -1,4 +1,5 @@
 ---
+layout: article
 title: sotetzold
 ---
 Van egy teoriam, mely szerint minel vilagosabb, elenkebb zold a noveny vegetativ resze, annal jobban birja, igenyli a napsutest.  

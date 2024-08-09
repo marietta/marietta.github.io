@@ -22,6 +22,10 @@ collections:
     output: true
   posts:
     output: true
+  notes:
+    output: true
+  tags:
+    output: true
 
 defaults:
   - scope:

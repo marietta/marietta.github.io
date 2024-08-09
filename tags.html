@@ -2,61 +2,15 @@
 layout: page
 ---
 
-<h3>posts with tags</h3>
-{% assign posts = site.posts %}
-{% for post in posts %}
-<section>
-    {% if post.tags%}
-    <a href="{{ post.url }}">{{post.name | filename_cleaner }}</a>
-    {% for tag in post.tags %}
-    {{ tag}}
-    {%endfor%}
-    {% endif %}
-</section>
-{% endfor %}
-
-<h3>posts with taxonomy</h3>
-{% assign posts = site.posts %}
-{% for post in posts %}
-<section>
-    {% if post.taxonomy%}
-    <a href="{{ post.url }}">{{post.name | filename_cleaner }}</a>
-    {% for tax in post.taxonomy %}
-    {{ tax}}
-    {%endfor%}
-    {% endif %}
-</section>
-{% endfor %}
-
-<h3>pages with tags</h3>
-{% assign pages = site.pages %}
-{% for page in pages %}
-<section>
-    {% if page.tags%}
-    <a href="{{ page.url }}">{{page.name | filename_cleaner }}</a>
-    {% for tag in page.tags %}
-    {{ tag}}
-    {%endfor%}
-    {% endif %}
-</section>
-{% endfor %}
-
-
 <h3>collections</h3>
 {% for collection in site.collections %}
-    <h4>label:{{ collection.label}} {{collection.tags}} {{ collection.metadata }}</h4>
+    <h4>{{ collection.label}} {{collection.tags}} {{ collection.metadata }}</h4>
     {% for document in collection.docs %}
-      <li><a href="{{ document.url }}">{{document.name | filename_cleaner }}</a>
+        {% if document.tags %}
+            <li><a href="{{ document.url }}">{{document.title }}</a>
             {% for tag in document.tags %}
                 {{ tag}}
             {%endfor%}</li>
+{% endif %}
     {% endfor %}
-{% endfor %}
-
-<h2>species</h2>
-{% for document in site.species %}
-<li><a href="{{document.url }}">{{document.name | filename_cleaner }}</a>{{ document.taxonomy }}
-   {% for tag in document.tags %}
-                {{ tag}}
-            {%endfor%}</li>
 {% endfor %}

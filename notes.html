@@ -1,0 +1,17 @@
+---
+layout: page
+---
+<div class="masonry-container">
+    {% for page in site.notes %}
+    <section>
+        <div class="card">
+            <div class="card__content">
+                <div class="card__header">{% assign page_title = page.title | default: page.name | filename_cleaner %}
+                    <a href="{{ page.url }}">{{ page.title }}</a>
+                </div>
+                {{ page.content | markdownify }}
+            </div>
+        </div>
+    </section>
+    {% endfor %}
+</div>

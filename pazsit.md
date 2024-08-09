@@ -1,6 +1,7 @@
 ---
 layout: pagetoc
 toc: true
+show_title: false
 ---
 
 # Le a pázsittal!

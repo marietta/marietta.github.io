@@ -27,11 +27,21 @@
 
 .button--secondary, .button--secondary:link, .button--secondary:visited {
   color: #333;
-  background-color: #cdcdcd;
+  background-color: #ddd;
 }
 
+.button--illatos, .button--illatos:link, .button--illatos:visited {
+  color: #eee;
+  background-color: #A51AC4;
+}
+.button--illatos:hover {
+}
+.root[data-is-touch=false] .button--illatos:hover {
+  color: #eee;
+  background-color: #701285;
+}
 .taxa-container {
-  width: 60%; /* width for the main content */
+  width: 55%; /* width for the main content */
   /* Add padding: top right bottom left */
   padding: 20px 0 20px 20px;
   box-sizing: border-box; /* Include padding in width */
@@ -73,7 +83,7 @@ summary:hover {
   border-left: 2px solid #aaa;
 }
 .taxa-list {
-  width: 40%; /* width for the main content */
+  width: 45%; /* width for the main content */
   /* Add padding: top right bottom left */
   padding: 20px 0 0 20px;
   box-sizing: border-box; /* Include padding in width */
@@ -89,7 +99,6 @@ summary:hover {
   width: 100%; /* Adjust as needed for two images of 300px each */
   overflow-x: auto; /* Enables horizontal scrolling */
   white-space: nowrap; /* Prevents images from wrapping to the next line */
-  border: 1px solid #ccc; /* Optional: Add a border for visual clarity */
 }
 
 .image-wrapper {
