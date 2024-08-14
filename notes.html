@@ -1,10 +1,10 @@
 ---
 layout: page
 ---
-<div class="masonry-container">
+<div class="masonry-grid" data-masonry='{ "itemSelector": ".masonry-item","gutter": 16 }'>
     {% for page in site.notes %}
     <section>
-        <div class="card">
+        <div class="card masonry-item">
             <div class="card__content">
                 <div class="card__header">{% assign page_title = page.title | default: page.name | filename_cleaner %}
                     <a href="{{ page.url }}">{{ page.title }}</a>

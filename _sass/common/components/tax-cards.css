@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.left, .right {
+    width: 50%;
+}
+
+.bottom {
+    margin-top: 20px;
+}
+
+.masonry {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust minmax value for card size */
+    gap: 16px; /* Space between cards */
+}
+

@@ -2,6 +2,6 @@
 layout: tags
 tags:
   - EUA
-title: Európai csoport, eurázsiai elemek
+title: Európai csoport - eurázsiai elemek
 ---
 

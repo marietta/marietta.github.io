@@ -1,32 +1,31 @@
 ---
 layout: article
 ---
-<h4>species under {{page.tags}}</h4>
+<h4>Species</h4>
 <div class="js-result layout--archive__result d-none">
 {% for current_page in site.species %}
-{% for tag in current_page.tags %}
-{% if page.tags contains tag %}
     <article class="item">
-        <div class="item__image">
+    {% for tag in current_page.tags %}
+    {% if page.tags contains tag %}
+            <div class="item__image">
             {% if current_page.image %}
             <img class="image image--sm" src="{{ current_page.image}}"  alt=""/>
             {% else %}
             <img class="image image--sm" src="/assets/images/cover.png" alt="Logo" />
             {%endif%}
-        </div>
-        <div class="item__content">
+            </div>
+            <div class="item__content">
             {% assign page_title = current_page.name | filename_cleaner %}
             <header><a href="{{ current_page.url }}"><h3 itemprop="headline" class="item__header">{{ page_title }}</h3></a></header>
             {%- include article-info.html article=current_page show_date=false -%}
         </div>
-    </article>
-    <br>
     {% endif %}
     {% endfor %}
-    {% endfor %}
+    </article>
+{% endfor %}
 </div><br>
 
-<h4>Pages with {{page.tags}}</h4>
+<h4>Pages</h4>
 <div class="js-result layout--archive__result d-none">
     {% assign current_pages = site.pages %}
     {% for current_page in current_pages %}
@@ -56,7 +55,7 @@ layout: article
     {% endfor %}
 </div><br>
 
-<h4>Posts with {{page.tags}}</h4>
+<h4>Posts</h4>
 <div class="js-result layout--archive__result d-none">
     {% assign site_posts = site.posts %}
     {% for site_post in site_posts %}

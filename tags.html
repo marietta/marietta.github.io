@@ -1,16 +1,19 @@
 ---
 layout: page
 ---
-
-<h3>collections</h3>
-{% for collection in site.collections %}
-    <h4>{{ collection.label}} {{collection.tags}} {{ collection.metadata }}</h4>
-    {% for document in collection.docs %}
-        {% if document.tags %}
-            <li><a href="{{ document.url }}">{{document.title }}</a>
-            {% for tag in document.tags %}
-                {{ tag}}
-            {%endfor%}</li>
-{% endif %}
-    {% endfor %}
+<ul >
+{% for document in site.tags %}
+    <li>
+    {{document.title}}
+        {% for tag in document.tags %}
+            <a class="button button--secondary button--pill button--sm"
+                   href="/tags/{{ tag }}">{{ tag }}</a>
+        {% endfor %}
+        {% if document.max_magassag %}
+        <a class="button button--secondary button--pill button--sm"
+               href="/tags/max-magassag-{{ document.max_magassag }}">max-magassag-{{document.max_magassag  }}</a>
+        {% endif %}
+    </li>
 {% endfor %}
+</ul>
+

@@ -9,15 +9,14 @@ taxonomy:
   - Lycopodiaceae
   - Lycopodioideae
   - Lycopodium
-image: https://inaturalist-open-data.s3.amazonaws.com/photos/350064471/small.jpg
-cover: https://inaturalist-open-data.s3.amazonaws.com/photos/350064471/small.jpg
+image: https://inaturalist-open-data.s3.amazonaws.com/photos/350064471/medium.jpg
 tags:
   - KOZ
   - őshonos
-  - max.magassag 20
+max_magassag: 20
 images:
-  - src="https://inaturalist-open-data.s3.amazonaws.com/photos/92299243/large.jpg
-  - https://inaturalist-open-data.s3.amazonaws.com/photos/350064471/medium.jpg
+  - https://inaturalist-open-data.s3.amazonaws.com/photos/92299243/large.jpg
+  - https://inaturalist-open-data.s3.amazonaws.com/photos/350064471/large.jpg
   - https://inaturalist-open-data.s3.amazonaws.com/photos/187298450/medium.jpeg
   - https://inaturalist-open-data.s3.amazonaws.com/photos/300052285/medium.jpeg
   - https://inaturalist-open-data.s3.amazonaws.com/photos/155106750/medium.jpeg

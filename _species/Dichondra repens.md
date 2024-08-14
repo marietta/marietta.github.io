@@ -8,8 +8,7 @@ taxonomy:
   - Solanales
   - Convolvulaceae
   - Dichondra
-image: https://inaturalist-open-data.s3.amazonaws.com/photos/386736547/large.jpeg
-cover: https://inaturalist-open-data.s3.amazonaws.com/photos/386736547/large.jpeg
+image: https://inaturalist-open-data.s3.amazonaws.com/photos/386736547/medium.jpeg
 tags:
   - creeper
   - talajtakaró

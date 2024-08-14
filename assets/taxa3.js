@@ -18,19 +18,19 @@ $(document).ready(function () {
             const tempDiv = $('<div>').html(data);
 
             // Extract only the <article class="item"> elements
-            const items = tempDiv.find('article.item');
+            const items = tempDiv.find('div.card');
 
             // Clear the taxa-list and append the filtered items
-            $('.taxa-list').empty().append(items);
+            $('.taxa-cards').empty().append(items);
             // Append each item with a line break after it
             items.each(function () {
-                $('.taxa-list').append($(this)).append('<br>'); // Append the article and a line break
+                $('.taxa-cards').append($(this)); // Append the article and a line break
             });
         }).fail(
             function (xhr, status, error) {
                 if (xhr.status === 404) {
-                    // Load the 404 page content into the .taxa-list element
-                    $('.taxa-list').load('/404.html .js-article-content', function (response, status, xhr) {
+                    // Load the 404 page content into the .taxa-cards element
+                    $('.taxa-cards').load('/404.html .js-article-content', function (response, status, xhr) {
                         if (status === "error") {
                             const msg = "Error loading 404 content: " + xhr.status + " " + xhr.statusText;
                             console.log(msg);
@@ -38,7 +38,7 @@ $(document).ready(function () {
                     });
                 } else {
                     const msg = "Error: " + xhr.status + " " + xhr.statusText;
-                    $('.taxa-list').html(msg);
+                    $('.taxa-cards').html(msg);
                     console.log(msg);
                 }
             }

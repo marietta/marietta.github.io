@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const taxaContainer = document.getElementById('taxa-container');
+    const taxaContainer = document.getElementById('taxa-list');
     const taxaData = JSON.parse(taxaContainer.getAttribute('data-taxa'));
 
     function generateHtml(taxa, isTopLevel = false) {
@@ -13,7 +13,14 @@ document.addEventListener("DOMContentLoaded", function() {
             const remainingName = parts.slice(1).join(' · '); // Join the remaining parts of the name
 
             html += `<details ${isTopLevel ? 'open' : ''}>\n`;
-            html += `    <summary data-content="${secondWord}">${firstWord} <a class="button button--secondary button--pill button--sm" href="/taxonomy/${secondWord}">${secondWord}</a>${restOfName}${remainingName ? ' ' + remainingName : ''}</summary>\n`;
+            html += `    <summary data-content="${secondWord}">${firstWord} <a class="button button--secondary button--pill button--sm" href="/taxonomy/${secondWord}">${secondWord}</a>${restOfName}${remainingName ? ' ' + remainingName : ''}`;
+
+            // Add a marker if the item has sub-levels
+            if (item.sub && item.sub.length > 0) {
+                html += ' <span class="marker"> ➜ </span>'; // You can customize this marker as needed
+            }
+
+            html += `</summary>\n`;
 
             if (isTopLevel)
                 html += `    <div class="top-taxa3">\n`;

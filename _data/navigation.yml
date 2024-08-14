@@ -1,4 +1,7 @@
 header:
+  - title: cards
+    url: /cards.html
+
   - title: tags
     url: /tags.html
 
@@ -7,7 +10,7 @@ header:
 
   - title: notes
     url: /notes.html
-
+    
   - title: Le a pázsittal!
     url: /pazsit.html
 

@@ -7,8 +7,7 @@ taxonomy:
   - Agaricales
   - Mycenaceae
   - Mycena
-image: https://inaturalist-open-data.s3.amazonaws.com/photos/362504420/small.jpg
-cover: https://inaturalist-open-data.s3.amazonaws.com/photos/362504420/small.jpg
+image: https://inaturalist-open-data.s3.amazonaws.com/photos/362504420/medium.jpg
 tags:
   - pink
 images:

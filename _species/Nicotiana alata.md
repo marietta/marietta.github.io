@@ -8,13 +8,14 @@ taxonomy:
   - Solanales
   - Solanaceae
   - Nicotiana
-image: https://inaturalist-open-data.s3.amazonaws.com/photos/317452181/large.jpeg
-cover: https://inaturalist-open-data.s3.amazonaws.com/photos/317452181/large.jpeg
+image: https://static.inaturalist.org/photos/166044958/medium.jpeg
 tags:
   - ADV
-  - max.magassag 150
   - illatos
+max_magassag: 150
 images:
+  - https://static.inaturalist.org/photos/166044958/large.jpeg
   - https://inaturalist-open-data.s3.amazonaws.com/photos/317452181/large.jpeg
+  - https://static.inaturalist.org/photos/233770859/original.jpeg
 ---
 

@@ -1,9 +1,10 @@
 
 .card {
-  max-width: 35rem;
+  background-color: $card-background-color;
+  max-width: 24.5vw;
+  height: fit-content;
   border-radius: map-get($base, border-radius);
   @include box-shadow();
-  @include transition(box-shadow map-get($animation, duration) map-get($animation, timing-function));
   & > :first-child {
     border-top-left-radius: map-get($base, border-radius);
     border-top-right-radius: map-get($base, border-radius);
@@ -12,6 +13,9 @@
     border-bottom-right-radius: map-get($base, border-radius);
     border-bottom-left-radius: map-get($base, border-radius);
   }
+}
+.card:hover {
+  background-color: $card-hover-color;
 }
 
 .cell {
@@ -25,9 +29,10 @@
 }
 
 .card__header, .card__header > a {
-  font-size: map-get($base, font-size-h4);
+  text-align: center;
+  font-size: map-get($base, font-size-h3);
   font-weight: 300;
-  @include link-colors($text-color-d, $main-color-1);
+  @include link-colors($text-color-d, $text-color-d);
 }
 
 .card__image {

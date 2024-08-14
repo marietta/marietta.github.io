@@ -8,13 +8,12 @@ taxonomy:
   - Brassicales
   - Brassicaceae
   - Hesperis 
-image: https://inaturalist-open-data.s3.amazonaws.com/photos/40379446/large.jpg
-cover: https://inaturalist-open-data.s3.amazonaws.com/photos/40379446/large.jpg
+image: https://inaturalist-open-data.s3.amazonaws.com/photos/40379446/medium.jpg
 tags:
   - PAN
   - őshonos
-  - max.magassag 90
   - illatos
+max_magassag: 90
 images:
   - https://inaturalist-open-data.s3.amazonaws.com/photos/40379330/large.jpg
   - https://inaturalist-open-data.s3.amazonaws.com/photos/40379446/large.jpg

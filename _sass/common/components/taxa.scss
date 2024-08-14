@@ -2,20 +2,7 @@
   display: flex; /* Use flexbox for layout */
   flex-wrap: wrap; /* Allow the TOC and content to wrap if needed */
   margin-top: 2rem;
-  background: #f0f0f0;
-}
-
-.taxonomy {
-  cursor: pointer;
-  margin: 10px 0;
-}
-
-.taxonomy .name-row {
-  cursor: pointer;
-}
-
-.taxonomy .SplitTaxon {
-  cursor: pointer;
+  border-radius: map-get($base, border-radius);
 }
 
 .sub-taxa {
@@ -31,43 +18,66 @@
 }
 
 .button--illatos, .button--illatos:link, .button--illatos:visited {
-  color: #eee;
-  background-color: #A51AC4;
+  color: #fff;
+  background-color: #BB4AD4;
 }
+
 .button--illatos:hover {
 }
+
 .root[data-is-touch=false] .button--illatos:hover {
-  color: #eee;
-  background-color: #701285;
+  color: #fff;
+  background-color: #9530AA;
 }
+
 .taxa-container {
-  width: 55%; /* width for the main content */
+    width: 50%;
+  background-color: #f2f2f2;
   /* Add padding: top right bottom left */
   padding: 20px 0 20px 20px;
   box-sizing: border-box; /* Include padding in width */
   cursor: pointer;
   font-size: map-get($base, font-size-h5);
   font-weight: 400;
+  border-radius: map-get($base, border-radius);
+  height: fit-content;
 }
-
+.taxa-info {
+  width: 50%; /* width for the main content */
+  /* Add padding: top right bottom left */
+  padding: 20px 0 20px 20px;
+  box-sizing: border-box; /* Include padding in width */
+  cursor: pointer;
+  font-size: map-get($base, font-size-h5);
+  font-weight: 400;
+  border-radius: map-get($base, border-radius);
+}
 summary {
   list-style: none;
   /* padding: top right bottom left */
   padding: 5px 0 5px 5px;
-
+  border-bottom-left-radius: map-get($base, border-radius);
+  border-top-left-radius: map-get($base, border-radius);
 }
 
 summary.active {
   background-color: white; /* Example styling */
+  border-bottom-left-radius: map-get($base, border-radius);
+  border-top-left-radius: map-get($base, border-radius);
 }
+
 summary:hover.active {
   background-color: white;
   text-decoration: underline;
+  border-bottom-left-radius: map-get($base, border-radius);
+  border-top-left-radius: map-get($base, border-radius);
 }
 
 summary:hover {
   background-color: #f7f7f7;
   text-decoration: underline;
+  border-bottom-left-radius: map-get($base, border-radius);
+  border-top-left-radius: map-get($base, border-radius);
 }
 
 .top-taxa3 {
@@ -75,20 +85,26 @@ summary:hover {
   padding-left: 0;
   padding-right: 0;
   border-left: 2px solid #aaa;
+  border-radius: map-get($base, border-radius);
 }
+
 .sub-taxa3 {
   margin-left: 40px;
   padding-left: 0;
   padding-right: 0;
   border-left: 2px solid #aaa;
+  border-radius: map-get($base, border-radius);
 }
+
 .taxa-list {
-  width: 45%; /* width for the main content */
+  width: 100%; /* width for the main content */
   /* Add padding: top right bottom left */
   padding: 20px 0 0 20px;
   box-sizing: border-box; /* Include padding in width */
-  background: white;
-}
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  }
 
 .taxa_title {
   font-size: map-get($base, font-size-h2);
@@ -102,13 +118,12 @@ summary:hover {
 }
 
 .image-wrapper {
-  display: inline-flex; /* Use inline-flex to keep images in a row */
+  //display: inline-flex; /* Use inline-flex to keep images in a row */
 }
 
 .image-wrapper img {
-  height: 20rem; /* Set the height of the images */
-  max-width: 20rem; /* Set the width of the images */
-  object-fit: cover; /* Ensures images maintain aspect ratio */
+  height: 35rem; /* Set the height of the images */
+  object-fit: contain; /* Ensures images maintain aspect ratio */
   margin-right: 10px; /* Optional: Add space between images */
 }
 
@@ -122,4 +137,7 @@ summary:hover {
 
 .image-container::-webkit-scrollbar-thumb:hover {
   background: #888; /* Darker color on hover */
+}
+.marker {
+    color:  #aaa;
 }

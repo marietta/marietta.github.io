@@ -1,11 +1,11 @@
-.masonry-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 16px;
+.masonry-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-@media (max-width: 600px) {
-  .masonry-container {
-    grid-template-columns: 1fr; /* Single column on small screens */
-  }
+.masonry-item {
+  margin: 10px; /* Add some spacing */
+  padding: 5px; /* Padding inside the items */
+  height: fit-content;
 }
