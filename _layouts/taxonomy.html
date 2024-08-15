@@ -1,9 +1,13 @@
 ---
 layout: article
 ---
-<div id="taxa-info">
-</div>
-<div id="taxa-cards" class="taxa-cards masonry-grid" data-masonry='{ "itemSelector": ".card"}'>
+<section>
+    {{content}}
+</section>
+
+
+
+<div id="taxa-cards" class="taxa-cards" data-masonry='{ "itemSelector": ".card", "columnWidth": ".card"}'>
 {% for current_page in site.species %}
 {% if current_page.taxonomy contains page.taxonomy %}
         <a href="{{ current_page.url }}">

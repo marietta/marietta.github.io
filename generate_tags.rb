@@ -2,7 +2,7 @@ require 'fileutils'
 
 # Define the directories for posts and their corresponding tags
 collection = {
-  'taxonomy' => 'species'
+  'tags' => 'species'
 }
 
 # Create a hash to hold tags for each directory

@@ -47,7 +47,6 @@ Lombhullató erdők és erdős sztyepp határvidéke, füves puszta, sztyepp és
 
 ## A talaj takarásának fontossága. Az avar
 
-
 ### A mulcsozás. A mélymulcs
 
 Így építs termőréteget https://greendex.hu/melymulcs-hogyan-csinaljuk-miert-jo/
@@ -55,6 +54,8 @@ Lombhullató erdők és erdős sztyepp határvidéke, füves puszta, sztyepp és
 [https://gazigazito.hu/a-mulcs-csodai-483780](https://gazigazito.hu/a-mulcs-csodai-483780)
 
 Mit kezdjunk a levagott fűvel?[https://gazigazito.hu/mit-kezdjunk-a-levagott-fuvel-1053981](https://gazigazito.hu/mit-kezdjunk-a-levagott-fuvel-1053981)
+
+### Talajtakarók. 
 
 Hogyan alakíts ki alacsony növésű, minimális törődést igénylő gyepet talajtakaró növényekkel
 
@@ -76,10 +77,14 @@ Virágzó talajtakarók [https://www.botanikaland.hu/talajtakaro-novenyek/](http
 * Creeping Phlox
 * macskamenta (Nepeta)
 
-    
+### Nitrogén megkötésének képessége. Cover crops
+https://en.wikipedia.org/wiki/Nitrogen_fixation#Root_nodule_symbioses
+
 ## A biodiverzitás fontossága
 
 A biodiverzitás [https://sokszinuvidek.24.hu/kertunk-portank/2021/04/16/erdokert-biodiverzitas-tervezes/](https://sokszinuvidek.24.hu/kertunk-portank/2021/04/16/erdokert-biodiverzitas-tervezes/)
+
+Companion planting https://en.wikipedia.org/wiki/Companion_planting
 
 ## Gyep, pázsit
 
@@ -97,7 +102,7 @@ the no-mow lawn. grass alternatives. [https://lawnlove.com/blog/types-of-no-mow-
 
 Kaszálók és magasfüvű rétek. [http://www.jgypk.hu/mentorhalo/tananyag/Biologia/73_a_fves_terletek_lvilga.html](http://www.jgypk.hu/mentorhalo/tananyag/Biologia/73_a_fves_terletek_lvilga.html)
 
-Az egyszikű (Liliopsida), perjevirágúak (Poales) rendje, perjefélék/pázsitfűfélék (Poaceae) családja: a fűfélék vagy pázsitfüvek. Szerepe a természetben
+Poaceae: a fűfélék vagy pázsitfüvek szerepe a természetben
 
 [https://web.archive.org/web/20080221195432/http://www.hik.hu/tankonyvtar/site/books/b159/ch22s75.html](https://web.archive.org/web/20080221195432/http://www.hik.hu/tankonyvtar/site/books/b159/ch22s75.html)
 
@@ -139,6 +144,7 @@ permakultúra és erdőkert
 ökológiai gazdálkodás és permakultúra
 
 [https://archive2020.szie.hu/file/tti/archivum/Dorner_Zita_ertekezes.pdf](https://archive2020.szie.hu/file/tti/archivum/Dorner_Zita_ertekezes.pdf) PDF
+
 
 ## Hasznos
 

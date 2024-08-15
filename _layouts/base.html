@@ -7,7 +7,10 @@ layout: none
   <head>
     {%- include analytics.html -%}
     {%- include head.html -%}
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap">
+    <link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.gallery.min.css" type="text/css" rel="stylesheet" />
+
     <script>
       {%- include scripts/utils/utils.js -%}
       {%- include scripts/lib/throttle.js -%}
@@ -16,24 +19,20 @@ layout: none
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script>
-      var msnry = new Masonry('.masonry-grid', {
+       var msnry = new Masonry('.taxa-cards', {
         itemSelector: '.card',
+        columnWidth: '.card',
         gutter: 10 // Set the gutter size
       });
-
-      // Use imagesLoaded to trigger layout after all images have loaded
-      imagesLoaded('.masonry-grid', function() {
+      imagesLoaded('.taxa-cards', function() {
         msnry.layout(); // Trigger Masonry layout
       });
-
       // Recalculate layout on window resize
       window.addEventListener('resize', function() {
         msnry.layout();
       });
         </script>
-
     {%- include scripts/variables.html -%}
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap">
     <title></title>
       </head>
   <body>
@@ -43,5 +42,27 @@ layout: none
     <script>
       {%- include scripts/common.js -%}
     </script>
+
+  <script src="//code.jquery.com/jquery-latest.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.gallery.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+        $(document).ready(function(){
+          $('[data-featherlight]').featherlight({
+            targetAttr: 'data-featherlight',
+            closeOnClick:   'false',
+            openSpeed:    0,
+            closeSpeed:   0,
+          });
+            $('.gallery').featherlightGallery({
+                gallery: {
+                    fadeIn: 0,
+                    fadeOut: 0
+                },
+                openSpeed:    0,
+                closeSpeed:   0
+            });
+        });
+		</script>
   </body>
 </html>

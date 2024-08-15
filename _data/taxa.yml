@@ -35,6 +35,26 @@
                     - name: Family Colchicaceae · Kikericsfélék · Bellworts and Allies
             - name: Class Magnoliopsida · Kétszikűek · Dicots
               sub:
+                - name: Order Malpighiales Malpigiavirágúak · Nances, Willows, and Allies
+                  sub:
+                    - name: Family Linaceae Flax
+                      sub:
+                        - name: Genus Linum Flaxes
+                          sub: []
+                - name: Order Solanales Burgonyavirágúak · Nightshades, Bindweeds, Gooseweeds, and Allies
+                  sub:
+                    - name: Family Solanaceae Burgonyafélék · Nightshade Family
+                      sub:
+                        - name: Genus Atropa Belladonnas
+                          sub: []
+                        - name: Genus Nicotiana Tobaccos
+                          sub: []
+                - name: Order Fabales Hüvelyesek · Legumes, Milkworts, and Allies
+                  sub:
+                    - name: Family Fabaceae Pillangósvirágúak · Legumes
+                      sub:
+                        - name: Genus Trifolium Lóhere · Clovers
+                          sub: []
                 - name: Order Brassicales Repcevirágúak · Mustards, Capers, and Allies
                   sub:
                     - name: Family Brassicaceae Keresztesvirágúak · Mustard Family

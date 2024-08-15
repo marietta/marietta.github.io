@@ -1,0 +1,29 @@
+
+.featherlight-content, .featherlight-image{
+    border-radius: 20px;
+    border: 2px solid transparent !important;
+    padding: 0 !important;
+}
+.featherlight-next:hover, .featherlight-previous:hover {
+    background: #33333380 !important;
+    top: 0 !important;
+}
+.featherlight-next{
+    right: 0 !important;
+}
+.featherlight-previous {
+    left: 0 !important;
+}
+
+.featherlight-close-icon {
+    font-size: 2rem;
+    line-height: 50px !important;
+    width: 50px !important;
+    background: #33333380 !important;
+    color: #fff !important;
+}
+
+.featherlight-next span, .featherlight-previous span {
+    font-size: 40px !important;
+    line-height: 40px !important;
+}

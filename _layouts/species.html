@@ -5,11 +5,10 @@ show_tags: true
 ---
 
 <div class="image-container">
-  <div class="image-wrapper">
+  <div class="image-wrapper" data-featherlight-gallery data-featherlight-filter="a">
     {% for image_url in page.images %}
     <a href="{{image_url}}"><img alt="{{ page.title }}" src="{{ image_url }}"></a>
     {% endfor %}
   </div>
 </div>
-
 {{content}}
