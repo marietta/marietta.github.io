@@ -17,6 +17,9 @@
           sub:
             - name: Class Liliopsida  · Egyszikűek · Monocots
               sub:
+                - name: Order Alismatales Hídőrvirágúak · Aroids, Water-Plantains, Seagrass, and Allies
+                - name: Order Arecales Pálmavirágúak · Palms, Bullanocks, and Allies
+                - name: Order Dioscoreales Jamszgyökérvirágúak · Yams, Colicroots, and Allies
                 - name: Order Poales · Perjevirágúak · Grasses, Sedges, Cattails, and Allies
                   sub:
                     - name: Family Poaceae · Pázsitfüvek · Grasses
@@ -35,14 +38,25 @@
                     - name: Family Colchicaceae · Kikericsfélék · Bellworts and Allies
             - name: Class Magnoliopsida · Kétszikűek · Dicots
               sub:
-                - name: Order Gentianales Tárnicsvirágúak · Gentians, Dogbanes, Madders, and Allies
+                - name: Order Apiales Ernyősvirágúak · Carrots, Ivies, and Allies
+                - name: Order Asterales Fészkesvirágzatúak · Sunflowers, Bellflowers, Fanflowers, and Allies
+                - name: Order Boraginales Borágóvirágúak · Borages
+                - name: Order Brassicales Repcevirágúak · Mustards, Capers, and Allies
                   sub:
-                    - name: Family Apocynaceae Meténgfélék · Dogbane Family
+                    - name: Family Brassicaceae Keresztesvirágúak · Mustard Family
                       sub:
-                        - name: Genus Vincetoxicum Méreggyilok · Dog-strangling Vines
-                          sub: []
-                        - name: Genus Asclepias Selyemkóró · Milkweeds
-                          sub: []
+                        - name: Genus Hesperis Estike
+                          sub: [ ]
+                - name: Order Caryophyllales Szegfűvirágúak · Pinks, Cactuses, and Allies
+                  sub:
+                    - name: Family Amaranthaceae Disznóparéjfélék · Amaranths
+                      sub:
+                        - name: Genus Amaranthus Disznóparéj · Amaranths
+                          sub: [ ]
+                - name: Order Celastrales Kecskerágó-Virágúak · Staff-vines and Allies
+                - name: Order Ceratophyllales Tócsagazvirágúak · Coontails
+                - name: Order Cornales Somvirágúak · Dogwoods, Hydrangeas, and Allies
+                - name: Order Crossosomatales Krosszoszomavirágúak · Rockflowers, Bladdernuts, and Allies
                 - name: Order Dipsacales Mácsonyavirágúak · Honeysuckles, Moschatels, and Allies
                   sub:
                     - name: Family Viburnaceae Pézsmaboglárfélék · Elder Family
@@ -51,18 +65,44 @@
                           sub: []
                     - name: Family Caprifoliaceae Loncfélék · Honeysuckle Family
                       sub: []
-                - name: Order Caryophyllales Szegfűvirágúak · Pinks, Cactuses, and Allies
+                - name: Order Ericales Erikavirágúak · Heathers, Balsams, Primroses, and Allies
+                - name: Order Fabales Hüvelyesek · Legumes, Milkworts, and Allies
                   sub:
-                    - name: Family Amaranthaceae Disznóparéjfélék · Amaranths
+                    - name: Family Fabaceae Pillangósvirágúak · Legumes
                       sub:
-                        - name: Genus Amaranthus Disznóparéj · Amaranths
+                        - name: Genus Trifolium Lóhere · Clovers
                           sub: []
+                - name: Order Gentianales Tárnicsvirágúak · Gentians, Dogbanes, Madders, and Allies
+                  sub:
+                    - name: Family Apocynaceae Meténgfélék · Dogbane Family
+                      sub:
+                        - name: Genus Vincetoxicum Méreggyilok · Dog-strangling Vines
+                          sub: [ ]
+                        - name: Genus Asclepias Selyemkóró · Milkweeds
+                          sub: [ ]
+                - name: Order Geraniales Gólyaorrvirágúak · Geraniums, Bridal Wreaths, and Allies
+                - name: Order Lamiales Ajakosvirágúak · Mints, Plantains, Olives, and Allies
                 - name: Order Malpighiales Malpigiavirágúak · Nances, Willows, and Allies
                   sub:
                     - name: Family Linaceae Flax
                       sub:
                         - name: Genus Linum Flaxes
                           sub: []
+                - name: Order Malvales Mályvavirágúak · Mallows, Rock-roses, and Allies
+                - name: Order Myrtales Mirtuszvirágúak · Myrtles, Evening Primroses, and Allies
+                - name: Order Nymphaeales Tündérrózsa-Virágúak · Waterlilies, Fanworts, and Allies
+                - name: Order Oxalidales Madársóskavirágúak · Woodsorrels, Quandongs, and Allies
+                - name: Order Piperales Borsvirágúak · Pepper Plants, Birthworts, and Allies
+                - name: Order Ranunculales Boglárkavirágúak · Buttercups, Poppies, and Allies
+                - name: Order Rosales Rózsafélék · Roses, Elms, Figs, and Allies
+                - name: Order Santalales Szantálfavirágúak · Sandalwoods, Mistletoes, and Allies
+                - name: Order Sapindales Szappanfavirágúak · Soapberries, Cashews, Mahoganies, and Allies
+                - name: Order Saxifragales · Kőtörőfűvirágúak · Saxifrages, Stonecrops, and Allies
+                  sub:
+                    - name: Family Paeoniaceae · Peonies
+                      sub:
+                        - name: Genus Paeonia · Peonies
+                          sub: [ ]
                 - name: Order Solanales Burgonyavirágúak · Nightshades, Bindweeds, Gooseweeds, and Allies
                   sub:
                     - name: Family Solanaceae Burgonyafélék · Nightshade Family
@@ -71,24 +111,11 @@
                           sub: []
                         - name: Genus Nicotiana Tobaccos
                           sub: []
-                - name: Order Fabales Hüvelyesek · Legumes, Milkworts, and Allies
+                - name: Order Vitales Szőlővirágúak · Grapes and Allies
                   sub:
-                    - name: Family Fabaceae Pillangósvirágúak · Legumes
-                      sub:
-                        - name: Genus Trifolium Lóhere · Clovers
-                          sub: []
-                - name: Order Brassicales Repcevirágúak · Mustards, Capers, and Allies
-                  sub:
-                    - name: Family Brassicaceae Keresztesvirágúak · Mustard Family
-                      sub:
-                        - name: Genus Hesperis Estike
-                          sub: [ ]
-                - name: Order Saxifragales · Kőtörőfűvirágúak · Saxifrages, Stonecrops, and Allies
-                  sub:
-                    - name: Family Paeoniaceae · Peonies
-                      sub:
-                        - name: Genus Paeonia · Peonies
-                          sub: [ ]
+                    - name: Family Vitaceae Szőlőfélék · Grape Family
+
+
         - name: Class Lycopodiopsida · Valódi Korpafüvek · Club mosses
           sub:
             - name: Order Selaginellales · Spikemosses

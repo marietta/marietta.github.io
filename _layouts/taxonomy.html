@@ -9,8 +9,9 @@ layout: article
         {% for taxaname in page.children  %}
         {% assign pages = site.taxonomy | where: 'taxonomy', taxaname %}
         {% for current_page in pages  %}
-        <a href="/taxonomy/{{ taxaname }}">
+
             <div class="card-small card--clickable masonry-item">
+                <a href="/taxonomy/{{ taxaname }}">
                 <div class="card__content">
                     <div class="card__header" >
                         {{ taxaname }}
@@ -19,10 +20,10 @@ layout: article
                         {%endif%}
                     </div>
                     {%- include article-info.html article=current_page show_date=false -%}
-                </div>
+                </div></a>
             </div>
             <br>
-        </a>
+
         {% endfor %}
         {% endfor %}
     </div>

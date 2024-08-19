@@ -1,7 +1,7 @@
 ---
 layout: taxonomy
 taxonomy: Angiospermae
-image: /assets/images/cover.png
+image: https://static.inaturalist.org/photos/166044958/medium.jpeg
 ---
 <details>
 <summary>
@@ -30,14 +30,13 @@ image: /assets/images/cover.png
 </details>
 
 <div id="taxa-info">
-
-<div class="container">
+<div class="flex" data-masonry='{ "itemSelector": ".card-small", "columnWidth": ".card-small", gutter: 16}'>
 {% assign fruits = "Liliopsida,Magnoliopsida" | split: "," %}
 {% for taxaname in fruits  %}
 {% assign pages = site.taxonomy | where: 'taxonomy', taxaname %}
 {% for current_page in pages  %}
 <a href="/taxonomy/{{ taxaname }}">
-    <div class="card-small card--clickable ">
+    <div class="card-small card--clickable masonry-item">
         <div class="card__content">
             <div class="card__header" >
                 {{ taxaname }}
@@ -52,5 +51,6 @@ image: /assets/images/cover.png
         </a>
 {% endfor %}
 {% endfor %}
+
 </div>
 </div>

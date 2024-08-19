@@ -42,6 +42,11 @@ taxaList.addEventListener('click', (event) => {
                 if (infoContent) {
                     infoContainer.innerHTML = infoContent.innerHTML; // Populate the info container
                     infoContainer.style.display = 'block'; // Show the info container
+
+                    new Masonry(taxaCardsContainer, {
+                        itemSelector: '.card-small',
+                        gutter: 16 // Adjust gutter as needed
+                    }).layout();
                 } else {
                     infoContainer.innerHTML = 'No information available.';
                     infoContainer.style.display = 'block';
