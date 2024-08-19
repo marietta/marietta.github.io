@@ -14,3 +14,4 @@ gem "webrick", "~> 1.8"
 gem "sinatra", ">= 3", "< 4"
 
 gem "jekyll-text-theme"
+gem 'jemoji'

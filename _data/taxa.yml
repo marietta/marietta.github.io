@@ -35,6 +35,28 @@
                     - name: Family Colchicaceae · Kikericsfélék · Bellworts and Allies
             - name: Class Magnoliopsida · Kétszikűek · Dicots
               sub:
+                - name: Order Gentianales Tárnicsvirágúak · Gentians, Dogbanes, Madders, and Allies
+                  sub:
+                    - name: Family Apocynaceae Meténgfélék · Dogbane Family
+                      sub:
+                        - name: Genus Vincetoxicum Méreggyilok · Dog-strangling Vines
+                          sub: []
+                        - name: Genus Asclepias Selyemkóró · Milkweeds
+                          sub: []
+                - name: Order Dipsacales Mácsonyavirágúak · Honeysuckles, Moschatels, and Allies
+                  sub:
+                    - name: Family Viburnaceae Pézsmaboglárfélék · Elder Family
+                      sub:
+                        - name: Genus Sambucus Bodza · Elders
+                          sub: []
+                    - name: Family Caprifoliaceae Loncfélék · Honeysuckle Family
+                      sub: []
+                - name: Order Caryophyllales Szegfűvirágúak · Pinks, Cactuses, and Allies
+                  sub:
+                    - name: Family Amaranthaceae Disznóparéjfélék · Amaranths
+                      sub:
+                        - name: Genus Amaranthus Disznóparéj · Amaranths
+                          sub: []
                 - name: Order Malpighiales Malpigiavirágúak · Nances, Willows, and Allies
                   sub:
                     - name: Family Linaceae Flax
@@ -67,40 +89,90 @@
                       sub:
                         - name: Genus Paeonia · Peonies
                           sub: [ ]
-        - name: Subphylum Lycophyta · Club mosses
+        - name: Class Lycopodiopsida · Valódi Korpafüvek · Club mosses
           sub:
-            - name: Class Lycopodiopsida · Valódi Korpafüvek · Club mosses
+            - name: Order Selaginellales · Spikemosses
               sub:
-                - name: Order Selaginellales · Spikemosses
+                - name: Family Selaginellaceae · Spikemosses
                   sub:
-                    - name: Family Selaginellaceae · Spikemosses
-                      sub:
-                        - name: Genus Selaginella · Spikemosses
-                - name: Order Lycopodiales · Clubmosses and Firmosses
+                    - name: Genus Selaginella · Spikemosses
+            - name: Order Lycopodiales · Clubmosses and Firmosses
+              sub:
+                - name: Family Lycopodiaceae · Clubmosses and Firmosses
                   sub:
-                    - name: Family Lycopodiaceae · Clubmosses and Firmosses
+                    - name: Subfamily Lycopodioideae
                       sub:
-                        - name: Subfamily Lycopodioideae
-                          sub:
-                            - name: Genus Lycopodium · Ground and Creeping Clubmosses
-
-        - name: Subphylum Psilophyta · Whisk ferns
+                        - name: Genus Lycopodium · Ground and Creeping Clubmosses
+        - name: Class Polypodiopsida · Páfrányok · Ferns
           sub:
-            - name: Class Psilotopsida · Whisk ferns
-        - name: Subphylum Pterophyta · Ferns
-          sub:
-            - name: Class Polypodiopsida · Páfrányok · Ferns
-        - name: Subphylum Sphenophyta or Equisetophyta· Horsetails
-          sub:
-            - name: Class Equisetopsida · Horsetails
+            - name: Order Polypodiales Édesgyökerű Páfrányok
+              sub:
+                - name: Family Pteridaceae Brake Family
+                - name: Family Thelypteridaceae Marsh Fern Family
+                  sub:
+                    - name: Genus Phegopteris Beech Ferns
+                      sub: []
+                - name: Family Woodsiaceae Cliff Ferns
+                  sub:
+                    - name: Genus Woodsia Cliff Ferns
+                      sub: []
+            - name: Order Salviniales Rucaörömpáfrányok
+              sub:
+                - name: Family Marsileaceae
+                  sub:
+                    - name: Genus Marsilea Helicopter Ferns
+                      sub: []
+                - name: Family Salviniaceae Water Fern Family
+                  sub:
+                    - name: Genus Salvinia
+                      sub: []
+            - name: Order Ophioglossales Kígyónyelvpáfrányok · Adder's-tongues and Allies
+              sub:
+                - name: Family Ophioglossaceae Kígyónyelvfélék · Adder's-tongue Family
+                  sub:
+                    - name: Genus Ophioglossum Adder's-Tongues
+                      sub: []
+            - name: Order Equisetales Valódi Zsurlók · Horsetails
+              sub:
+                - name: Family Equisetaceae Zsurlófélék · Horsetail Family
+                  sub:
+                    - name: Genus Equisetum Zsurló · Horsetails
+                      sub: []
         - name: Division Gymnospermae
           sub:
+            - name: Division Gnetophyta · Leplesmagvúak
+              sub:
+                - name: Class Gnetopsida Leplesmagvúak
+                  sub:
+                    - name: Family Ephedraceae Jointfir Family
+                      sub:
+                        - name: Genus Ephedra Jointfirs
+                          sub: []
             - name: Division Ginkgophyta · Ginkgos
               sub:
                 - name: Class Ginkgoopsida · Páfrányfenyők · Ginkgos
+                  sub:
+                    - name: Family Ginkgoaceae Ginkgo Family
+                      sub:
+                        - name: Genus Ginkgo Ginkgo
+                          sub: []
             - name: Division Pinophyta · Conifers
               sub:
                 - name: Class Pinopsida · Tűlevelűek · Conifers
+                  sub:
+                    - name: Order Pinales Fenyőalakúak · Conifers
+                      sub:
+                        - name: Family Cupressaceae Ciprusfélék · Cypress Family
+                        - name: Family Taxaceae Tiszafafélék · Yew Family
+                          sub:
+                            - name: Genus Taxus Yews
+                              sub: []
+                        - name: Family Pinaceae Fenyőfélék · Pine Family
+                          sub:
+                            - name: Genus Abies Firs
+                            - name: Genus Cedrus Cedars
+                            - name: Genus Picea Lucfenyők · Spruces
+                            - name: Genus Pinus Fenyő · Pines
 
 - name: Kingdom Fungi · Gombák
   sub:

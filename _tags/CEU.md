@@ -1,4 +1,5 @@
 ---
+tags: CEU
 layout: tags
-tags: pink
 ---
+

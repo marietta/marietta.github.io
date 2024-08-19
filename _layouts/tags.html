@@ -1,23 +1,24 @@
 ---
 layout: article
 ---
+
 <h4>Species</h4>
 <div class="js-result layout--archive__result d-none">
 {% for current_page in site.species %}
     <article class="item">
     {% for tag in current_page.tags %}
     {% if page.tags contains tag %}
-            <div class="item__image">
-            {% if current_page.image %}
-            <img class="image image--sm" src="{{ current_page.image}}"  alt=""/>
-            {% else %}
-            <img class="image image--sm" src="/assets/images/cover.png" alt="Logo" />
-            {%endif%}
-            </div>
-            <div class="item__content">
-            {% assign page_title = current_page.name | filename_cleaner %}
-            <header><a href="{{ current_page.url }}"><h3 itemprop="headline" class="item__header">{{ page_title }}</h3></a></header>
-            {%- include article-info.html article=current_page show_date=false -%}
+        <div class="item__image">
+        {% if current_page.image %}
+        <img class="image image--sm" src="{{ current_page.image}}"  alt=""/>
+        {% else %}
+        <img class="image image--sm" src="/assets/images/cover.png" alt="Logo" />
+        {%endif%}
+        </div>
+        <div class="item__content">
+        {% assign page_title = current_page.name | filename_cleaner %}
+        <header><a href="{{ current_page.url }}"><h3 itemprop="headline" class="item__header">{{ page_title }}</h3></a></header>
+        {%- include article-info.html article=current_page show_date=false -%}
         </div>
     {% endif %}
     {% endfor %}

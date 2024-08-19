@@ -56,7 +56,7 @@ taxaList.addEventListener('click', (event) => {
                     new Masonry(taxaCardsContainer, {
                         itemSelector: '.card',
                         gutter: 20 // Adjust gutter as needed
-                    });
+                    }).layout();
                 } else {
                     taxaCardsContainer.innerHTML = 'No taxa cards available.';
                     taxaCardsContainer.style.display = 'block';

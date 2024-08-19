@@ -14,7 +14,6 @@ layout: none
     <script>
       {%- include scripts/utils/utils.js -%}
       {%- include scripts/lib/throttle.js -%}
-      {%- include scripts/lib/lazyload.js -%}
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
@@ -22,13 +21,13 @@ layout: none
        var msnry = new Masonry('.taxa-cards', {
         itemSelector: '.card',
         columnWidth: '.card',
-        gutter: 10 // Set the gutter size
+        gutter: 10, // Set the gutter size
       });
       imagesLoaded('.taxa-cards', function() {
         msnry.layout(); // Trigger Masonry layout
       });
       // Recalculate layout on window resize
-      window.addEventListener('resize', function() {
+        window.addEventListener('resize', function() {
         msnry.layout();
       });
         </script>
@@ -51,16 +50,16 @@ layout: none
           $('[data-featherlight]').featherlight({
             targetAttr: 'data-featherlight',
             closeOnClick:   'false',
-            openSpeed:    0,
-            closeSpeed:   0,
+            openSpeed:    1,
+            closeSpeed:   1,
           });
             $('.gallery').featherlightGallery({
                 gallery: {
-                    fadeIn: 0,
-                    fadeOut: 0
+                    fadeIn: 1,
+                    fadeOut: 1
                 },
-                openSpeed:    0,
-                closeSpeed:   0
+                openSpeed:    1,
+                closeSpeed:   1,
             });
         });
 		</script>

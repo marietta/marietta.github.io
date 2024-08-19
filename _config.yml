@@ -4,6 +4,7 @@ plugins:
   - jekyll-timeago
   - jekyll-toc
   - kramdown
+  - jemoji
 
 theme: jekyll-text-theme
 timezone: Europe/Budapest

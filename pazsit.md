@@ -8,7 +8,7 @@ show_title: false
 
 ## A növényzet kialakulása. A szukcesszió
 
-<div align="center"><img src="assets/images/succession.jpg" alt="szukcesszió ecological succession" width="80%"></div>
+<img src="assets/images/succession.jpg" alt="szukcesszió ecological succession" width="80%">
 
 ahol nem volt növényzet: primer szukcesszió
 

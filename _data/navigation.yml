@@ -2,6 +2,9 @@ header:
   - title: cards
     url: /cards.html
 
+  - title: classes
+    url: /classes.html
+
   - title: tags
     url: /tags.html
 

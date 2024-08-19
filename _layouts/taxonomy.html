@@ -1,13 +1,38 @@
 ---
 layout: article
 ---
-<section>
-    {{content}}
-</section>
+
+{{content}}
+
+<div id="taxa-info">
+    <div class="flex" data-masonry='{ "itemSelector": ".card-small", "columnWidth": ".card-small", "gutter": 16}'>
+        {% for taxaname in page.children  %}
+        {% assign pages = site.taxonomy | where: 'taxonomy', taxaname %}
+        {% for current_page in pages  %}
+        <a href="/taxonomy/{{ taxaname }}">
+            <div class="card-small card--clickable masonry-item">
+                <div class="card__content">
+                    <div class="card__header" >
+                        {{ taxaname }}
+                        {% if current_page.image %}
+                        <img src="{{ current_page.image}}"  alt=""/>
+                        {%endif%}
+                    </div>
+                    {%- include article-info.html article=current_page show_date=false -%}
+                </div>
+            </div>
+            <br>
+        </a>
+        {% endfor %}
+        {% endfor %}
+    </div>
+</div>
 
 
-
-<div id="taxa-cards" class="taxa-cards" data-masonry='{ "itemSelector": ".card", "columnWidth": ".card"}'>
+<h4>Species</h4>
+<details open>
+    <summary class="summary--dark">show/hide species</summary>
+<div id="taxa-cards" class="taxa-cards" data-masonry='{ "itemSelector": ".card", "columnWidth": ".card", "gutter": 16}'>
 {% for current_page in site.species %}
 {% if current_page.taxonomy contains page.taxonomy %}
         <a href="{{ current_page.url }}">
@@ -26,6 +51,8 @@ layout: article
 {%endif%}
 {% endfor %}
 </div>
+</details>
+
 
 <h4>Pages</h4>
 <div class="js-result layout--archive__result d-none">
@@ -57,7 +84,7 @@ layout: article
     {% endfor %}
 </div><br>
 
-<h4>Posts with {{page.taxonomy}}</h4>
+<h4>Posts</h4>
 <div class="js-result layout--archive__result d-none">
     {% assign site_posts = site.posts %}
     {% for site_post in site_posts %}

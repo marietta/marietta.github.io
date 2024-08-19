@@ -14,15 +14,12 @@
 
 .button--secondary, .button--secondary:link, .button--secondary:visited {
   color: #333;
-  background-color: #ddd;
+  background-color: $button-color;
 }
 
 .button--illatos, .button--illatos:link, .button--illatos:visited {
   color: #fff;
   background-color: #BB4AD4;
-}
-
-.button--illatos:hover {
 }
 
 .root[data-is-touch=false] .button--illatos:hover {
@@ -32,7 +29,7 @@
 
 .taxa-container {
     width: 50%;
-  background-color: #f2f2f2;
+  background-color: $card-background-color;
   /* Add padding: top right bottom left */
   padding: 20px 0 20px 20px;
   box-sizing: border-box; /* Include padding in width */
@@ -43,7 +40,7 @@
   height: fit-content;
 }
 .taxa-info {
-  width: 50%; /* width for the main content */
+  width: 100%; /* width for the main content */
   /* Add padding: top right bottom left */
   padding: 20px 0 20px 20px;
   box-sizing: border-box; /* Include padding in width */
@@ -52,6 +49,8 @@
   font-weight: 400;
   border-radius: map-get($base, border-radius);
 }
+
+
 summary {
   list-style: none;
   /* padding: top right bottom left */
@@ -61,23 +60,26 @@ summary {
 }
 
 summary.active {
-  background-color: white; /* Example styling */
+  background-color: $background-color; /* Example styling */
   border-bottom-left-radius: map-get($base, border-radius);
   border-top-left-radius: map-get($base, border-radius);
 }
 
 summary:hover.active {
-  background-color: white;
+  background-color: $background-color;
   text-decoration: underline;
   border-bottom-left-radius: map-get($base, border-radius);
   border-top-left-radius: map-get($base, border-radius);
 }
 
 summary:hover {
-  background-color: #f7f7f7;
+  background-color: $summary-hover-color;
   text-decoration: underline;
   border-bottom-left-radius: map-get($base, border-radius);
   border-top-left-radius: map-get($base, border-radius);
+}
+summary.summary--dark {
+    background-color: $card-background-color;
 }
 
 .top-taxa3 {
@@ -141,3 +143,7 @@ summary:hover {
 .marker {
     color:  #aaa;
 }
+.flex {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow the TOC and content to wrap if needed */
+  }

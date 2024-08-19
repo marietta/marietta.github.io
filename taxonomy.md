@@ -5,8 +5,7 @@ show_title: false
 
 <div class="container">
     <div class="left" class="taxa-container">
-        <div id="taxa-list" data-taxa='{{ site.data.taxa | jsonify | escape }}'>
-        </div>
+        <div id="taxa-list" data-taxa='{{ site.data.taxa | jsonify | escape }}'></div>
     </div>
     <div class="right">
         <div id="taxa-info" class="taxa-info info-container">
@@ -22,4 +21,4 @@ show_title: false
     </div>
 </div>
 <script src="/assets/taxa3generator.js" defer></script>
-<script src="assets/tax-cards.js"></script>
+<script src="/assets/tax-cards.js"></script>
