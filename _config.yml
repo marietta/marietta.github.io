@@ -4,7 +4,7 @@ plugins:
   - jekyll-timeago
   - jekyll-toc
   - kramdown
-  - jemoji
+  - jekyll-datapage-generator
 
 theme: jekyll-text-theme
 timezone: Europe/Budapest
@@ -27,9 +27,22 @@ collections:
     output: true
   tags:
     output: true
+  padapt:
+    output: true
+
+page_gen:
+  - data: 'padapt-small'
+    template: 'padapt'
+    name: 'name'
+    dir: 'padapt'
+    tags: "nativeness_hu"
 
 defaults:
   - scope:
       path: ""
     values:
       image: /assets/images/cover.png
+  - scope:
+      path: "/padapt"
+    values:
+      tags: "nativeness_hu"

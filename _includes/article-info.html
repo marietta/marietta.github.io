@@ -51,31 +51,122 @@
             >{{ _tag }}</a>
           </li>
           {%- endfor -%}
+
+          {% assign phylum_lat = include.article['phylum_lat'] %}
+          {% assign class_lat = include.article['class_lat'] %}
+          {% assign order_lat = include.article['order_lat'] %}
+          {% assign family_lat = include.article['family_lat'] %}
+
+          {% if phylum_lat %}
+          <li>
+          <a class="button button--secondary button--pill button--sm"
+          href="/taxonomy/{{ phylum_lat }}">
+          {{ phylum_lat }}
+          </a>
+          </li>
+          {%- endif -%}
+          {% if class_lat %}
+          <li>
+          <a class="button button--secondary button--pill button--sm"
+          href="/taxonomy/{{ class_lat }}"
+          >{{ class_lat }}</a>
+          </li>
+          {%- endif -%}
+          {% if order_lat %}
+          <li>
+          <a class="button button--secondary button--pill button--sm"
+          href="/taxonomy/{{ order_lat }}"
+          >{{ order_lat }}</a>
+          </li>
+          {%- endif -%}
+          {% if family_lat %}
+          <li>
+          <a class="button button--secondary button--pill button--sm"
+          href="/taxonomy/{{ family_lat }}"
+          >{{ family_lat }}</a>
+          </li>
+          <li>
+          <a class="button button--secondary button--pill button--sm"
+          href="/taxonomy/{{ page.title | split: ' ' | first}}"
+          >{{ include.article.title  | split: ' ' | first}}</a>
+          </li>
+          {%- endif -%}
         </ul>
 
         <ul class="right-col menu">
+          {% if phylum_lat == "Pinophyta" %}
+          <li class="button button--height button--pill button--sm">
+            <i class="fa-solid fa-tree"></i>
+          </li>
+          {% endif %}
             {%- assign _tag_path = _paths_archive | append: '?tag=' -%}
             {%- include snippets/prepend-baseurl.html path=_tag_path -%}
             {%- for _tag in include.article.tags -%}
-            {%- assign _tag_path = __return -%}
-            {%- assign _tag_encode = _tag | strip | url_encode } -%}
-            <li>
               {% if _tag == "PAN" or _tag == "END" or _tag == "őshonos" %}
-              <a class="button button--success button--pill button--sm"
-                 href="/tags/{{ _tag }}">{{ _tag }}</a>
-               {% else %}{% if _tag == "illatos" %}
-              <a class="button button--illatos button--pill button--sm"
-               href="/tags/{{ _tag }}">{{ _tag }}</a>
-               {% else %}
-              <a class="button button--secondary button--pill button--sm"
-               href="/tags/{{ _tag }}">{{ _tag }}</a>
-               {% endif %}
+                    <li><a class="button button--success button--pill button--sm"
+                       href="/tags/{{ _tag }}">{{ _tag }}</a>
+                    </li>
+              {% else %}
+                    <li><a class="button button--secondary button--pill button--sm"
+                       href="/tags/{{ _tag }}">{{ _tag }}</a>
+                    </li>
               {% endif %}
-            </li>
             {%- endfor -%}
 
+            {% assign nativeness = include.article['nativeness_hu'] %}
+            {% if nativeness %}
+            {% if nativeness == "PAN" or nativeness == "END" or nativeness == "őshonos" %}
+              <li>
+                <a class="button button--success button--pill button--sm"
+                   href="/tags/{{ nativeness }}">
+                  {{ nativeness }}</a></li>
+                 {% else %}
+                <li><a class="button button--secondary button--pill button--sm"
+                   href="/tags/{{ nativeness }}">
+                  {{ nativeness }}</a>
+              </li>
+            {% endif %}{% endif %}
+          {% assign floraelem = include.article['Flóraelem besorolás'] %}
+            {% if floraelem %}
+              <li>
+                  <a class="button button--secondary button--pill button--sm"
+                  href="/tags/{{ floraelem }}">
+                    {{ floraelem }}</a>
+              </li>
+            {%- endif -%}
+          {% assign magassag = include.article['Maximum magasság'] %}
+            {% if magassag %}
+            {% assign magassag_m = magassag | times: 1.0 | divided_by: 100 %}
+              <li>
+                <a class="button button--height button--pill button--sm"
+                  href="/tags/max-magassag-{{ magassag }}">
+                  <i class="fa-solid fa-arrows-up-down"></i>
+                  {{ magassag_m }} m</a>
+              </li>
+            {%- endif -%}
 
-          </ul>
+          {% if include.article['Virágzás kezdete'] %}
+          {% assign virag_begin = include.article['Virágzás kezdete'] | plus: 0 %}
+          {% assign virag_span = include.article['Virágzás időtartama'] | plus: 0 %}
+          {% assign end_number = virag_begin | plus: virag_span %}
+
+            {% for virag in (virag_begin..end_number) %}
+            {% assign month_date = "2023-" | append: virag | append: "-01" %}
+            {% assign month_name = month_date | date: "%b" %}
+            {% if phylum_lat != "Angiospermae" %}
+            <li class="button button--success button--pill button--sm">
+              {%else%}
+            <li class="button button--flowering button--pill button--sm">
+            {%- endif -%}
+              ❀ {{ month_name }}
+            </li>
+            {% endfor %}
+          {%- endif -%}
+
+
+
+         </ul>
+
           <ul class="right-col menu">
           {%- if _show_author  -%}
             <li><i class="fas fa-user"></i> <span>{{ _author.name }}</span></li>

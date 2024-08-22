@@ -10,7 +10,6 @@ layout: article
 
 {% assign extract_classes = "" %}
 
-{% comment %} Define a function to process items recursively {% endcomment %}
 {% assign max_depth = 10 %}
 
 {% for i in (1..max_depth) %}

@@ -1,0 +1,22 @@
+---
+layout: article
+---
+
+{% for row in site.data.padapt-small %}
+<div><a href="/padapt/{{row.name | downcase | replace: ' ', '-'}}.html">{{ row.name }}</a></div>
+{%endfor%}
+<ul>
+  {% for collection in site.collections %}
+    <li>
+      <h2>{{ collection.label }}</h2>
+      <ul>
+        {% for item in site[collection.label] %}
+          <li>
+            <a href="{{ item.url }}">{{ item.title }}</a>
+            <small>{{ item.date | date: "%b %-d, %Y" }}</small>
+          </li>
+        {% endfor %}
+      </ul>
+    </li>
+  {% endfor %}
+</ul>

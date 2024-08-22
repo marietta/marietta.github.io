@@ -17,14 +17,26 @@
   background-color: $button-color;
 }
 
+.button--success, .button--success:link, .button--success:visited {
+  color: #fff;
+  background-color: #74ac00;
+}
+.button--flowering, .button--flowering:link, .button--flowering:visited {
+  color: #fff;
+  background-color: #bf1d99;
+}
+.button--height, .button--height:link, .button--height:visited {
+  color: #000;
+  background-color: $button-color;
+}
 .button--illatos, .button--illatos:link, .button--illatos:visited {
   color: #fff;
   background-color: #BB4AD4;
 }
 
-.root[data-is-touch=false] .button--illatos:hover {
-  color: #fff;
-  background-color: #9530AA;
+.root[data-is-touch=false] .button--height:hover {
+  color: #000;
+  background-color: $button-color;
 }
 
 .taxa-container {

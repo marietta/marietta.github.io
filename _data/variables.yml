@@ -1,0 +1,5 @@
+sources:
+  bootcdn:
+    font_awesome: 'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.6.0/css/all.css'
+  unpkg:
+    font_awesome: 'https://use.fontawesome.com/releases/v6.6.0/css/all.css'

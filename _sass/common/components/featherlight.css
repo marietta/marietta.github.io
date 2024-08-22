@@ -27,3 +27,8 @@
     font-size: 40px !important;
     line-height: 40px !important;
 }
+
+.featherlight img {
+    max-width: 100%; /* Ensure images fit within the lightbox */
+    height: auto; /* Maintain aspect ratio */
+}
