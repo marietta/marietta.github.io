@@ -113,11 +113,32 @@
               {% endif %}
             {%- endfor -%}
 
+            {% assign eletforma = include.article['Életforma'] %}
+          {% if eletforma %}
+            {% if eletforma == 'H' or eletforma=='He' %}
+                <li>
+                  <a class="button button--secondary button--pill button--sm"
+                     href="/tags/{{ eletforma }}">
+                    évelő
+                  </a>
+                </li>
+            {% endif %}
+            {% if eletforma contains 'HH' %}
+                <li>
+                  <a class="button button--secondary button--pill button--sm"
+                     href="/tags/{{ eletforma }}">
+                    vízi
+                  </a>
+                </li>
+            {% endif %}
+
+          {% endif %}
+
             {% assign nativeness = include.article['nativeness_hu'] %}
             {% if nativeness %}
             {% if nativeness == "PAN" or nativeness == "END" or nativeness == "őshonos" %}
               <li>
-                <a class="button button--success button--pill button--sm"
+                <a class="button button--success button--pill button--md"
                    href="/tags/{{ nativeness }}">
                   {{ nativeness }}</a></li>
                  {% else %}
@@ -136,9 +157,14 @@
             {%- endif -%}
           {% assign magassag = include.article['Maximum magasság'] %}
             {% if magassag %}
+          {% assign magassag_int = magassag | times: 1  %}
+          {% if magassag_int <100 %}
             {% assign magassag_m = magassag | times: 1.0 | divided_by: 100 %}
+          {%else%}
+            {% assign magassag_m = magassag | times: 1 | divided_by: 100 %}
+          {%- endif -%}
               <li>
-                <a class="button button--height button--pill button--sm"
+                <a class="button button--height button--pill button--md"
                   href="/tags/max-magassag-{{ magassag }}">
                   <i class="fa-solid fa-arrows-up-down"></i>
                   {{ magassag_m }} m</a>

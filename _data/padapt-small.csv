@@ -1,35 +1,77 @@
 species_id,phylum_lat,class_lat,order_lat,family_lat,taxon_lat,name,nativeness_hu,Maximum magasság,Életforma,Szociális magatartási típus,Flóraelem besorolás,invasion_status_hu,Terjedési stratégia,Virágzás kezdete,Virágzás időtartama
-1,Pinophyta,Pinopsida,Pinales,Pinaceae,Abies alba Mill.,Abies alba,rejtett honosságú,3500,MM,C,CEU,meghonosodott faj,Epilobium,5,2
-2,Pinophyta,Pinopsida,Pinales,Pinaceae,Abies cephalonica Loudon,Abies cephalonica,idegenhonos,3000,MM,,,alkalmi faj,Epilobium (PADAPT),5,2
-3,Pinophyta,Pinopsida,Pinales,Pinaceae,Abies concolor (Gordon) Hildebr.,Abies concolor,idegenhonos,2000,MM,,,alkalmi faj,Epilobium (PADAPT),5,2
-4,Pinophyta,Pinopsida,Pinales,Pinaceae,Abies nordmanniana (Steven) Spach,Abies nordmanniana,idegenhonos,3000,MM,,,alkalmi faj,Epilobium (PADAPT),5,2
-5,Angiospermae,Magnoliopsida,Malvales,Malvaceae,Abutilon theophrasti Medik.,Abutilon theophrasti,idegenhonos,150,Th,W,SME,özönfaj,Allium,7,3
-6,Angiospermae,Magnoliopsida,Lamiales,Acanthaceae,Acanthus balcanicus Heywood et I. Richardson,Acanthus balcanicus,idegenhonos,100,He,,,alkalmi faj,Zea (PADAPT),6,2
-7,Angiospermae,Magnoliopsida,Sapindales,Sapindaceae,Acer campestre L.,Acer campestre,őshonos,3000,MM,G,EUR,,Epilobium,4,2
-8,Angiospermae,Magnoliopsida,Sapindales,Sapindaceae,Acer negundo L.,Acer negundo,idegenhonos,2000,MM,AC,ADV,meghonosodott faj,Epilobium,3,2
-9,Angiospermae,Magnoliopsida,Sapindales,Sapindaceae,Acer opalus Mill. subsp. obtusatum (Waldst. et Kit. ex Willd.) Gams,Acer opalus,idegenhonos,,,,,alkalmi faj,Epilobium (PADAPT),,
-10,Angiospermae,Magnoliopsida,Sapindales,Sapindaceae,Acer platanoides L.,Acer platanoides,őshonos,4000,MM,G,CEU,,Epilobium,3,2
-11,Angiospermae,Magnoliopsida,Sapindales,Sapindaceae,Acer pseudoplatanus L.,Acer pseudoplatanus,őshonos,4000,MM,S,CEU,,Epilobium,5,2
-12,Angiospermae,Magnoliopsida,Sapindales,Sapindaceae,Acer saccharinum L.,Acer saccharinum,idegenhonos,3000,MM,,,meghonosodott faj,Epilobium,2,2
-13,Angiospermae,Magnoliopsida,Sapindales,Sapindaceae,Acer tataricum L.,Acer tataricum,őshonos,1000,M-MM,S,PoP,,Epilobium,5,2
-14,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Achillea asplenifolia Vent.,Achillea asplenifolia,őshonos,50,He,DT,PAN,,Allium,6,4
-15,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Achillea collina Becker ex Rchb.,Achillea collina,őshonos,60,He,DT,CON,,Allium,6,5
-16,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Achillea crithmifolia Waldst. et Kit.,Achillea crithmifolia,őshonos,40,He,G,PaB,,Allium (PADAPT),6,2
-17,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Achillea distans Waldst. et Kit. ex Willd.,Achillea distans,őshonos,60,He,G,CEA,,Allium (PADAPT),6,2
-18,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Achillea horanszkyi Ujhelyi,Achillea horanszkyi,őshonos,35,He(Ch),Su,END,,Allium (PADAPT),5,2
-19,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Achillea millefolium L.,Achillea millefolium,őshonos,70,He,DT,KOZ,,Allium,5,6
-20,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Achillea nobilis L.,Achillea nobilis,őshonos,45,He,G,EUA,,Allium,6,1
-21,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Achillea ochroleuca Ehrh.,Achillea ochroleuca,őshonos,30,He,S,PoP,,Allium (PADAPT),5,3
-22,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Achillea pannonica Scheele,Achillea pannonica,őshonos,60,He,DT,PON,,Allium,5,4
-23,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Achillea pratensis Saukel et R. Länger,Achillea pratensis,őshonos,50,He,,,,Allium,5,7
-24,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Achillea ptarmica L.,Achillea ptarmica,őshonos,80,He,Sr,EUA,,Allium,5,3
-25,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Achillea setacea Waldst. et Kit.,Achillea setacea,őshonos,30,He,G,CON,,Allium,6,3
-26,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Achillea stricta Schleich. ex Gremli,Achillea stricta,őshonos,40,He,,,,Allium (PADAPT),6,5
-27,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Achillea tuzsonii Ujhelyi,Achillea tuzsonii,őshonos,50,He,,END,,Allium (PADAPT),6,2
-28,Angiospermae,Magnoliopsida,Lamiales,Lamiaceae,Acinos arvensis (Lam.) Dandy,Acinos arvensis,őshonos,30,Th(-HT),NP,EUR,,Allium,5,3
-29,Angiospermae,Magnoliopsida,Ranunculales,Ranunculaceae,Aconitum anthora L.,Aconitum anthora,őshonos,60,He,S,EUA,,Allium,8,2
-30,Angiospermae,Magnoliopsida,Ranunculales,Ranunculaceae,Aconitum moldavicum Hacq.,Aconitum moldavicum,őshonos,120,He,Sr,CAR,,Allium,6,2
-31,Angiospermae,Magnoliopsida,Ranunculales,Ranunculaceae,Aconitum variegatum L.,Aconitum variegatum,őshonos,150,He,Sr,CEA,,Allium,7,3
-32,Angiospermae,Magnoliopsida,Ranunculales,Ranunculaceae,Aconitum vulparia Rchb.,Aconitum vulparia,őshonos,150,He,S,CEU,,Allium,6,3
-33,Angiospermae,Liliopsida,Alismatales,Araceae,Acorus calamus L.,Acorus calamus,idegenhonos,150,HH(Ge),S,ADV,meghonosodott faj,Zea,6,2
-34,Angiospermae,Magnoliopsida,Ranunculales,Ranunculaceae,Actaea spicata L.,Actaea spicata,őshonos,60,He,G,EUA,,Cornus,5,2
+192,Angiospermae,Magnoliopsida,Brassicales,Brassicaceae,Arabis recta Vill.,Arabis recta,őshonos,30,Th,G,PoM,,Allium,4,2
+193,Angiospermae,Magnoliopsida,Brassicales,Brassicaceae,Arabis sagittata (Bertol.) DC.,Arabis sagittata,őshonos,80,HT(-Th),G,CIR,,Allium,5,3
+194,Angiospermae,Magnoliopsida,Brassicales,Brassicaceae,Arabis turrita L.,Arabis turrita,őshonos,80,HT-He,G,SME,,Allium,4,2
+195,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Arctium lappa L.,Arctium lappa,idegenhonos,150,HT,W,EUA,meghonosodott faj,Bidens,7,3
+196,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Arctium minus (Hill) Bernh.,Arctium minus,idegenhonos,100,HT,W,EUR,meghonosodott faj,Bidens,7,3
+197,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Arctium nemorosum Lej.,Arctium nemorosum,őshonos,250,HT,DT,EUR,,Bidens,7,3
+198,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Arctium tomentosum Mill.,Arctium tomentosum,őshonos,150,HT,W,EUA,,Bidens,7,3
+199,Angiospermae,Magnoliopsida,Rosales,Rosaceae,Aremonia agrimonioides (L.) DC.,Aremonia agrimonioides,őshonos,40,He,S,SMO,,Allium,5,2
+200,Angiospermae,Magnoliopsida,Caryophyllales,Caryophyllaceae,Arenaria leptoclados (Rchb.) Guss.,Arenaria leptoclados,őshonos,15,Th,NP,SME,,Allium,5,3
+201,Angiospermae,Magnoliopsida,Caryophyllales,Caryophyllaceae,Arenaria procera Spreng.,Arenaria procera,őshonos,40,He,S,EUA,,Allium,6,2
+202,Angiospermae,Magnoliopsida,Caryophyllales,Caryophyllaceae,Arenaria serpyllifolia L. s. l.,Arenaria serpyllifolia,őshonos,30,Th,NP,CIR,,Allium,4,4
+203,Angiospermae,Magnoliopsida,Rosales,Rosaceae,Aria collina (M. Lepší P. Lepší & N. Mey.) Sennikov & Kurtto,Aria collina,őshonos,,,,,,Cornus,,
+204,Angiospermae,Magnoliopsida,Rosales,Rosaceae,Aria danubialis (Jáv.) Sennikov & Kurtto,Aria danubialis,őshonos,,,,,,Cornus,,
+205,Angiospermae,Magnoliopsida,Rosales,Rosaceae,Aria edulis (Willd.) M. Roem.,Aria edulis,őshonos,1500,MM,G,CEU,,Cornus,5,2
+206,Angiospermae,Magnoliopsida,Rosales,Rosaceae,Aria graeca (Spach) M. Roem.,Aria graeca,őshonos,,,,,,Cornus,,
+207,Angiospermae,Magnoliopsida,Rosales,Rosaceae,Aria javorkana,Aria javorkana,őshonos,,,,,,Cornus,,
+208,Angiospermae,Magnoliopsida,Rosales,Rosaceae,Aria keszthelyensis (Somlyay &amp; Sennikov) Sennikov &amp; Kurtto,Aria keszthelyensis,őshonos,,,,,,Cornus,,
+209,Angiospermae,Magnoliopsida,Rosales,Rosaceae,Aria pannonica (Kárpáti) Sennikov &amp; Kurtto,Aria pannonica,őshonos,,,,,,Cornus,,
+210,Angiospermae,Magnoliopsida,Rosales,Rosaceae,Aria subdanubialis (Soó) Sennikov &amp; Kurtto,Aria subdanubialis,őshonos,,,,,,Cornus,,
+211,Angiospermae,Magnoliopsida,Rosales,Rosaceae,Aria thaiszii (Soó) Sennikov &amp; Kurtto,Aria thaiszii,őshonos,,,,,,Cornus,,
+212,Angiospermae,Magnoliopsida,Rosales,Rosaceae,Aria ujhelyii (Somlyay &amp; Sennikov) Sennikov &amp; Kurtto,Aria ujhelyii,őshonos,,,,,,Cornus,,
+213,Angiospermae,Magnoliopsida,Rosales,Rosaceae,Aria ulmifolia (Kárpáti) Sennikov &amp; Kurtto,Aria ulmifolia,őshonos,,,,,,Cornus,,
+214,Angiospermae,Magnoliopsida,Rosales,Rosaceae,Aria vajdae (Boros) Sennikov &amp; Kurtto,Aria vajdae,őshonos,,,,,,Cornus,,
+215,Angiospermae,Magnoliopsida,Rosales,Rosaceae,Aria zolyomii (Soó) Sennikov &amp; Kurtto,Aria zolyomii,őshonos,,,,,,Cornus,,
+216,Angiospermae,Magnoliopsida,Piperales,Aristolochiaceae,Aristolochia clematitis L.,Aristolochia clematitis,idegenhonos,100,He,W,SME,meghonosodott faj,Allium,5,2
+217,Angiospermae,Magnoliopsida,Rosales,Rosaceae,Armeniaca vulgaris Lam.,Armeniaca vulgaris,idegenhonos,1000,MM,,,alkalmi faj,Cornus,3,2
+218,Angiospermae,Magnoliopsida,Caryophyllales,Plumbaginaceae,Armeria alpina (Hoppe) Willd.,Armeria alpina,idegenhonos,25,He,,,alkalmi faj,Zea,6,2
+219,Angiospermae,Magnoliopsida,Caryophyllales,Plumbaginaceae,Armeria elongata (Hoffm.) K. Koch,Armeria elongata,őshonos,40,He,Su,CEU,,Allium,5,5
+220,Angiospermae,Magnoliopsida,Brassicales,Brassicaceae,Armoracia macrocarpa (Waldst. et Kit.) Kit. ex Baumg.,Armoracia macrocarpa,őshonos,100,He,S,PAN,,Allium,5,3
+221,Angiospermae,Magnoliopsida,Brassicales,Brassicaceae,Armoracia rusticana,Armoracia rusticana,idegenhonos,100,He,I,ADV,meghonosodott faj,Zea,5,3
+222,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Arnica montana L.,Arnica montana,őshonos,50,He,Sr,CEU,,Allium,5,3
+223,Angiospermae,Liliopsida,Poales,Poaceae,Arrhenatherum elatius (L.) Beauv.,Arrhenatherum elatius,őshonos,120,He,DT,EUA,,Allium,5,3
+224,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Artemisia abrotanum L.,Artemisia abrotanum,idegenhonos,100,Ch,I,ADV,alkalmi faj,Zea,8,2
+225,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Artemisia absinthium L.,Artemisia absinthium,idegenhonos,90,Ch-He,W,EUA,meghonosodott faj,Allium,8,3
+226,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Artemisia alba Turra,Artemisia alba,őshonos,80,Ch,S,SME,,Allium,7,3
+227,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Artemisia annua L.,Artemisia annua,idegenhonos,150,Th,W,EUA,özönfaj,Allium,7,4
+228,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Artemisia austriaca Jacq.,Artemisia austriaca,őshonos,80,Ch-He,S,EUA,,Allium,7,3
+229,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Artemisia campestris L.,Artemisia campestris,őshonos,80,He-Ch,G,EUA,,Allium,8,3
+230,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Artemisia dracunculus L.,Artemisia dracunculus,idegenhonos,120,He,,,alkalmi faj,Zea,8,2
+231,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Artemisia pontica L.,Artemisia pontica,őshonos,80,He,S,EUA,,Allium,8,3
+232,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Artemisia santonicum L.,Artemisia santonicum,őshonos,60,He-Ch,C,EUA,,Allium,7,4
+233,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Artemisia scoparia Waldst. et Kit.,Artemisia scoparia,őshonos,80,Th-HT,S,EUA,,Allium,7,3
+234,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Artemisia vulgaris L.,Artemisia vulgaris,őshonos,200,He,W,CIR,,Allium,7,4
+235,Angiospermae,Liliopsida,Alismatales,Araceae,Arum maculatum L.,Arum maculatum,őshonos,40,Ge,G,EUR,,Cornus,4,2
+236,Angiospermae,Liliopsida,Alismatales,Araceae,Arum orientale M. Bieb.,Arum orientale,őshonos,40,Ge,G,PON,,Cornus,4,2
+237,Angiospermae,Magnoliopsida,Rosales,Rosaceae,Aruncus dioicus (Walter) Fernald,Aruncus dioicus,őshonos,150,He,S,EUA,,Allium,6,3
+238,Angiospermae,Magnoliopsida,Lamiales,Scrophulariaceae,Asarina procumbens Mill.,Asarina procumbens,idegenhonos,50,He,,,alkalmi faj,Allium,7,3
+239,Angiospermae,Magnoliopsida,Piperales,Aristolochiaceae,Asarum europaeum L.,Asarum europaeum,őshonos,10,He,G,EUA,,Allium,3,3
+240,Angiospermae,Magnoliopsida,Gentianales,Apocynaceae,Asclepias syriaca L.,Asclepias syriaca,idegenhonos,150,Ge,AC,ADV,átalakító faj,Epilobium,6,2
+241,Angiospermae,Liliopsida,Asparagales,Asparagaceae,Asparagus officinalis L.,Asparagus officinalis,őshonos,150,Ge,G,PoM,,Cornus,5,3
+242,Angiospermae,Liliopsida,Asparagales,Asparagaceae,Asparagus verticillatus L.,Asparagus verticillatus,idegenhonos,,,,,alkalmi faj,Cornus,,
+243,Angiospermae,Magnoliopsida,Boraginales,Boraginaceae,Asperugo procumbens L.,Asperugo procumbens,idegenhonos,50,Th,W,EUA,meghonosodott faj,Allium,5,4
+244,Angiospermae,Magnoliopsida,Gentianales,Rubiaceae,Asperula arvensis L.,Asperula arvensis,idegenhonos,35,Th,W,EUA,meghonosodott faj,Allium,5,2
+245,Angiospermae,Magnoliopsida,Gentianales,Rubiaceae,Asperula cynanchica L. s. l.,Asperula cynanchica,őshonos,40,He,G,PoM,,Allium,6,5
+246,Angiospermae,Magnoliopsida,Gentianales,Rubiaceae,Asperula orientalis Boiss. et Hohen.,Asperula orientalis,idegenhonos,35,Th,I,ADV,alkalmi faj,Allium,5,2
+247,Angiospermae,Magnoliopsida,Gentianales,Rubiaceae,Asperula rumelica Boiss.,Asperula rumelica,őshonos,60,He,,,,Allium,6,5
+248,Angiospermae,Magnoliopsida,Gentianales,Rubiaceae,Asperula taurina L. subsp. leucanthera (Beck) Hayek,Asperula taurina,őshonos,50,He,Sr,SME,,Allium,4,3
+249,Angiospermae,Magnoliopsida,Gentianales,Rubiaceae,Asperula tinctoria L.,Asperula tinctoria,őshonos,60,He,G,PON,,Allium,6,3
+250,Angiospermae,Liliopsida,Asparagales,Asphodelaceae,Asphodelus albus Mill.,Asphodelus albus,őshonos,100,Ge,Sr,SME,,Allium,5,2
+251,Pterophyta,Polypodiopsida,Polypodiales,Aspleniaceae,Asplenium adiantum-nigrum L.,Asplenium adiantum-nigrum,őshonos,40,He,S,KOZ,,Lycopodium,7,3
+252,Pterophyta,Polypodiopsida,Polypodiales,Aspleniaceae,Asplenium ceterach L. s. l.,Asplenium ceterach,őshonos,30,He,S,SME,,Lycopodium,5 (9),2
+253,Pterophyta,Polypodiopsida,Polypodiales,Aspleniaceae,Asplenium fontanum (L.) Bernh.,Asplenium fontanum,őshonos,20,He,Su,AsM,,Lycopodium,7,3
+254,Pterophyta,Polypodiopsida,Polypodiales,Aspleniaceae,Asplenium javorkaeanum Vida,Asplenium javorkaeanum,őshonos,30,He,S,BAL,,Lycopodium,5 (9),3
+255,Pterophyta,Polypodiopsida,Polypodiales,Aspleniaceae,Asplenium lepidum C. Presl,Asplenium lepidum,őshonos,9,He,,SMO,,Lycopodium,7,2
+256,Pterophyta,Polypodiopsida,Polypodiales,Aspleniaceae,Asplenium ruta-muraria L.,Asplenium ruta-muraria,őshonos,20,He,G,CIR,,Lycopodium,7,3
+257,Pterophyta,Polypodiopsida,Polypodiales,Aspleniaceae,Asplenium scolopendrium L.,Asplenium scolopendrium,őshonos,60,He,S,CIR,,Lycopodium,7,3
+258,Pterophyta,Polypodiopsida,Polypodiales,Aspleniaceae,Asplenium septentrionale (L.) Hoffm.,Asplenium septentrionale,őshonos,15,He,G,CIR,,Lycopodium,7,3
+259,Pterophyta,Polypodiopsida,Polypodiales,Aspleniaceae,Asplenium trichomanes L.,Asplenium trichomanes,őshonos,30,He,G,KOZ,,Lycopodium,7,2
+260,Pterophyta,Polypodiopsida,Polypodiales,Aspleniaceae,Asplenium viride Huds.,Asplenium viride,őshonos,20,He,S,CIR,,Lycopodium,7,3
+261,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Aster amellus L.,Aster amellus,őshonos,70,He,G,PON,,Epilobium,7,5
+262,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Aster lanceolatus agg.,Aster lanceolatus,idegenhonos,130,He,A,ADV,alkalmi faj,Epilobium,8,3
+263,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Aster laevis Willd.,Aster laevis,idegenhonos,150,He,,,özönfaj,Epilobium,7,3
+264,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Aster linosyris (L.) Bernh.,Aster linosyris,őshonos,60,He,G,PoM,,Epilobium,7,3
+265,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Aster novae-angliae L.,Aster novae-angliae,idegenhonos,150,He,I,ADV,özönfaj,Epilobium,7,5
+266,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Aster novi-belgii L.,Aster novi-belgii,idegenhonos,120,He,I,ADV,özönfaj,Epilobium,7,4
+267,Angiospermae,Magnoliopsida,Asterales,Asteraceae,Aster oleifolius (Lam.) Wagenitz,Aster oleifolius,őshonos,35,He,Su,CON,,Epilobium,7,3

@@ -1,28 +1,60 @@
 "Allium": "Allium típus (<u>autochoria</u>, anemochoria, endozoochoria, epizoochoria)<br>A legelterjedtebb terjedési stratégia, a Magyarországon előforduló növényfajoknak körülbelül a fele ebbe a típusba tartozik. Az ide tartozó fajok jelentős része generalista terjedésű, az anemochoriához vagy a zoochoriához való morfológiai adaptáció egyértelmű jele nélkül."
 "Zea": "Ennek a típusnak a képviselői jellemzően dísz- és haszonnövények, melyek ritkán vagy soha nem terjednek generatív terjesztőképletekkel és nem képeznek földfelszín feletti vegetatív diaspórákat sem."
-"Epilobium": &Epilobium "Epilobium típus (<u>anemochoria, autochoria</u>, endozoochoria, epizoochoria)<br> Ez a terjedési stratégia jellemző a mezofil és száraz termőhelyek fajaira. Az anemochoria nagy szerepe egyértelmű (az ide tartozó fajok nagy része a fészkesek közül kerül ki), míg az autochoria szerepe kevésbé egyértelmű és így jelentősége valószínűleg alábecsült."
-"Epilobium (PADAPT)": *Epilobium
-"W": "Emberi tényezőktől zavart termőhelyek növényei - Honos gyomfajok"
-"DT": "Emberi tényezőktől zavart termőhelyek növényei - Zavarástűrő növények"
-"NP": "Természetes pionírok, természeti tényezőktől zavart termőhelyek növényei"
+"Epilobium": "Epilobium típus (<u>anemochoria, autochoria</u>, endozoochoria, epizoochoria)<br> Ez a terjedési stratégia jellemző a mezofil és száraz termőhelyek fajaira. Az anemochoria nagy szerepe egyértelmű (az ide tartozó fajok nagy része a fészkesek közül kerül ki), míg az autochoria szerepe kevésbé egyértelmű és így jelentősége valószínűleg alábecsült."
+"Bidens": "Bidens típus (<u>autochoria, epizoochoria</u>, endozoochoria)<br>Erre a terjedési stratégiára két alapvető terjedési mód jellemző, amik közül az epizoochóriához való morfológiai adaptáció egyértelmű jelei ellenére az autochória a fontosabb."
+Cornus: "Cornus típus (autochoria, endozoochoria)<br>Jellemzően húsos terméssel rendelkező lágyszárúak, cserjék és fák tartoznak ebbe a típusba, melyek gyakran a rózsafélék családjából kerülnek ki. Ezen kívül a nagytermetű, nagy és tápanyaggazdag magokkal rendelkező fák is ebbe a csoportba tartoznak."
+
+
+"DT": "Ruderálisok. <br>Emberi tényezőktől zavart termőhelyek növényei. <br>Zavarástűrő növények"
+"NP": "Ruderálisok. <br>Természetes pionírok, természeti tényezőktől zavart termőhelyek növényei"
+W: "Ruderálisok. <br>Emberi tényezőktől zavart termőhelyek növényei. <br>Honos gyomfajok"
 "C": "Természetes kompetítorok"
+"S": "Specialisták, szűk ökológiájú stressz-tűrők"
+Sr: "Specialisták, szűk ökológiájú stressz-tűrők. <br>Ritka specialisták"
+Su: "Specialisták, szűk ökológiájú stressz-tűrők.<br>Unikális specialisták"
+
 
 "özönfaj": "(inváziós, invasive): rövid időn belül igen nagymértékben szaporodik, és nagy területen terjed (pl. Erigeron annuus)"
 "meghonosodott faj": "(naturalised): Magyarország területén önfenntartó populációkkal van jelen (pl. Cabomba caroliniana)."
 "alkalmi faj": "(casual): alkalmi megtelepedő, spontán vagy szubspontán, de nem szándékos vetés révén megjelenő növény (pl. Cucumis sativus)."
 
 "ADV": "Adventív fajok - jövevények"
-"SME": "Mediterrán csoport - szubmediterrán elemek"
-"EUR": "Európai csoport - európai elemek"
+AsM: "Atlanti csoport - (szub)atlanti-szubmediterrán elemek"
+SAT: "Atlanti csoport - szubatlanti elemek"
 "CEU": "Európai csoport - közép-európai elemek"
+"CIR": "Európai csoport - cirkumpoláris elemek"
+"EUA": "Európai csoport - eurázsiai elemek"
+"EUR": "Európai csoport - európai elemek"
+"KOZ": "Kozmopolita"
+"MED": "Mediterrán csoport - mediterrán elemek"
+"SME": "Mediterrán csoport - szubmediterrán elemek"
+"PaB": "Mediterrán csoport - pannon-balkáni elemek"
+"SMO": "Mediterrán csoport - keleti-szubmediterrán elemek"
+"BAL": "Mediterrán csoport - balkáni elemek"
+"Ill": "Mediterrán csoport - illír, nyugat-balkáni elemek"
+"PoP": "Kontinentális csoport - pontus-pannon elemek"
+"PON": "Kontinentális csoport - pontusi elemek"
+"PoM": "Kontinentális csoport - pontus-szubmediterrán elemek"
+"TUR": "Kontinentális csoport - turáni (aralo-kaspi) elemek"
+BOR: "Északi és magashegységi csoport - boreális, északi elemek"
+ALP: Északi és magashegységi csoport - havasi (magashegységi, alpin) elemek
+CEA: Északi és magashegységi csoport - középeurópai-alpin elemek
+ALB: Északi és magashegységi csoport - alpin-balkáni elemek
+CAR: Északi és magashegységi csoport - kárpáti endemizmusok
+DAC: Északi és magashegységi csoport - kelet-kárpáti, dacikus elemek
+PAN: Endemikus csoport - pannóniai endemizmusok
+END: Endemikus csoport - lokális (szuper) endemizmusok
+
 
 "HH": &HH "Hydato-helophyta: vízinövények, kitartó képleteik a vízben vagy a víz fenekén vannak."
 HH(Ge): *HH
+H: &H "Hemikryptophyta: évelő növények, kitartó képleteik a talaj felszínén, többnyire avarral takarva, vagy közvetlenül a talajfelszín alatt vannak."
+He: *H
 "G": &G "Geophyta: évelő növények, kitartó képleteik a talajban, jóval a talaj felszíne alatt vannak."
-"MM": "Mega-mesophanerophyta: fák. <br>Phanerophyta, fás növények, kitartó képleteik magasan a talaj felett helyezkednek el.<br>"
-"S": "Specialisták, szűk ökológiájú stressz-tűrők"
+"MM": &MM "Mega-mesophanerophyta: fák. <br>Phanerophyta, fás növények, kitartó képleteik magasan a talaj felett helyezkednek el.<br>"
+M-MM: "Mega-mesophanerophyta: fák. <br>Microphanerophyta: cserjék."
 "Th": "Therophyta: egyévesek, kitartó képleteik magok és termések."
-
-
-
+"HT": "Hemitherophyta: <b>kétévesek</b>, első évben vegetatív módon áttelelnek, de a második évben termésérés után elpusztulnak."
+"E": "Epiphyta: fákon élő növények."
+"Ch": "Chamaephyta: évelő növények, kitartó képleteik kevéssel a talaj felett vannak (félcserjék, törpecserjék, párnás növények)."
 
