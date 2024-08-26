@@ -2,7 +2,7 @@
 layout: article
 ---
 
-{% assign plant_data = site.data.padapt-small | where: "name", page.title | first %}
+{% assign plant_data = site.data.padapt | where: "taxon_lat", page.title | first %}
 
 <div class="image-container">
     <div class="image-wrapper" data-featherlight-gallery data-featherlight-filter="a">
@@ -18,7 +18,7 @@ layout: article
 {% assign dictionary=site.data.dictionary %}
 
 {% assign eletforma = plant_data['Életforma'] %}
-{%if eletforma%}
+{%if eletforma %}
 <p class="success">Életforma: <b>{{eletforma}}</b><br>{{ dictionary[eletforma] }}</p>
 {%endif%}
 
@@ -40,10 +40,10 @@ layout: article
 {% assign terjedes = plant_data['Terjedési stratégia'] %}
 <p class="success">Terjedési stratégia: <b>{{terjedes}}</b> <br>{{dictionary[terjedes] }} </p>
 
-
+{{page}}
 
 <script>
-    fetch('https://api.inaturalist.org/v1/taxa?q={{plant_data.name}}&order=desc&order_by=observations_count&rank=species,subspecies')
+    fetch('https://api.inaturalist.org/v1/taxa?q={{page.title}}&order=desc&order_by=observations_count&rank=species,subspecies')
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not ok');

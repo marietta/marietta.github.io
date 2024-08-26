@@ -1,5 +1,0 @@
----
-taxonomy: Convolvulaceae
-layout: taxonomy
----
-

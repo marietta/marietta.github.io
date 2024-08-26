@@ -5,14 +5,11 @@ header:
   - title: classes
     url: /classes.html
 
-  - title: padapt
-    url: /padapt.html
+  - title: padapt-list
+    url: /padapt-list.html
 
   - title: tags
-    url: /tags.html
-
-  - title: taxonomy
-    url: /taxonomy.html
+    url: /tags-list.html
 
   - title: notes
     url: /notes.html

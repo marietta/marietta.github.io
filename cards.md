@@ -6,7 +6,7 @@ layout: article
 {% for current_page in site.species %}
 {% if current_page.taxonomy %}
 <a href="{{ current_page.url }}">
-        <div class="card masonry-item">
+        <div class="card card--clickable masonry-item">
         <div class="card__content">
             <div class="card__header">
                 {{ current_page.title }}

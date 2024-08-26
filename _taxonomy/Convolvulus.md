@@ -1,5 +1,0 @@
----
-taxonomy: Convolvulus
-layout: taxonomy
----
-

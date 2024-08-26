@@ -2,6 +2,21 @@
 layout: article
 ---
 
+{% assign padapt-data = site.data.padapt %}
+{% for row in padapt-data %}
+{% assign classes = classes | append: row.class_lat | append: "," %}
+{% endfor %}
+{% assign unique_classes = classes | split: "," | uniq | sort %}
+{% for class in unique_classes %}
+<div class="card-small">
+<div class="card__content">
+{{ class }}
+<a href="/taxonomy/{{ class }}">
+        {{class}}</a>
+</div>
+</div>
+{% endfor %}<br>
+
 <div id="taxa-info">
 <div class="flex" data-masonry='{ "itemSelector": ".card-small", "columnWidth": ".card-small", "gutter": 16}'>
 {% assign process_items = site.data.taxa %}

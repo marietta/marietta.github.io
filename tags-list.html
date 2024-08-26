@@ -1,0 +1,84 @@
+---
+layout: page
+---
+<ul >
+{% for document in site.tags %}
+    <li>
+    {{document.title}}
+        {% for tag in document.tags %}
+            {% if document.max_magassag %}
+                <a class="button button--secondary button--pill button--sm"
+               href="/tags/max-magassag-{{ document.max_magassag }}">max-magassag-{{document.max_magassag  }}</a>
+            {% else %}
+                <a class="button button--secondary button--pill button--sm"
+                   href="/tags/{{ tag }}">{{ tag }}</a>
+            {% endif %}
+        {% endfor %}
+
+    </li>
+{% endfor %}
+</ul>
+
+{% assign padapt-data = site.data.padapt %}
+<h4>Életforma</h4>
+{% for row in padapt-data %}
+{% assign classes = classes | append: row["Életforma"] | append: "," %}
+{% endfor %}
+{% assign unique_classes = classes | split: "," | uniq | sort %}
+{% for class in unique_classes %}
+    <a href="/tags/{{ class }}">
+        {{class}}</a>
+{% endfor %}<br>
+
+<h4>Szociális magatartási típus</h4>
+{% for row in padapt-data %}
+{% assign classes1 = classes1 | append: row["Szociális magatartási típus"] | append: "," %}
+{% endfor %}
+{% assign unique_classes1 = classes1 | split: "," | uniq | sort %}
+{% for class in unique_classes1 %}
+    <a href="/tags/{{ class }}">
+        {{class}}</a>
+{% endfor %}<br>
+
+<h4>Flóraelem besorolás</h4>
+{% for row in padapt-data %}
+{% assign classes2 = classes2 | append: row["Flóraelem besorolás"] | append: "," %}
+{% endfor %}
+{% assign unique_classes2 = classes2 | split: "," | uniq | sort %}
+{% for class in unique_classes2 %}
+    <a href="/tags/{{ class }}">
+        {{class}}</a>
+{% endfor %}<br>
+
+<h4>Terjedési stratégia</h4>
+{% for row in padapt-data %}
+{% assign classes3 = classes3 | append: row["Terjedési stratégia"] | append: "," %}
+{% endfor %}
+{% assign unique_classes3 = classes3 | split: "," | uniq | sort %}
+{% for class in unique_classes3 %}
+    <a href="/tags/{{ class }}">
+        {{class}}</a>
+{% endfor %}<br>
+
+<h4>Honosság</h4>
+{% for row in padapt-data %}
+{% assign classes4 = classes4 | append: row["nativeness_hu"] | append: "," %}
+{% endfor %}
+{% assign unique_classes4 = classes4 | split: "," | uniq | sort %}
+{% for class in unique_classes4 %}
+    <a href="/tags/{{ class }}">
+        {{class}}</a>
+{% endfor %}<br>
+
+<h4>Inváziós státusz</h4>
+{% for row in padapt-data %}
+{% assign classes5 = classes5 | append: row["invasion_status_hu"] | append: "," %}
+{% endfor %}
+{% assign unique_classes5 = classes5 | split: "," | uniq | sort %}
+{% for class in unique_classes5 %}
+    <a href="/tags/{{ class }}">
+        {{class}}</a>
+{% endfor %}<br>
+
+
+

@@ -1,5 +1,0 @@
----
-taxonomy: Eudicots
-layout: taxonomy
----
-

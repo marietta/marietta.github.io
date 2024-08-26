@@ -1,5 +1,6 @@
 ---
-max_magassag: 40
+tags: "40"
 layout: tags
+max_magassag: 40
 ---
 

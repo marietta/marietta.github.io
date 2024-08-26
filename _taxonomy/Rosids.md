@@ -1,5 +1,0 @@
----
-taxonomy: Rosids
-layout: taxonomy
----
-

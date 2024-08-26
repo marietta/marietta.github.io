@@ -2,6 +2,23 @@
 layout: article
 ---
 
+<h4>PADAPT</h4>
+{% for docu in site.padapt %}
+    {% if docu.tags contains page.tags
+or docu['Flóraelem besorolás'] contains page.tags
+or docu['Életforma'] contains page.tags
+or docu['nativeness_hu'] contains page.tags
+or docu['Szociális magatartási típus'] contains page.tags %}
+    <div><a href="{{ docu.url }}">{{ docu.title }}</a></div>
+    {% endif %}
+{%endfor%}
+
+{% for docu in site.padapt %}
+{% if docu.class_lat contains page.taxonomy %}
+<div><a href="{{ docu.url }}">{{ docu.title }}</a></div>
+{% endif %}
+{%endfor%}
+
 <h4>Species</h4>
 <div>
 {% for current_page in site.species %}
@@ -89,7 +106,3 @@ layout: article
     {%- include scripts/archieve.js -%}
 </script>
 
-
-
-
-{{ content }}

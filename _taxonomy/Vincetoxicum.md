@@ -1,5 +1,0 @@
----
-taxonomy: Vincetoxicum
-layout: taxonomy
----
-

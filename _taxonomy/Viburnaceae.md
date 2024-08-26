@@ -1,5 +1,0 @@
----
-taxonomy: Viburnaceae
-layout: taxonomy
----
-

@@ -1,5 +1,0 @@
----
-taxonomy: Lathyrus
-layout: taxonomy
----
-

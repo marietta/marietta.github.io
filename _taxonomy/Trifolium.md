@@ -1,5 +1,0 @@
----
-taxonomy: Trifolium
-layout: taxonomy
----
-

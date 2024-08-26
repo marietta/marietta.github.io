@@ -1,5 +1,0 @@
----
-taxonomy: Apocynaceae
-layout: taxonomy
----
-

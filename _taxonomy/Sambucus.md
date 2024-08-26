@@ -1,5 +1,0 @@
----
-taxonomy: Sambucus
-layout: taxonomy
----
-

@@ -1,5 +1,0 @@
----
-taxonomy: Atropa
-layout: taxonomy
----
-

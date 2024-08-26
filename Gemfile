@@ -7,7 +7,7 @@ gem "jekyll", "~> 4.2"
 group :jekyll_plugins do
   gem "jekyll-timeago", "~> 0.15.0"
   gem 'jekyll-toc'
-  gem "jekyll-datapage-generator"
+#   gem "jekyll-datapage-generator"
 end
 
 gem "webrick", "~> 1.8"

@@ -1,6 +1,0 @@
----
-tags: 
-  - őshonos
-layout: tags
----
-

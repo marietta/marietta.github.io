@@ -1,5 +1,0 @@
----
-taxonomy: Solanaceae
-layout: taxonomy
----
-

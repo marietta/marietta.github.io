@@ -1,5 +1,0 @@
----
-taxonomy: Nicotiana
-layout: taxonomy
----
-

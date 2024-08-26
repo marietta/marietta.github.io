@@ -2,8 +2,6 @@
 layout: article
 ---
 
-{{content}}
-
 <div id="taxa-info">
     <div class="flex" data-masonry='{ "itemSelector": ".card-small", "columnWidth": ".card-small", "gutter": 16}'>
         {% for taxaname in page.children  %}
@@ -29,6 +27,21 @@ layout: article
     </div>
 </div>
 
+<h4>PADAPT</h4>
+{% for docu in site.padapt %}
+{% if docu.class_lat contains page.taxonomy %}
+<div><a href="{{ docu.url }}">{{ docu.title }}</a></div>
+{% endif %}
+{% if docu.order_lat contains page.taxonomy %}
+<div><a href="{{ docu.url }}">{{ docu.title }}</a></div>
+{% endif %}
+{% if docu.family_lat contains page.taxonomy %}
+<div><a href="{{ docu.url }}">{{ docu.title }}</a></div>
+{% endif %}
+{% if docu.genus_lat contains page.taxonomy %}
+<div><a href="{{ docu.url }}">{{ docu.title }}</a></div>
+{% endif %}
+{%endfor%}
 
 <h4>Species</h4>
 <details open>

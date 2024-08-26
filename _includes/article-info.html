@@ -56,6 +56,7 @@
           {% assign class_lat = include.article['class_lat'] %}
           {% assign order_lat = include.article['order_lat'] %}
           {% assign family_lat = include.article['family_lat'] %}
+          {% assign genus_lat = include.article['genus_lat'] %}
 
           {% if phylum_lat %}
           <li>
@@ -85,10 +86,12 @@
           href="/taxonomy/{{ family_lat }}"
           >{{ family_lat }}</a>
           </li>
+          {%- endif -%}
+          {% if genus_lat %}
           <li>
           <a class="button button--secondary button--pill button--sm"
-          href="/taxonomy/{{ page.title | split: ' ' | first}}"
-          >{{ include.article.title  | split: ' ' | first}}</a>
+          href="/taxonomy/{{ genus_lat }}"
+          >{{ genus_lat }}</a>
           </li>
           {%- endif -%}
         </ul>
@@ -113,40 +116,60 @@
               {% endif %}
             {%- endfor -%}
 
-            {% assign eletforma = include.article['Életforma'] %}
+          {% assign eletforma = include.article['Életforma'] %}
           {% if eletforma %}
-            {% if eletforma == 'H' or eletforma=='He' %}
-                <li>
-                  <a class="button button--secondary button--pill button--sm"
-                     href="/tags/{{ eletforma }}">
-                    évelő
-                  </a>
-                </li>
-            {% endif %}
-            {% if eletforma contains 'HH' %}
-                <li>
-                  <a class="button button--secondary button--pill button--sm"
-                     href="/tags/{{ eletforma }}">
-                    vízi
-                  </a>
-                </li>
-            {% endif %}
-
+          <li><a class="button button--secondary button--pill button--sm"
+               href="/tags/{{eletforma}}">{{eletforma}} </a></li>
+          {% if eletforma contains 'MM' %}
+          <li><a class="button button--secondary button--pill button--sm"
+               href="/tags/MM">fák </a></li>
+          {% endif %}
+          {% if eletforma == 'M' %}
+          <li><a class="button button--secondary button--pill button--sm"
+               href="/tags/M">cserje</a></li>
+          {% endif %}
+          {% if eletforma == 'N' %}
+          <li><a class="button button--secondary button--pill button--sm"
+               href="/tags/N">félcserje</a></li>
+          {% endif %}
+          {% if eletforma contains 'Ch' %}
+          <li><a class="button button--secondary button--pill button--sm"
+                 href="/tags/Ch">törpecserje</a></li>
+          {% endif %}
+          {% if eletforma == 'H' or eletforma contains 'He'%}
+          <li><a class="button button--secondary button--pill button--sm"
+               href="/tags/He">talajfelszíni évelő</a></li>
+          {% endif %}
+          {% if eletforma contains 'Ge'%}
+          <li><a class="button button--secondary button--pill button--sm"
+               href="/tags/Ge">mélyen ülő évelő </a></li>
+          {% endif %}
+          {% if eletforma contains 'HH'%}
+          <li><a class="button button--secondary button--pill button--sm"
+               href="/tags/HH">vízi </a></li>
+          {% endif %}
+          {% if eletforma contains 'HT' %}
+          <li><a class="button button--secondary button--pill button--sm"
+               href="/HT">kétéves </a></li>
+          {% endif %}
+          {% if eletforma contains 'Th' %}
+          <li><a class="button button--secondary button--pill button--sm"
+               href="/tags/Th">egyéves </a></li>
+          {% endif %}
           {% endif %}
 
-            {% assign nativeness = include.article['nativeness_hu'] %}
+          {% assign nativeness = include.article['nativeness_hu'] %}
             {% if nativeness %}
-            {% if nativeness == "PAN" or nativeness == "END" or nativeness == "őshonos" %}
-              <li>
-                <a class="button button--success button--pill button--md"
-                   href="/tags/{{ nativeness }}">
-                  {{ nativeness }}</a></li>
-                 {% else %}
+              {% if nativeness contains "PAN" or nativeness contains "END" or nativeness contains "őshonos" %}
+                <li><a class="button button--success button--pill button--md"
+                     href="/tags/{{ nativeness }}">
+                    {{ nativeness }}</a></li>
+                {% else %}
                 <li><a class="button button--secondary button--pill button--sm"
                    href="/tags/{{ nativeness }}">
-                  {{ nativeness }}</a>
-              </li>
-            {% endif %}{% endif %}
+                  {{ nativeness }}</a></li>
+              {% endif %}
+            {% endif %}
           {% assign floraelem = include.article['Flóraelem besorolás'] %}
             {% if floraelem %}
               <li>
@@ -157,17 +180,20 @@
             {%- endif -%}
           {% assign magassag = include.article['Maximum magasság'] %}
             {% if magassag %}
-          {% assign magassag_int = magassag | times: 1  %}
-          {% if magassag_int <100 %}
-            {% assign magassag_m = magassag | times: 1.0 | divided_by: 100 %}
+
+          {% assign magassag_d = magassag | times: 1.0  %}
+          {% assign magassag_m = magassag_d | divided_by: 100 %}
+          {% assign valueRound = magassag_m | round: 0 %}
+          {% if magassag_m == valueRound  or magassag_m > 10 %}
+            {% assign magassag_show = valueRound %}
           {%else%}
-            {% assign magassag_m = magassag | times: 1 | divided_by: 100 %}
+          {% assign magassag_show = magassag_m %}
           {%- endif -%}
               <li>
                 <a class="button button--height button--pill button--md"
                   href="/tags/max-magassag-{{ magassag }}">
                   <i class="fa-solid fa-arrows-up-down"></i>
-                  {{ magassag_m }} m</a>
+                  {{ magassag_show }} m</a>
               </li>
             {%- endif -%}
 

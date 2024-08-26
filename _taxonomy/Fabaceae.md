@@ -1,5 +1,0 @@
----
-taxonomy: Fabaceae
-layout: taxonomy
----
-

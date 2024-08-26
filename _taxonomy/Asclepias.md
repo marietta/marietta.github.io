@@ -1,5 +1,0 @@
----
-taxonomy: Asclepias
-layout: taxonomy
----
-
