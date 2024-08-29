@@ -1,0 +1,68 @@
+
+{% assign unique_families = include.unique_families %}
+
+<div class="flex-family masonry-grid">
+    {% for family in unique_families %}
+    <a href="/taxonomy/{{ family }}">
+        <div class="card-small card--clickable masonry-item">
+            <div class="card__content">
+                <div class="card__header">
+                    {{ family }}
+                    <img id="{{ family }}-cover" alt="{{ family }}" />
+                </div>
+            </div>
+        </div></a>
+
+    <script>
+        (function(family) {
+            fetch("https://api.inaturalist.org/v1/taxa?q=" + family + "&order=desc&order_by=observations_count&rank=family")
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log(data);
+                // Check if results exist and if the first result has a default_photo
+                if (data.results && data.results.length > 0 && data.results[0].default_photo) {
+                    document.getElementById(family + '-cover').src = data.results[0].default_photo.medium_url;
+                } else {
+                    console.error('No results found for family:', family);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        })("{{ family }}");
+    </script>
+    <script>
+            var elem = document.querySelector('.flex-family');
+            var msnry = new Masonry(elem, {
+                itemSelector: '.masonry-item',
+                columnWidth: '.masonry-item',
+                transitionDuration: 0,
+                gutter: 16,
+            });
+            imagesLoaded(elem).on('progress', function() {
+                msnry.layout();
+            });
+            imagesLoaded('.masonry-grid', function() {
+                msnry.layout(); // Trigger Masonry layout
+            });
+            window.addEventListener('resize', function() {
+                msnry.layout();
+            });
+            window.addEventListener('scroll', function () {
+                msnry.layout();
+            });
+    </script>
+    {% endfor %}
+
+</div>
+
+
+<script>
+        {%- include scripts/archieve.js -%}
+</script>
+

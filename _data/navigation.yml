@@ -1,12 +1,10 @@
 header:
-  - title: cards
-    url: /cards.html
 
   - title: classes
     url: /classes.html
 
-  - title: padapt-list
-    url: /padapt-list.html
+  - title: orders
+    url: /orders.html
 
   - title: tags
     url: /tags-list.html

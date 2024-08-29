@@ -2079,7 +2079,7 @@ species_id,phylum_lat,class_lat,order_lat,family_lat,taxon_lat_full,taxon_lat,ge
 2078,Angiospermae,Magnoliopsida,Ranunculales,Ranunculaceae,Ranunculus peltatus Schrank,Ranunculus peltatus,Ranunculus,őshonos,200,HH,,,,Wolffia,4,5
 2079,Angiospermae,Magnoliopsida,Ranunculales,Ranunculaceae,Ranunculus polyanthemoides Boreau,Ranunculus polyanthemoides,Ranunculus,őshonos,100,He,,,,Allium,5,3
 2080,Angiospermae,Magnoliopsida,Ranunculales,Ranunculaceae,Ranunculus polyanthemos L. s. l.,Ranunculus polyanthemos,Ranunculus,őshonos,100,He,G,PON,,Allium,5,3
-2081,Angiospermae,Magnoliopsida,Ranunculales,Ranunculaceae,Ranunculus polyphyllus Waldst. et Kit.,Ranunculus polyphyllus,Ranunculus,őshonos,15 (vízi: 80),HH,G,CON,,Wolffia,4,3
+2081,Angiospermae,Magnoliopsida,Ranunculales,Ranunculaceae,Ranunculus polyphyllus Waldst. et Kit.,Ranunculus polyphyllus,Ranunculus,őshonos,80,HH,G,CON,,Wolffia,4,3
 2082,Angiospermae,Magnoliopsida,Ranunculales,Ranunculaceae,Ranunculus psilostachys Griseb.,Ranunculus psilostachys,Ranunculus,idegenhonos,40,Ge,NP,BAL,meghonosodott faj,Allium,6,2
 2083,Angiospermae,Magnoliopsida,Ranunculales,Ranunculaceae,Ranunculus repens L.,Ranunculus repens,Ranunculus,őshonos,40,He,DT,EUA,,Allium,5,3
 2084,Angiospermae,Magnoliopsida,Ranunculales,Ranunculaceae,Ranunculus rionii Lagger,Ranunculus rionii,Ranunculus,őshonos,90,HH,NP,CIR,,Wolffia,4,3

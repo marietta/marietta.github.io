@@ -4,17 +4,6 @@ layout: article
 
 {% assign padapt-data = site.data.padapt %}
 
-<h4>by classes</h4>
-{% for row in padapt-data %}
-{% assign classes = classes | append: row.class_lat | append: "," %}
-{% endfor %}
-{% assign unique_classes = classes | split: "," | uniq | sort %}
-
-{% for class in unique_classes %}
-    <a href="/taxonomy/{{ class }}">
-        {{class}}</a>
-{% endfor %}<br>
-
 <h4>by orders</h4>
 {% for row in padapt-data %}
 {% assign fruits = fruits | append: row.order_lat | append: "," %}

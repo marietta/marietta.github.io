@@ -159,3 +159,8 @@ summary.summary--dark {
   display: flex; /* Use flexbox for layout */
   flex-wrap: wrap; /* Allow the TOC and content to wrap if needed */
   }
+.flex-classes, .flex-orders, .flex-family, .flex-genus, .flex-taxa{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}

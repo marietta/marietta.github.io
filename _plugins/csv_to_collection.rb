@@ -31,8 +31,8 @@ module Jekyll
         tags.merge(row['Szociális magatartási típus'].split(', ')) if row['Szociális magatartási típus']
         tags.merge(row['Flóraelem besorolás'].split(', ')) if row['Flóraelem besorolás']
         tags.merge(row['Életforma'].split(', ')) if row['Életforma']
+        tags.merge(row['Maximum magasság'].split(', ')) if row['Maximum magasság']
         tags.merge(row['invasion_status_hu'].split(', ')) if row['invasion_status_hu']
-        tags.merge(row['Honosság'].split(', ')) if row['Honosság']
         tags.merge(row['nativeness_hu'].split(', ')) if row['nativeness_hu']
       end
 
@@ -81,7 +81,8 @@ module Jekyll
 
       # These will be included into tags
       self.data['tags'] = (data['Terjedési stratégia'] || '').split(', ') +
-        (data['Szociális magatartási típus'] || '').split(', ')
+        (data['Szociális magatartási típus'] || '').split(', ')+
+        (data['Maximum magasság'] || '').split(', ')
 
       self.content = ""
     end

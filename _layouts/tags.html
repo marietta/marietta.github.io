@@ -2,106 +2,77 @@
 layout: article
 ---
 
-<h4>PADAPT</h4>
+<div class="masonry-grid">
 {% for docu in site.padapt %}
     {% if docu.tags contains page.tags
-or docu['Flóraelem besorolás'] contains page.tags
-or docu['Életforma'] contains page.tags
-or docu['nativeness_hu'] contains page.tags
-or docu['Szociális magatartási típus'] contains page.tags %}
-    <div><a href="{{ docu.url }}">{{ docu.title }}</a></div>
-    {% endif %}
-{%endfor%}
+    or docu['Flóraelem besorolás'] contains page.tags
+    or docu['Életforma'] contains page.tags
+    or docu['nativeness_hu'] contains page.tags
+    or docu['Maximum magasság'] == page.tags
+    or docu['Szociális magatartási típus'] contains page.tags %}
+    {% assign tax = docu.taxon_lat %}
+    <a href="{{ docu.url }}">
+        <div class=" card card--clickable masonry-item">
+            <div class="card__content">
+                <div class="card__header">
+                    {{ tax }}
+                    <img id="{{ tax }}-cover" alt="{{ tax }}"/>
+                </div>
+                {%- include article-info.html article=docu show_date=false -%}
+            </div>
+        </div>
+    </a>
 
-{% for docu in site.padapt %}
-{% if docu.class_lat contains page.taxonomy %}
-<div><a href="{{ docu.url }}">{{ docu.title }}</a></div>
+    <script>
+        (function (tax) {
+            fetch("https://api.inaturalist.org/v1/taxa?q=" + tax + "&order=desc&order_by=observations_count&rank=species,subspecies,variety")
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log(data);
+                    // Check if results exist and if the first result has a default_photo
+                    if (data.results && data.results.length > 0 && data.results[0].default_photo) {
+                        document.getElementById(tax + '-cover').src = data.results[0].default_photo.medium_url;
+                    } else {
+                        console.error('No results found for:', tax);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        })("{{ tax }}");
+    </script>
+    <script>
+        var grid = document.querySelector('.masonry-grid');
+        var msnry = new Masonry(grid, {
+            itemSelector: '.masonry-item',
+            columnWidth: '.masonry-item',
+            gutter: 16,
+            transitionDuration: 0,
+        });
+        imagesLoaded('.masonry-grid', function () {
+            msnry.layout(); // Trigger Masonry layout
+        });
+        imagesLoaded(grid).on('progress', function () {
+            msnry.layout();
+        });
+        window.addEventListener('resize', function () {
+            msnry.layout();
+        });
+        window.addEventListener('scroll', function () {
+            msnry.layout();
+        });
+    </script>
+
 {% endif %}
+
 {%endfor%}
+</div>
 
-<h4>Species</h4>
-<div>
-{% for current_page in site.species %}
-    <article class="item">
-    {% for tag in current_page.tags %}
-    {% if page.tags contains tag %}
-        <div class="item__image">
-        {% if current_page.image %}
-        <img class="image image--sm" src="{{ current_page.image}}"  alt=""/>
-        {% else %}
-        <img class="image image--sm" src="/assets/images/cover.png" alt="Logo" />
-        {%endif%}
-        </div>
-        <div class="item__content">
-        {% assign page_title = current_page.name | filename_cleaner %}
-        <header><a href="{{ current_page.url }}"><h3 itemprop="headline" class="item__header">{{ page_title }}</h3></a></header>
-        {%- include article-info.html article=current_page show_date=false -%}
-        </div>
-    {% endif %}
-    {% endfor %}
-    </article>
-{% endfor %}
-</div><br>
-
-<h4>Pages</h4>
-<div class="js-result layout--archive__result d-none">
-    {% assign current_pages = site.pages %}
-    {% for current_page in current_pages %}
-    {% if current_page.tags%}
-    {% if current_page.tags contains page.tags %}
-    <article class="item">
-        <div class="item__image">
-            {% if current_page.image %}
-            <img class="image image--sm" src="{{ current_page.image}}"  alt=""/>
-            {% else %}
-            <img class="image image--sm" src="/assets/images/cover.png" alt="Logo" />
-            {%endif%}
-        </div>
-        <div class="item__content">
-            {% if current_page.title %}
-            {% assign page_title = current_page.title %}
-            {%else%}
-            {% assign page_title = current_page.name | filename_cleaner %}
-            {%endif%}
-            <header><a href="{{ current_page.url }}"><h3 itemprop="headline" class="item__header">{{ page_title }}</h3></a></header>
-            {%- include article-info.html article=current_page show_date=false -%}
-        </div>
-    </article>
-    <br>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
-</div><br>
-
-<h4>Posts</h4>
-<div class="js-result layout--archive__result d-none">
-    {% assign site_posts = site.posts %}
-    {% for site_post in site_posts %}
-    {% if site_post.tags%}
-    {% if site_post.tags contains page.tags %}
-    <article class="item">
-        <div class="item__image">
-            {% if site_post.image %}
-            <img class="image image--sm" src="{{ site_post.image}}"  alt=""/>
-            {% else %}
-            <img class="image image--sm" src="/assets/images/cover.png" alt="Logo" />
-            {%endif%}
-        </div>
-        <div class="item__content">
-            {% if site_post.title %}
-            {% assign page_title = site_post.title %}
-            {%else%}
-            {% assign page_title = site_post.name | filename_cleaner %}
-            {%endif%}
-            <header><a href="{{ site_post.url }}"><h3 itemprop="headline" class="item__header">{{ page_title }}</h3></a></header>
-            {%- include article-info.html article=site_post show_date=false -%}
-        </div>
-    </article>
-    <br>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
-</div><br>
 <script>
     {%- include scripts/archieve.js -%}
 </script>

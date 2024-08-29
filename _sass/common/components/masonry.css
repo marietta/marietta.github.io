@@ -1,11 +1,11 @@
 .masonry-grid {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
 }
 
 .masonry-item {
-  margin: 10px; /* Add some spacing */
+  /* Add some spacing */
+  margin: 10px 10px 15px;
   padding: 5px; /* Padding inside the items */
   height: fit-content;
 }

@@ -15,22 +15,9 @@ layout: none
       {%- include scripts/utils/utils.js -%}
       {%- include scripts/lib/throttle.js -%}
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-    <script>
-       var msnry = new Masonry('.taxa-cards', {
-        itemSelector: '.card',
-        columnWidth: '.card',
-        gutter: 10, // Set the gutter size
-      });
-      imagesLoaded('.taxa-cards', function() {
-        msnry.layout(); // Trigger Masonry layout
-      });
-      // Recalculate layout on window resize
-        window.addEventListener('resize', function() {
-        msnry.layout();
-      });
-        </script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
     {%- include scripts/variables.html -%}
     <title></title>
       </head>

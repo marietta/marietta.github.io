@@ -1,23 +1,7 @@
 ---
 layout: page
 ---
-<ul >
-{% for document in site.tags %}
-    <li>
-    {{document.title}}
-        {% for tag in document.tags %}
-            {% if document.max_magassag %}
-                <a class="button button--secondary button--pill button--sm"
-               href="/tags/max-magassag-{{ document.max_magassag }}">max-magassag-{{document.max_magassag  }}</a>
-            {% else %}
-                <a class="button button--secondary button--pill button--sm"
-                   href="/tags/{{ tag }}">{{ tag }}</a>
-            {% endif %}
-        {% endfor %}
 
-    </li>
-{% endfor %}
-</ul>
 
 {% assign padapt-data = site.data.padapt %}
 <h4>Életforma</h4>
@@ -26,8 +10,10 @@ layout: page
 {% endfor %}
 {% assign unique_classes = classes | split: "," | uniq | sort %}
 {% for class in unique_classes %}
-    <a href="/tags/{{ class }}">
+{% if class.size > 0 %}
+    <a class="button button--secondary button--pill button--sm" href="/tags/{{ class }}">
         {{class}}</a>
+{% endif %}
 {% endfor %}<br>
 
 <h4>Szociális magatartási típus</h4>
@@ -36,8 +22,10 @@ layout: page
 {% endfor %}
 {% assign unique_classes1 = classes1 | split: "," | uniq | sort %}
 {% for class in unique_classes1 %}
-    <a href="/tags/{{ class }}">
+{% if class.size > 0 %}
+    <a class="button button--secondary button--pill button--sm" href="/tags/{{ class }}">
         {{class}}</a>
+{% endif %}
 {% endfor %}<br>
 
 <h4>Flóraelem besorolás</h4>
@@ -46,8 +34,10 @@ layout: page
 {% endfor %}
 {% assign unique_classes2 = classes2 | split: "," | uniq | sort %}
 {% for class in unique_classes2 %}
-    <a href="/tags/{{ class }}">
+{% if class.size > 0 %}
+    <a class="button button--secondary button--pill button--sm" href="/tags/{{ class }}">
         {{class}}</a>
+{% endif %}
 {% endfor %}<br>
 
 <h4>Terjedési stratégia</h4>
@@ -56,8 +46,10 @@ layout: page
 {% endfor %}
 {% assign unique_classes3 = classes3 | split: "," | uniq | sort %}
 {% for class in unique_classes3 %}
-    <a href="/tags/{{ class }}">
+{% if class.size > 0 %}
+    <a class="button button--secondary button--pill button--sm" href="/tags/{{ class }}">
         {{class}}</a>
+{% endif %}
 {% endfor %}<br>
 
 <h4>Honosság</h4>
@@ -66,8 +58,10 @@ layout: page
 {% endfor %}
 {% assign unique_classes4 = classes4 | split: "," | uniq | sort %}
 {% for class in unique_classes4 %}
-    <a href="/tags/{{ class }}">
+{% if class.size > 0 %}
+    <a class="button button--secondary button--pill button--sm" href="/tags/{{ class }}">
         {{class}}</a>
+{% endif %}
 {% endfor %}<br>
 
 <h4>Inváziós státusz</h4>
@@ -76,9 +70,45 @@ layout: page
 {% endfor %}
 {% assign unique_classes5 = classes5 | split: "," | uniq | sort %}
 {% for class in unique_classes5 %}
-    <a href="/tags/{{ class }}">
+{% if class.size > 0 %}
+    <a class="button button--secondary button--pill button--sm" href="/tags/{{ class }}">
         {{class}}</a>
+{% endif %}
 {% endfor %}<br>
 
 
+<h4>Max. magasság</h4>
+{% for row in padapt-data %}
+{% assign classes6 = classes6 | append: row["Maximum magasság"] | append: "," %}
+{% endfor %}
+{% assign unique_classes6 = classes6 | split: "," | uniq | sort %}
+{% for class in unique_classes6 %}
+{% if class.size > 0 %}
+        {% assign magassag = class %}
 
+        {% assign magassag_d = magassag | times: 1.0  %}
+        {% assign magassag_m = magassag_d | divided_by: 100 %}
+        {% assign valueRound = magassag_m | round: 0 %}
+        {% if magassag_m == valueRound  or magassag_m > 10 %}
+            {% assign magassag_show = valueRound %}
+        {%else%}
+            {% assign magassag_show = magassag_m %}
+        {%- endif -%}
+        <a class="button button--height button--pill button--md"
+          href="/tags/{{ magassag }}">
+          <i class="fa-solid fa-arrows-up-down"></i>
+          {{ magassag_show }} m</a>
+
+{% endif %}
+{% endfor %}<br>
+
+
+<h4>Misc.</h4>
+{% for document in site.tags %}
+        {% for tag in document.tags %}
+            {% unless document.max_magassag %}
+                <a class="button button--secondary button--pill button--sm"
+                   href="/tags/{{ tag }}">{{ tag }}</a>
+            {% endunless %}
+        {% endfor %}
+{% endfor %}

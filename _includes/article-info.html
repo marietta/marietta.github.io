@@ -110,10 +110,12 @@
                        href="/tags/{{ _tag }}">{{ _tag }}</a>
                     </li>
               {% else %}
+              {% unless _tag == include.article["Maximum magasság"] %}
                     <li><a class="button button--secondary button--pill button--sm"
                        href="/tags/{{ _tag }}">{{ _tag }}</a>
                     </li>
-              {% endif %}
+              {% endunless %}
+          {% endif %}
             {%- endfor -%}
 
           {% assign eletforma = include.article['Életforma'] %}
@@ -191,7 +193,7 @@
           {%- endif -%}
               <li>
                 <a class="button button--height button--pill button--md"
-                  href="/tags/max-magassag-{{ magassag }}">
+                  href="/tags/{{ magassag }}">
                   <i class="fa-solid fa-arrows-up-down"></i>
                   {{ magassag_show }} m</a>
               </li>

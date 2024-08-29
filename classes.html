@@ -1,0 +1,35 @@
+---
+layout: article
+---
+
+{% assign classes = "Ginkgoopsida,Gnetopsida,Liliopsida,Lycopodiopsida,Magnoliopsida,Pinopsida,Polypodiopsida" | split: ',' %}
+<div class="flex-classes masonry-grid">
+    {% for class in classes %}
+    <a href="/taxonomy/{{ class }}">
+        <div class="card-small card--clickable masonry-item">
+            <div class="card__content">
+                <div class="card__header">
+                    {{ class }}
+                    <img alt="{{ class }}" src="/assets/images/{{class}}.jpg"/>
+                </div>
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+</div>
+
+<script>
+    var msnry = new Masonry('.masonry-grid', {
+        itemSelector: '.masonry-item',
+        columnWidth: '.masonry-item',
+        gutter: 16, // Set the gutter size
+        transitionDuration: 0,
+    });
+    imagesLoaded('.masonry-grid', function () {
+        msnry.layout(); // Trigger Masonry layout
+    });
+    // Recalculate layout on window resize
+    window.addEventListener('resize', function () {
+        msnry.layout();
+    });
+</script>

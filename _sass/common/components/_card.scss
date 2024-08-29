@@ -1,7 +1,7 @@
 
 .card {
   background-color: $card-background-color;
-  max-width: 24.5vw;
+  max-width: 400px;
   height: fit-content;
   border-radius: map-get($base, border-radius);
   @include box-shadow();
@@ -16,7 +16,7 @@
 }
 
 .card-small {
-    max-width: 18vw;
+    max-width: 250px;
     height: fit-content;
     background-color: $card-background-color;
     border-top-left-radius: map-get($base, border-radius);
