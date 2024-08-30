@@ -32,59 +32,8 @@ layout: article
 {% endfor %}
 {% assign unique_genuses = genus | split: "," | uniq | sort %}
 
-<div class="flex-genus masonry-grid">
-    {% for genus in unique_genuses %}
-    <a href="/taxonomy/{{ genus }}">
-        <div class=" card-small card--clickable masonry-item">
-            <div class="card__content">
-                <div class="card__header">
-                    {{ genus }}
-                    <img id="{{ genus }}-cover" alt="{{ genus }}"/>
-                </div>
-            </div>
-        </div>
-    </a>
+{% include genus.html unique_genuses=unique_genuses %}
 
-    <script>
-        (function (genus) {
-            fetch("https://api.inaturalist.org/v1/taxa?q=" + genus + "&order=desc&order_by=observations_count&rank=genus")
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    console.log(data);
-                    // Check if results exist and if the first result has a default_photo
-                    if (data.results && data.results.length > 0 && data.results[0].default_photo) {
-                        document.getElementById(genus + '-cover').src = data.results[0].default_photo.medium_url;
-                    } else {
-                        console.error('No results found for genus:', genus);
-                    }
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                });
-        })("{{ genus }}");
-    </script>
-    <script>
-        var grid = document.querySelector('.flex-genus');
-        var msnry = new Masonry(grid, {
-            itemSelector: '.masonry-item',
-            columnWidth: '.masonry-item',
-            transitionDuration: 0,
-        });
-
-        imagesLoaded(grid).on('progress', function () {
-            msnry.layout();
-        });
-        window.addEventListener('resize', function () {
-            msnry.layout();
-        });
-    </script>
-    {% endfor %}
-</div>
 
 <div class="flex-taxa masonry-grid">
     {% for docu in site.padapt %}
@@ -111,7 +60,6 @@ layout: article
                     return response.json();
                 })
                 .then(data => {
-                    console.log(data);
                     // Check if results exist and if the first result has a default_photo
                     if (data.results && data.results.length > 0 && data.results[0].default_photo) {
                         document.getElementById(tax + '-cover').src = data.results[0].default_photo.medium_url;
@@ -125,29 +73,23 @@ layout: article
         })("{{ tax }}");
     </script>
     <script>
-        var $grid = $('.flex-taxa').imagesLoaded( function() {
-          $grid.masonry({
-            itemSelector: '.masonry-item',
-            columnWidth: '.masonry-item',
-            transitionDuration: 0,
-              gutter: 16,
-          });
-        });
-
         var grid = document.querySelector('.flex-taxa');
         var msnry = new Masonry(grid, {
             itemSelector: '.masonry-item',
             columnWidth: '.masonry-item',
             transitionDuration: 0,
-              gutter: 16,
+            gutter: 16,
         });
-
         imagesLoaded(grid).on('progress', function () {
+            msnry.layout();
+        });
+        window.addEventListener('scroll', function () {
             msnry.layout();
         });
         window.addEventListener('resize', function () {
             msnry.layout();
         });
+
     </script>
 
     {% endif %}

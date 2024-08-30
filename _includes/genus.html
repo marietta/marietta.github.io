@@ -1,21 +1,21 @@
 
-{% assign unique_families = include.unique_families %}
+{% assign unique_genuses = include.unique_genuses %}
 
-<div class="flex-family masonry-grid">
-    {% for family in unique_families %}
-    <a href="/taxonomy/{{ family }}">
+<div class="flex-genus masonry-grid">
+    {% for genus in unique_genuses %}
+    <a href="/taxonomy/{{ genus }}">
         <div class="card-small card--clickable masonry-item">
             <div class="card__content">
                 <div class="card__header">
-                    {{ family }}
-                    <img id="{{ family }}-cover" alt="{{ family }}" />
+                    {{ genus }}
+                    <img id="{{ genus }}-cover" alt="{{ genus }}" />
                 </div>
             </div>
         </div></a>
 
     <script>
-        (function(family) {
-            fetch("https://api.inaturalist.org/v1/taxa?q=" + family + "&order=desc&order_by=observations_count&rank=family")
+        (function(genus) {
+            fetch("https://api.inaturalist.org/v1/taxa?q=" + genus + "&order=desc&order_by=observations_count&rank=genus")
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -25,18 +25,18 @@
             .then(data => {
                 // Check if results exist and if the first result has a default_photo
                 if (data.results && data.results.length > 0 && data.results[0].default_photo) {
-                    document.getElementById(family + '-cover').src = data.results[0].default_photo.medium_url;
+                    document.getElementById(genus + '-cover').src = data.results[0].default_photo.medium_url;
                 } else {
-                    console.error('No results found for family:', family);
+                    console.error('No results found for genus:', genus);
                 }
             })
             .catch(error => {
                 console.error('Error:', error);
             });
-        })("{{ family }}");
+        })("{{ genus }}");
     </script>
     <script>
-        var grid = document.querySelector('.flex-family');
+        var grid = document.querySelector('.flex-genus');
         var msnry = new Masonry(grid, {
             itemSelector: '.masonry-item',
             columnWidth: '.masonry-item',
@@ -56,7 +56,6 @@
     {% endfor %}
 
 </div>
-
 
 <script>
         {%- include scripts/archieve.js -%}

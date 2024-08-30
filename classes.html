@@ -19,16 +19,19 @@ layout: article
 </div>
 
 <script>
-    var msnry = new Masonry('.masonry-grid', {
+    var grid = document.querySelector('.flex-classes');
+    var msnry = new Masonry(grid, {
         itemSelector: '.masonry-item',
         columnWidth: '.masonry-item',
-        gutter: 16, // Set the gutter size
         transitionDuration: 0,
+        gutter: 16,
     });
-    imagesLoaded('.masonry-grid', function () {
-        msnry.layout(); // Trigger Masonry layout
+    imagesLoaded(grid).on('progress', function () {
+        msnry.layout();
     });
-    // Recalculate layout on window resize
+    window.addEventListener('scroll', function () {
+        msnry.layout();
+    });
     window.addEventListener('resize', function () {
         msnry.layout();
     });
