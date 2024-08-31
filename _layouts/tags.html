@@ -2,13 +2,14 @@
 layout: article
 ---
 
-<div class="masonry-grid">
+<div class="flex-taxa masonry-grid">
 {% for docu in site.padapt %}
     {% if docu.tags contains page.tags
     or docu['Flóraelem besorolás'] contains page.tags
     or docu['Életforma'] contains page.tags
     or docu['nativeness_hu'] contains page.tags
     or docu['Maximum magasság'] == page.tags
+    or docu['invasion_status_hu'] == page.tags
     or docu['Szociális magatartási típus'] contains page.tags %}
     {% assign tax = docu.taxon_lat %}
     <a href="{{ docu.url }}">
@@ -16,7 +17,7 @@ layout: article
             <div class="card__content">
                 <div class="card__header">
                     {{ tax }}
-                    <img id="{{ tax }}-cover" alt="{{ tax }}" data-src="/assets/images/cover3.jpg" class="lazyload" />
+                    <img id="{{ tax }}-cover" alt="{{ tax }}" class="lazyload"  data-src="/assets/images/cover.png"/>
                 </div>
                 {%- include article-info.html article=docu show_date=false -%}
             </div>
@@ -25,7 +26,7 @@ layout: article
 
     <script>
         (function (tax) {
-            fetch("https://api.inaturalist.org/v1/taxa?q=" + tax + "&order=desc&order_by=observations_count&rank=species,subspecies,variety")
+            fetch("https://api.inaturalist.org/v1/taxa?q=" + tax + "&order=desc&order_by=observations_count&rank=species,subspecies,variety,form")
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
@@ -35,9 +36,14 @@ layout: article
                 .then(data => {
                     // Check if results exist and if the first result has a default_photo
                     if (data.results && data.results.length > 0 && data.results[0].default_photo) {
-                        document.getElementById(tax + '-cover').src = data.results[0].default_photo.medium_url;
+                        var imgElement = document.getElementById(tax + '-cover');
+                        imgElement.src = data.results[0].default_photo.medium_url;
+                        imgElement.onload = function() {
+                            // Recalculate Masonry layout after the image has loaded
+                            msnry.layout();
+                        };
                     } else {
-                        console.error('No results found for:', tax);
+                        console.error('No results found for tag:', tax);
                     }
                 })
                 .catch(error => {
@@ -46,23 +52,22 @@ layout: article
         })("{{ tax }}");
     </script>
     <script>
-        var grid = document.querySelector('.masonry-grid');
+        var grid = document.querySelector('.flex-taxa');
         var msnry = new Masonry(grid, {
             itemSelector: '.masonry-item',
             columnWidth: '.masonry-item',
             transitionDuration: 0,
             gutter: 16,
         });
-        imagesLoaded(grid).on('progress', function () {
+        imagesLoaded(grid).on('progress', function() {
             msnry.layout();
         });
-        window.addEventListener('scroll', function () {
+        imagesLoaded(grid).on('scroll', function() {
             msnry.layout();
         });
-        window.addEventListener('resize', function () {
-            msnry.layout();
-        });
-</script>
+
+    </script>
+
 {% endif %}
 
 {%endfor%}

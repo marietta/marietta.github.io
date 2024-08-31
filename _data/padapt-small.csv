@@ -135,3 +135,119 @@ species_id,phylum_lat,class_lat,order_lat,family_lat,taxon_lat_full,taxon_lat,ge
 2727,Angiospermae,Liliopsida,Poales,Poaceae,Vulpia bromoides (L.) S.F. Gray,Vulpia bromoides,Vulpia,őshonos,50,Th,NP,ADV,,Allium,6,2
 2733,Pterophyta,Polypodiopsida,Polypodiales,Woodsiaceae,Woodsia alpina (Bolton) S.F. Gray,Woodsia alpina,Woodsia,őshonos,15,He,Su,ALP,,Lycopodium,7,2
 2744,Angiospermae,Liliopsida,Poales,Poaceae,Zea mays L.,Zea mays,Zea,idegenhonos,300,Th,,,alkalmi faj,Zea,6,3
+327,Angiospermae,Liliopsida,Poales,Cyperaceae,Blysmus compressus (L.) Panzer ex Link,Blysmus compressus,Blysmus,őshonos,40,He,G,EUA,,Allium,6,3
+328,Angiospermae,Liliopsida,Poales,Cyperaceae,Bolboschoenus glaucus (Lam.) S.G. Sm.,Bolboschoenus glaucus,Bolboschoenus,őshonos,150,Ge-HH,,,,Sparganium,6,3
+329,Angiospermae,Liliopsida,Poales,Cyperaceae,Bolboschoenus laticarpus,Bolboschoenus laticarpus,Bolboschoenus,őshonos,110,Ge-HH,,,,Sparganium,6,3
+330,Angiospermae,Liliopsida,Poales,Cyperaceae,Bolboschoenus maritimus agg.,Bolboschoenus maritimus,Bolboschoenus,őshonos,100,Ge-HH,C,KOZ,,Sparganium,6,3
+331,Angiospermae,Liliopsida,Poales,Cyperaceae,Bolboschoenus planiculmis (F. Schmidt) T.V. Egorova,Bolboschoenus planiculmis,Bolboschoenus,őshonos,90,Ge-HH,,,,Sparganium,6,3
+332,Angiospermae,Liliopsida,Poales,Cyperaceae,Bolboschoenus yagara (Ohwi) Y.C. Yang et M. Zhan,Bolboschoenus yagara,Bolboschoenus,őshonos,130,Ge-HH,,,,Sparganium,7,4
+463,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex acuta L.,Carex acuta,Carex,őshonos,100,He-Ge(HH),C,EUA,,Sparganium,5,2
+464,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex acutiformis Ehrh.,Carex acutiformis,Carex,őshonos,120,He-Ge,C,EUA,,Sparganium,5,2
+465,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex alba Scop.,Carex alba,Carex,őshonos,25,He-Ge,S,EUA,,Allium,5,2
+466,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex appropinquata Schumach.,Carex appropinquata,Carex,őshonos,80,He,C,EUA,,Allium,5,2
+467,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex bohemica Schreb.,Carex bohemica,Carex,őshonos,30,He(-HH),Sr,EUA,,Sparganium,6,4
+468,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex brevicollis DC.,Carex brevicollis,Carex,őshonos,45,He,S,SME,,Allium,5,2
+469,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex brizoides L.,Carex brizoides,Carex,őshonos,60,He-Ge,C,CEU,,Allium,5,2
+470,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex buekii Wimm.,Carex buekii,Carex,őshonos,110,He-Ge,S,PoP,,Allium,5,1
+471,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex buxbaumii Wahlenb.,Carex buxbaumii,Carex,őshonos,70,He,,,,Allium,5,2
+472,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex canescens L.,Carex canescens,Carex,őshonos,45,He,Sr,KOZ,,Sparganium,5,2
+473,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex caryophyllea Latourr.,Carex caryophyllea,Carex,őshonos,30,He-Ge,DT,EUA,,Allium,4,1
+474,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex cespitosa L.,Carex cespitosa,Carex,őshonos,50,He,Sr,EUA,,Allium,5,2
+475,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex davalliana Sm.,Carex davalliana,Carex,őshonos,40,He,S,CEU,,Allium,4,3
+476,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex demissa Hornem.,Carex demissa,Carex,őshonos,30,He,,,,Sparganium,5,2
+477,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex depressa Link subsp. transsilvanica (Schur) T.V. Egorova,Carex depressa,Carex,őshonos,20,He,,,,Allium,3,2
+478,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex diandra Schrank,Carex diandra,Carex,őshonos,70,He(HH),S,CIR,,Sparganium,5,2
+479,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex digitata L.,Carex digitata,Carex,őshonos,25,He,G,EUR,,Allium,4,2
+480,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex distans L.,Carex distans,Carex,őshonos,60,He,C,EUR,,Allium,4,3
+481,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex disticha Huds.,Carex disticha,Carex,őshonos,100,He-Ge(HH),G,EUA,,Allium,5,2
+482,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex divisa Huds.,Carex divisa,Carex,őshonos,30,He-Ge,G,KOZ,,Allium,4,3
+483,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex divulsa Stokes subsp. divulsa,Carex divulsa divulsa,Carex,őshonos,60,He,DT,EUA?,,Allium,5,4
+484,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex divulsa Stokes subsp. leersii (Kneucker) W. Koch,Carex divulsa leersii,Carex,őshonos,70,He,DT,EUA?,,Allium,5,2
+485,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex echinata Murray,Carex echinata,Carex,őshonos,20,He,S,CIR,,Allium,5,2
+486,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex elata All.,Carex elata,Carex,őshonos,120,He,C,EUA,,Sparganium,4,2
+487,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex elongata L.,Carex elongata,Carex,őshonos,60,He,S,EUA,,Sparganium,5,2
+488,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex ericetorum Pollich,Carex ericetorum,Carex,őshonos,30,He,G,EUA,,Allium,4,2
+489,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex extensa Gooden.,Carex extensa,Carex,őshonos,,,,,,Allium,,
+490,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex flacca Schreb.,Carex flacca,Carex,őshonos,50,He-Ge,G,EUR,,Allium,5,2
+491,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex flava agg.,Carex flava,Carex,őshonos,50,He,S,EUA,,Allium,5,2
+492,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex fritschii Waisb.,Carex fritschii,Carex,őshonos,45,He,S,CEU,,Allium,4,2
+493,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex halleriana Asso,Carex halleriana,Carex,őshonos,30,He,S,SME,,Allium,4,1
+494,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex hartmanii Cajander,Carex hartmanii,Carex,őshonos,70,He,Su,,,Allium,5,2
+495,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex hirta L.,Carex hirta,Carex,őshonos,60,He-Ge,DT,EUR,,Allium,5,2
+496,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex hordeistichos Vill.,Carex hordeistichos,Carex,őshonos,30,He,G,PoP,,Allium,5,2
+497,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex hostiana DC.,Carex hostiana,Carex,őshonos,45,He,S,EUR,,Allium,5,2
+498,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex humilis Leyss.,Carex humilis,Carex,őshonos,10,He,C,CON,,Allium,3,2
+499,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex lasiocarpa Ehrh.,Carex lasiocarpa,Carex,őshonos,100,He-HH,Cu,CIR,,Sparganium,5,2
+500,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex lepidocarpa Tausch,Carex lepidocarpa,Carex,őshonos,50,He,G,EUR,,Allium,5,1
+501,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex limosa L.,Carex limosa,Carex,őshonos,35,He-Ge,Su,CIR,,Sparganium,5,2
+502,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex liparicarpos Gaudin,Carex liparicarpos,Carex,őshonos,25,He-Ge,G,PoM,,Allium,4,2
+503,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex melanostachya M. Bieb. ex Willd.,Carex melanostachya,Carex,őshonos,50,He-Ge,G,CON,,Allium,5,2
+504,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex michelii Host,Carex michelii,Carex,őshonos,30,He-Ge,G,SMO,,Allium,4,2
+505,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex montana L.,Carex montana,Carex,őshonos,30,He,S,CON,,Allium,3,3
+506,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex muricata agg.,Carex muricata,Carex,őshonos,,,,,,Allium,,
+507,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex nigra (L.) Reichard,Carex nigra,Carex,őshonos,25,He-Ge(HH),G,KOZ,,Allium,5,2
+508,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex otrubae Podp.,Carex otrubae,Carex,őshonos,70,He,G,EUA,,Allium,5,3
+509,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex ovalis Gooden.,Carex ovalis,Carex,őshonos,60,He,DT,CIR,,Allium,5,2
+510,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex pairaei F.W. Schultz,Carex pairaei,Carex,őshonos,60,He,DT,EUA,,Allium,6,2
+511,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex pallescens L.,Carex pallescens,Carex,őshonos,45,He,DT,CIR,,Allium,4,3
+512,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex panicea L.,Carex panicea,Carex,őshonos,40,He-Ge,G,CIR,,Allium,5,2
+513,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex paniculata L.,Carex paniculata,Carex,őshonos,100,He,C,EUR,,Sparganium,5,2
+514,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex pendula Huds.,Carex pendula,Carex,őshonos,150,He,S,AsM,,Sparganium,5,2
+515,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex pilosa Scop.,Carex pilosa,Carex,őshonos,40,He-Ge,C,SAR,,Allium,4,2
+516,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex pilulifera L.,Carex pilulifera,Carex,őshonos,40,He,Sr,EUR,,Allium,4,2
+517,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex praecox Schreb.,Carex praecox,Carex,őshonos,30,He-Ge,G,EUA,,Allium,3,2
+518,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex pseudocyperus L.,Carex pseudocyperus,Carex,őshonos,80,He-HH,S,CIR,,Sparganium,5,2
+519,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex randalpina B. Wallnöfer,Carex randalpina,Carex,őshonos,,,,,,Allium,,
+520,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex remota L.,Carex remota,Carex,őshonos,60,He,C,CIR,,Sparganium,5,3
+521,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex repens Bellardi,Carex repens,Carex,őshonos,70,He-Ge,Su,CEU,,Allium,5,3
+522,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex riparia Curtis,Carex riparia,Carex,őshonos,130,He-Ge,C,EUA,,Sparganium,5,2
+523,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex rostrata Stokes,Carex rostrata,Carex,őshonos,70,He(-Ge),C,CIR,,Sparganium,5,2
+524,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex secalina Willd. ex Wahlenb.,Carex secalina,Carex,őshonos,30,He,G,EUA,,Allium,5,2
+525,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex spicata Huds.,Carex spicata,Carex,őshonos,50,He,DT,EUA,,Allium,5,3
+526,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex stenophylla Wahlenb.,Carex stenophylla,Carex,őshonos,20,He-Ge,G,CIR,,Allium,4,2
+527,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex strigosa Huds.,Carex strigosa,Carex,őshonos,60,He,S,AsM,,Allium,5,2
+528,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex supina Willd. ex Wahlenb.,Carex supina,Carex,őshonos,15,He-Ge,G,CON,,Allium,4,2
+529,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex sylvatica Huds.,Carex sylvatica,Carex,őshonos,70,He,G,EUR,,Allium,5,2
+530,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex tomentosa L.,Carex tomentosa,Carex,őshonos,40,He-Ge,G,EUA,,Allium,4,2
+531,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex umbrosa Host,Carex umbrosa,Carex,őshonos,40,He,Gr,CEU,,Allium,4,2
+532,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex vesicaria L.,Carex vesicaria,Carex,őshonos,80,He,C,CIR,,Sparganium,5,2
+533,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex viridula Michx.,Carex viridula,Carex,őshonos,20,He,G,EUA,,Allium,5,2
+534,Angiospermae,Liliopsida,Poales,Cyperaceae,Carex vulpina L. s. str.,Carex vulpina,Carex,őshonos,80,He,DT,EUA,,Allium,5,3
+665,Angiospermae,Liliopsida,Poales,Cyperaceae,Cladium mariscus (L.) Pohl,Cladium mariscus,Cladium,őshonos,200,Ge(-HH),C,KOZ,,Sparganium,6,2
+770,Angiospermae,Liliopsida,Poales,Cyperaceae,Cyperus difformis L.,Cyperus difformis,Cyperus,idegenhonos,50,Th,A,ADV,özönfaj,Sparganium,9,2
+771,Angiospermae,Liliopsida,Poales,Cyperaceae,Cyperus esculentus L.,Cyperus esculentus,Cyperus,idegenhonos,60,Ge(-Th),,,özönfaj,Sparganium,8,3
+772,Angiospermae,Liliopsida,Poales,Cyperaceae,Cyperus flavescens L.,Cyperus flavescens,Cyperus,őshonos,30,Th,NP,KOZ,,Sparganium,7,3
+773,Angiospermae,Liliopsida,Poales,Cyperaceae,Cyperus fuscus L.,Cyperus fuscus,Cyperus,őshonos,20,Th,NP,EUA,,Sparganium,7,4
+774,Angiospermae,Liliopsida,Poales,Cyperaceae,Cyperus glaber L.,Cyperus glaber,Cyperus,őshonos,50,Th,Cu,,,Sparganium,8,2
+775,Angiospermae,Liliopsida,Poales,Cyperaceae,Cyperus glomeratus L.,Cyperus glomeratus,Cyperus,őshonos,50,He-HH,Sr,EUA,,Sparganium,7,4
+776,Angiospermae,Liliopsida,Poales,Cyperaceae,Cyperus longus L.,Cyperus longus,Cyperus,őshonos,90,Ge-HH,S,AsM,,Sparganium,5,4
+777,Angiospermae,Liliopsida,Poales,Cyperaceae,Cyperus pannonicus Jacq.,Cyperus pannonicus,Cyperus,őshonos,15,He(-Th),NP,EUA,,Sparganium,7,3
+816,Angiospermae,Liliopsida,Poales,Cyperaceae,Dichostylis micheliana (L.) Nees,Dichostylis micheliana,Dichostylis,őshonos,15,Th,NP,EUA,,Sparganium,7,3
+872,Angiospermae,Liliopsida,Poales,Cyperaceae,Eleocharis acicularis (L.) Roem. et Schult.,Eleocharis acicularis,Eleocharis,őshonos,10,He,NP,CIR,,Sparganium,6,3
+873,Angiospermae,Liliopsida,Poales,Cyperaceae,Eleocharis austriaca Hayek,Eleocharis austriaca,Eleocharis,őshonos,60,He,,EUA,,Sparganium,6,3
+874,Angiospermae,Liliopsida,Poales,Cyperaceae,Eleocharis carniolica W.D.J. Koch,Eleocharis carniolica,Eleocharis,őshonos,20,He,C,CEA,,Sparganium,7,3
+875,Angiospermae,Liliopsida,Poales,Cyperaceae,Eleocharis mamillata H. Lindb. s. str.,Eleocharis mamillata,Eleocharis,őshonos,50,He,,EUA,,Sparganium,6,3
+876,Angiospermae,Liliopsida,Poales,Cyperaceae,Eleocharis ovata (Roth) Roem. et Schult.,Eleocharis ovata,Eleocharis,őshonos,20,Th,NP,CIR,,Sparganium,6,3
+877,Angiospermae,Liliopsida,Poales,Cyperaceae,Eleocharis palustris agg.,Eleocharis palustris,Eleocharis,őshonos,60,He,C,KOZ,,Sparganium,5,4
+878,Angiospermae,Liliopsida,Poales,Cyperaceae,Eleocharis quinqueflora (Hartm.n) O. Schwarz,Eleocharis quinqueflora,Eleocharis,őshonos,10,He,S,CIR,,Sparganium,6,1
+879,Angiospermae,Liliopsida,Poales,Cyperaceae,Eleocharis uniglumis (Link) Schult.,Eleocharis uniglumis,Eleocharis,őshonos,40,He,G,CIR,,Sparganium,5,4
+941,Angiospermae,Liliopsida,Poales,Cyperaceae,Eriophorum angustifolium Honck.,Eriophorum angustifolium,Eriophorum,őshonos,50,He,C,CIR,,Phragmites,4,2
+942,Angiospermae,Liliopsida,Poales,Cyperaceae,Eriophorum gracile W.D.J. Koch,Eriophorum gracile,Eriophorum,őshonos,40,He,Su,CIR,,Phragmites,5,2
+943,Angiospermae,Liliopsida,Poales,Cyperaceae,Eriophorum latifolium Hoppe,Eriophorum latifolium,Eriophorum,őshonos,50,He,S,CIR,,Phragmites,4,2
+944,Angiospermae,Liliopsida,Poales,Cyperaceae,Eriophorum vaginatum L.,Eriophorum vaginatum,Eriophorum,őshonos,50,He,Cu,CIR,,Phragmites,3,2
+2108,Angiospermae,Liliopsida,Poales,Cyperaceae,Rhynchospora alba (L.) Vahl,Rhynchospora alba,Rhynchospora,őshonos,30,He,Su,BOR,,Sparganium,7,2
+2258,Angiospermae,Liliopsida,Poales,Cyperaceae,Schoenoplectus lacustris (L.) Palla s. str.,Schoenoplectus lacustris,Schoenoplectus,őshonos,250,HH-Ge,C,CIR,,Sparganium,6,3
+2259,Angiospermae,Liliopsida,Poales,Cyperaceae,Schoenoplectus litoralis (Schrad.) Palla,Schoenoplectus litoralis,Schoenoplectus,őshonos,200,HH-Ge,A,MED,,Sparganium,5,3
+2260,Angiospermae,Liliopsida,Poales,Cyperaceae,Schoenoplectus mucronatus (L.) Palla,Schoenoplectus mucronatus,Schoenoplectus,őshonos,100,HH-He,DT,KOZ,,Sparganium,7,4
+2261,Angiospermae,Liliopsida,Poales,Cyperaceae,Schoenoplectus pungens (Vahl) Palla,Schoenoplectus pungens,Schoenoplectus,őshonos,60,HH-Ge,A,,,Sparganium,7,2
+2262,Angiospermae,Liliopsida,Poales,Cyperaceae,Schoenoplectus setaceus (L.) Palla,Schoenoplectus setaceus,Schoenoplectus,őshonos,15,Th-He,NP,KOZ,,Sparganium,6,5
+2263,Angiospermae,Liliopsida,Poales,Cyperaceae,Schoenoplectus supinus (L.) Palla,Schoenoplectus supinus,Schoenoplectus,őshonos,15,Th,NP,KOZ,,Sparganium,6,5
+2264,Angiospermae,Liliopsida,Poales,Cyperaceae,Schoenoplectus tabernaemontani (C. C. Gmel.) Palla,Schoenoplectus tabernaemontani,Schoenoplectus,őshonos,150,HH-Ge,C,KOZ,,Sparganium,6,3
+2265,Angiospermae,Liliopsida,Poales,Cyperaceae,Schoenoplectus triqueter L.,Schoenoplectus triqueter,Schoenoplectus,őshonos,100,HH-Ge,G,EUA,,Sparganium,6,2
+2266,Angiospermae,Liliopsida,Poales,Cyperaceae,Schoenus ferrugineus L.,Schoenus ferrugineus,Schoenus,nem megerősített,30,He,,EUR,,Sparganium,6,2
+2267,Angiospermae,Liliopsida,Poales,Cyperaceae,Schoenus nigricans L.,Schoenus nigricans,Schoenus,őshonos,60,He,C,KOZ,,Sparganium,6,2
+2275,Angiospermae,Liliopsida,Poales,Cyperaceae,Scirpoides holoschoenus (L.) Soják,Scirpoides holoschoenus,Scirpoides,őshonos,100,Ge,C,EUA,,Allium,6,3
+2276,Angiospermae,Liliopsida,Poales,Cyperaceae,Scirpus radicans Schkuhr,Scirpus radicans,Scirpus,őshonos,100,He-HH,NP,EUA,,Sparganium,6,2
+2277,Angiospermae,Liliopsida,Poales,Cyperaceae,Scirpus sylvaticus L.,Scirpus sylvaticus,Scirpus,őshonos,100,Ge,G,CIR,,Sparganium,5,3
+2542,Angiospermae,Liliopsida,Poales,Cyperaceae,Trichophorum alpinum (L.) Pers.,Trichophorum alpinum,Trichophorum,őshonos,30,He,Su,CIR,,Phragmites,4,2
+2543,Angiospermae,Liliopsida,Poales,Cyperaceae,Trichophorum caespitosum (L.) Hartm.,Trichophorum caespitosum,Trichophorum,nem megerősített,40,He,Su,CIR,,Phragmites,5,3

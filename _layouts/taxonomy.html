@@ -44,7 +44,7 @@ layout: article
             <div class="card__content">
                 <div class="card__header">
                     {{ tax }}
-                    <img id="{{ tax }}-cover" alt="{{ tax }}"/>
+                    <img id="{{ tax }}-cover" alt="{{ tax }}" class="lazyload" data-src="/assets/images/cover.png" />
                 </div>
                 {%- include article-info.html article=docu show_date=false -%}
             </div>
@@ -62,9 +62,14 @@ layout: article
                 .then(data => {
                     // Check if results exist and if the first result has a default_photo
                     if (data.results && data.results.length > 0 && data.results[0].default_photo) {
-                        document.getElementById(tax + '-cover').src = data.results[0].default_photo.medium_url;
+                        var imgElement = document.getElementById(order + '-cover');
+                        imgElement.src = data.results[0].default_photo.medium_url;
+                        imgElement.onload = function() {
+                            // Recalculate Masonry layout after the image has loaded
+                            msnry.layout();
+                        };
                     } else {
-                        console.error('No results found for:', tax);
+                        console.error('No results found for order:', order);
                     }
                 })
                 .catch(error => {
@@ -80,13 +85,10 @@ layout: article
             transitionDuration: 0,
             gutter: 16,
         });
-        imagesLoaded(grid).on('progress', function () {
+        imagesLoaded(grid).on('progress', function() {
             msnry.layout();
         });
-        window.addEventListener('scroll', function () {
-            msnry.layout();
-        });
-        window.addEventListener('resize', function () {
+        imagesLoaded(grid).on('scroll', function() {
             msnry.layout();
         });
 
@@ -100,4 +102,3 @@ layout: article
 <script>
         {%- include scripts/archieve.js -%}
 </script>
-

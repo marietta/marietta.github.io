@@ -17,7 +17,7 @@ layout: article
             <div class="card__content">
                 <div class="card__header">
                     {{ order }}
-                    <img id="{{ order }}-cover" alt="{{ order }}" data-src="/assets/images/cover3.jpg" class="lazyload" />
+                    <img id="{{ order }}-cover" alt="{{ order }}" class="lazyload" data-src="/assets/images/cover.png" />
                 </div>
             </div>
         </div>
@@ -50,13 +50,7 @@ layout: article
                 });
         })("{{ order }}");
     </script>
-    {% endfor %}
-</div>
-
-<script src="/assets/masonry.pkgd.min.js"></script>
-<script src="/assets/imagesloaded.pkgd.min.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
+    <script>
         var grid = document.querySelector('.flex-orders');
         var msnry = new Masonry(grid, {
             itemSelector: '.masonry-item',
@@ -70,5 +64,8 @@ layout: article
         imagesLoaded(grid).on('scroll', function() {
             msnry.layout();
         });
-    });
-</script>
+
+    </script>
+    {% endfor %}
+</div>
+

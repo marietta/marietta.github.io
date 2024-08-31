@@ -1,15 +1,15 @@
 header:
 
-  - title: classes
+  - title: browse by classes
     url: /classes.html
 
-  - title: orders
+  - title: by orders
     url: /orders.html
 
-  - title: tags
+  - title: by tags
     url: /tags-list.html
 
-  - title: notes
+  - title: Notes
     url: /notes.html
 
   - title: Le a pázsittal!

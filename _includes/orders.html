@@ -8,7 +8,7 @@
             <div class="card__content">
                 <div class="card__header">
                     {{ order }}
-                    <img id="{{ order }}-cover" alt="{{ order }}" />
+                    <img id="{{ order }}-cover" alt="{{ order }}" class="lazyload" data-src="/assets/images/cover.png"/>
                 </div>
             </div>
         </div></a>
@@ -23,16 +23,20 @@
                 return response.json();
             })
             .then(data => {
-                // Check if results exist and if the first result has a default_photo
-                if (data.results && data.results.length > 0 && data.results[0].default_photo) {
-                    document.getElementById(order + '-cover').src = data.results[0].default_photo.medium_url;
-                } else {
-                    console.error('No results found for order:', order);
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
+                    if (data.results && data.results.length > 0 && data.results[0].default_photo) {
+                        var imgElement = document.getElementById(order + '-cover');
+                        imgElement.src = data.results[0].default_photo.medium_url;
+                        imgElement.onload = function() {
+                            // Recalculate Masonry layout after the image has loaded
+                            msnry.layout();
+                        };
+                    } else {
+                        console.error('No results found for order:', order);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
         })("{{ order }}");
     </script>
     <script>
@@ -43,15 +47,13 @@
             transitionDuration: 0,
             gutter: 16,
         });
-        imagesLoaded(grid).on('progress', function () {
+        imagesLoaded(grid).on('progress', function() {
             msnry.layout();
         });
-        window.addEventListener('scroll', function () {
+        imagesLoaded(grid).on('scroll', function() {
             msnry.layout();
         });
-        window.addEventListener('resize', function () {
-            msnry.layout();
-        });
+
     </script>
     {% endfor %}
 
