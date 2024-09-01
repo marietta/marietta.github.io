@@ -96,12 +96,50 @@ module Jekyll
       @name = "#{tag.strip}.html"
       super(site, base, @dir, @name)
 
+      dict_path = File.join(@site.source, '_data', 'dictionary.yml')
+      @titles = YAML.load_file(dict_path) || {}
+
       self.data['layout'] = 'tags'
-      self.data['title'] = tag
+      self.data['title'] = fetch_title(tag.strip)
       self.data['tags'] = tag
 
       self.content = ""
     end
+
+    def fetch_title(tag)
+      # Check if the tag exists and has a title
+      if @titles.key?(tag)
+        title_entry = @titles[tag].find { |entry| entry.key?('title') }
+        return title_entry['title'] if title_entry && title_entry['title']
+      end
+
+      # If no title found, check if the tag is numeric
+      if numeric_tag?(tag)
+        number = tag.to_i
+        # Perform floating-point division
+        result = number / 100.0
+
+        # Check if the result is >= 10
+        if result >= 10
+          # Return as integer if there's no fractional part
+          return "#{result.to_i} m maximum magasság" if result == result.to_i
+          return "#{result} m maximum magasság"  # Return as float if there's a fractional part
+        else
+          # Return as integer if there's no fractional part for results < 10
+          return "#{result.to_i} m maximum magasság" if result == result.to_i
+          # Return float as string for results < 10
+          return "#{result} m maximum magasság"
+        end
+      end
+      # Return the tag itself if no title found or not numeric
+      tag
+    end
+
+    def numeric_tag?(tag)
+      # Check if the tag is a numeric value
+      !!(tag =~ /\A\d+\z/)
+    end
+
   end
 
   class TaxonomyPage < Page

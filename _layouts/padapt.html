@@ -19,31 +19,29 @@ layout: article
 
 {% assign eletforma = plant_data['Életforma'] %}
 {%if eletforma %}
-<p class="success">Életforma: <b>{{eletforma}}</b><br>{{ dictionary[eletforma] }}</p>
+<p class="success">Életforma: <b>{{eletforma}}</b><br>{{dictionary[eletforma][0].title }}<br>{{ dictionary[eletforma][0].desc }}</p>
 {%endif%}
 
 {% assign szoc = plant_data['Szociális magatartási típus'] %}
 {%if szoc%}
-<p class="success">Szociális magatartási típus: <b>{{szoc}}</b><br>{{dictionary[szoc] }}</p>
+<p class="success">Szociális magatartási típus: <b>{{szoc}}</b><br>{{dictionary[szoc][0].title }}<br>{{dictionary[szoc][0].desc }}</p>
 {%endif%}
 
 {% assign floraelem = plant_data['Flóraelem besorolás'] %}
 {%if floraelem%}
-<p class="success">Flóraelem besorolás: <b>{{floraelem}}</b><br>{{dictionary[floraelem] }}</p>
+<p class="success">Flóraelem besorolás: <b>{{floraelem}}</b><br>{{dictionary[floraelem][0].title }}</p>
 {%endif%}
 
 {% assign inv = plant_data['invasion_status_hu'] %}
 {%if inv%}
-<p class="success">Inváziós státusz: <b>{{inv}}</b> {{dictionary[inv] }}</p>
+<p class="success">Inváziós státusz: <b>{{inv}}</b> {{dictionary[inv][0].desc }}</p>
 {%endif%}
 
 {% assign terjedes = plant_data['Terjedési stratégia'] %}
-<p class="success">Terjedési stratégia: <b>{{terjedes}}</b> <br>{{dictionary[terjedes] }} </p>
-
-{{page}}
+<p class="success">Terjedési stratégia: <b>{{terjedes}}</b> <br>{{dictionary[terjedes][0].desc }} </p>
 
 <script>
-    fetch('https://api.inaturalist.org/v1/taxa?q={{page.title}}&order=desc&order_by=observations_count&rank=species,subspecies')
+    fetch("https://api.inaturalist.org/v1/taxa/autocomplete?q={{page.title}}&rank=species,subspecies,variation&locale=hu")
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not ok');
@@ -53,6 +51,19 @@ layout: article
   .then(data => {
     // Check if results exist and if the first result has a default_photo
     if (data.results && data.results.length > 0) {
+
+      if (data.results[0].preferred_common_name)
+      {
+        const preferredCommonName = data.results[0].preferred_common_name;
+        document.getElementById('title_preferred_common_name').innerText = preferredCommonName.charAt(0).toUpperCase() + preferredCommonName.slice(1); // Capitalize the name
+      }
+
+      if (data.results[0].english_common_name)
+      {
+        const englishCommonName = data.results[0].english_common_name;
+        document.getElementById('title_english_common_name').innerText = englishCommonName; // Display the name
+      }
+
       const taxa_id = data.results[0].id; // Declare taxa_id here
 
       // Second fetch using the extracted taxa_id
@@ -70,10 +81,9 @@ layout: article
     }
   })
   .then(taxaData => {
-    console.log(taxaData); // Process the taxa data as needed
     if (taxaData.results && taxaData.results.length > 0) {
+
         const firstResult = taxaData.results[0].taxon_photos;
-        console.log(firstResult);
         if (firstResult) {
           document.getElementById('target-image-1').src = firstResult[0].photo.medium_url;
           document.getElementById('target-a1').href = firstResult[0].photo.large_url;

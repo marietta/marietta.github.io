@@ -1,23 +1,31 @@
 ---
 layout: article
 ---
+{% assign dictionary=site.data.dictionary[page.tags][0] %}
+
+{% if dictionary.desc %}
+<p class="success">{{dictionary.desc}}</p>
+{% endif %}
+
+<br>
 
 <div class="flex-taxa masonry-grid">
 {% for docu in site.padapt %}
     {% if docu.tags contains page.tags
     or docu['Flóraelem besorolás'] contains page.tags
-    or docu['Életforma'] contains page.tags
+    or docu['Életforma'] == page.tags
     or docu['nativeness_hu'] contains page.tags
     or docu['Maximum magasság'] == page.tags
-    or docu['invasion_status_hu'] == page.tags
-    or docu['Szociális magatartási típus'] contains page.tags %}
+    or docu['invasion_status_hu'] contains page.tags
+    or docu['Szociális magatartási típus'] == page.tags %}
     {% assign tax = docu.taxon_lat %}
     <a href="{{ docu.url }}">
         <div class=" card card--clickable masonry-item">
             <div class="card__content">
                 <div class="card__header">
                     {{ tax }}
-                    <img id="{{ tax }}-cover" alt="{{ tax }}" class="lazyload"  data-src="/assets/images/cover.png"/>
+                    <h4><span id="{{ tax }}-preferred_common_name"></span><br><span id="{{ tax }}-english_common_name"></span></h4>
+                    <img id="{{ tax }}-cover" alt="{{ tax }}" class="lazyload"  src="/assets/images/cover2.png"/>
                 </div>
                 {%- include article-info.html article=docu show_date=false -%}
             </div>
@@ -26,29 +34,40 @@ layout: article
 
     <script>
         (function (tax) {
-            fetch("https://api.inaturalist.org/v1/taxa?q=" + tax + "&order=desc&order_by=observations_count&rank=species,subspecies,variety,form")
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    // Check if results exist and if the first result has a default_photo
-                    if (data.results && data.results.length > 0 && data.results[0].default_photo) {
-                        var imgElement = document.getElementById(tax + '-cover');
-                        imgElement.src = data.results[0].default_photo.medium_url;
-                        imgElement.onload = function() {
-                            // Recalculate Masonry layout after the image has loaded
-                            msnry.layout();
-                        };
-                    } else {
-                        console.error('No results found for tag:', tax);
-                    }
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                });
+        fetch("https://api.inaturalist.org/v1/taxa/autocomplete?q="+ tax +"&rank=species&locale=hu")
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                // Check if results exist and if the first result has a default_photo
+                if (data.results && data.results.length > 0 && data.results[0].default_photo) {
+                    if (data.results[0].preferred_common_name)
+                        {
+                            const preferredCommonName = data.results[0].preferred_common_name;
+                            document.getElementById('{{ tax }}-preferred_common_name').innerText = preferredCommonName.charAt(0).toUpperCase() + preferredCommonName.slice(1); // Capitalize the name
+                        }
+
+                    if (data.results[0].english_common_name)
+                        {
+                            const englishCommonName = data.results[0].english_common_name;
+                            document.getElementById('{{ tax }}-english_common_name').innerText = englishCommonName; // Display the name
+                        }
+                    var imgElement = document.getElementById(tax + '-cover');
+                    imgElement.src = data.results[0].default_photo.medium_url;
+                    imgElement.onload = function() {
+                        // Recalculate Masonry layout after the image has loaded
+                        msnry.layout();
+                    };
+                } else {
+                    console.error('No results found for taxa:', tax);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
         })("{{ tax }}");
     </script>
     <script>
@@ -65,7 +84,9 @@ layout: article
         imagesLoaded(grid).on('scroll', function() {
             msnry.layout();
         });
-
+        imagesLoaded(grid).on('resize', function() {
+            msnry.layout();
+        });
     </script>
 
 {% endif %}

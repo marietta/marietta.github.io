@@ -102,6 +102,12 @@
             <i class="fa-solid fa-tree"></i>
           </li>
           {% endif %}
+          {% if include.article.tags contains "Cornus" %}
+          <li class="button button--height button--pill button--sm">
+            <i class="fa-solid fa-apple-whole"></i>
+          </li>
+          {% endif %}
+
             {%- assign _tag_path = _paths_archive | append: '?tag=' -%}
             {%- include snippets/prepend-baseurl.html path=_tag_path -%}
             {%- for _tag in include.article.tags -%}
@@ -147,8 +153,8 @@
                href="/tags/Ge">mélyen ülő évelő </a></li>
           {% endif %}
           {% if eletforma contains 'HH'%}
-          <li><a class="button button--secondary button--pill button--sm"
-               href="/tags/HH">vízi </a></li>
+          <li><a class="button button--vizi button--pill button--sm"
+               href="/tags/HH"><i class="fa-solid fa-water"></i> vízi </a></li>
           {% endif %}
           {% if eletforma contains 'HT' %}
           <li><a class="button button--secondary button--pill button--sm"

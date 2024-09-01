@@ -8,14 +8,14 @@
             <div class="card__content">
                 <div class="card__header">
                     {{ genus }}
-                    <img id="{{ genus }}-cover" alt="{{ genus }}" class="lazyload"  data-src="/assets/images/cover.png"/>
+                    <img id="{{ genus }}-cover" alt="{{ genus }}" class="lazyload" src="/assets/images/cover2.png"/>
                 </div>
             </div>
         </div></a>
 
     <script>
         (function(genus) {
-            fetch("https://api.inaturalist.org/v1/taxa?q=" + genus + "&order=desc&order_by=observations_count&rank=genus")
+            fetch("https://api.inaturalist.org/v1/taxa?q="+ genus +"&locale=hu&order=desc&order_by=observations_count&rank=genus")
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -31,6 +31,7 @@
                             // Recalculate Masonry layout after the image has loaded
                             msnry.layout();
                         };
+
                     } else {
                         console.error('No results found for genus:', genus);
                     }

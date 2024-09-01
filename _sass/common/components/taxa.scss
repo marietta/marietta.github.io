@@ -25,7 +25,19 @@
   color: #fff;
   background-color: #bf1d99;
 }
+.button--vizi, .button--vizi:link, .button--vizi:visited {
+  color: #fff;
+    background-color: #337CCC;
+}
+.root[data-is-touch=false] .button--vizi:hover {
+  color: #fff;
+  background-color: #2D6CB3;
+}
 .button--height, .button--height:link, .button--height:visited {
+  color: #000;
+  background-color: $button-color;
+}
+.root[data-is-touch=false] .button--height:hover {
   color: #000;
   background-color: $button-color;
 }
@@ -34,10 +46,6 @@
   background-color: #BB4AD4;
 }
 
-.root[data-is-touch=false] .button--height:hover {
-  color: #000;
-  background-color: $button-color;
-}
 
 .taxa-container {
     width: 50%;
@@ -164,3 +172,8 @@ summary.summary--dark {
   flex-wrap: wrap;
   width: 100%;
 }
+
+img {
+    border-radius: map-get($base, border-radius);
+}
+
