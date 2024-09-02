@@ -29,8 +29,10 @@ W:
     desc: "Honos gyomfajok<br>Emberi tényezőktől zavart termőhelyek növényei. <br>Ruderálisok. "
 "C":
   - title: "Természetes kompetitorok"
+    desc: "Természetes kompetitorok"
 ST:
   - title:  "Stressztűrők"
+    desc: "Stressztűrők"
 "S":
   - title: "Specialisták"
     desc: "Specialisták, szűk ökológiájú stressz-tűrők"
@@ -66,7 +68,7 @@ AC:
 "özönfaj":
   - desc: "(inváziós, invasive): rövid időn belül igen nagymértékben szaporodik, és nagy területen terjed"
 "meghonosodott faj":
-  - desc: "(naturalised): Magyarország területén önfenntartó populációkkal van jelen (pl. Cabomba caroliniana)."
+  - desc: "(naturalised): Magyarország területén önfenntartó populációkkal van jelen."
 "alkalmi faj":
   - desc: "(casual): alkalmi megtelepedő, spontán vagy szubspontán, de nem szándékos vetés révén megjelenő növény."
 
@@ -159,7 +161,7 @@ Ch-He:
 "Th":
   - title:  "Therophyta"
     desc: "<b>Egyévesek</b>, kitartó képleteik magok és termések."
-"E":
+"Epi":
   - title:  "Epiphyta"
     desc: "Fákon élő növények."
 (HT-)He:

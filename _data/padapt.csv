@@ -1518,7 +1518,7 @@ species_id,phylum_lat,class_lat,order_lat,family_lat,taxon_lat_full,taxon_lat,ge
 1517,Angiospermae,Magnoliopsida,Dipsacales,Caprifoliaceae,Lonicera nigra L.,Lonicera nigra,Lonicera,őshonos,200,M,S,CEU,,Cornus,5,2
 1518,Angiospermae,Magnoliopsida,Dipsacales,Caprifoliaceae,Lonicera tatarica L.,Lonicera tatarica,Lonicera,idegenhonos,300,M,,,alkalmi faj,Cornus,5,2
 1519,Angiospermae,Magnoliopsida,Dipsacales,Caprifoliaceae,Lonicera xylosteum L.,Lonicera xylosteum,Lonicera,őshonos,300,M,G,EUA,,Cornus,5,2
-1520,Angiospermae,Magnoliopsida,Santalales,Loranthaceae,Loranthus europaeus Jacq.,Loranthus europaeus,Loranthus,őshonos,150,E,G,SMO,,Cornus,5,2
+1520,Angiospermae,Magnoliopsida,Santalales,Loranthaceae,Loranthus europaeus Jacq.,Loranthus europaeus,Loranthus,őshonos,150,Epi,G,SMO,,Cornus,5,2
 1521,Angiospermae,Magnoliopsida,Fabales,Fabaceae,Lotus angustissimus L.,Lotus angustissimus,Lotus,őshonos,50,Th,Sr,PoM,,Allium,5,3
 1522,Angiospermae,Magnoliopsida,Fabales,Fabaceae,Lotus borbasii Ujhelyi,Lotus borbasii,Lotus,őshonos,20,He,Sr,PaB,,Allium,5,2
 1523,Angiospermae,Magnoliopsida,Fabales,Fabaceae,Lotus corniculatus L.,Lotus corniculatus,Lotus,őshonos,40,He,DT,EUA,,Allium,5,5
@@ -1917,7 +1917,7 @@ species_id,phylum_lat,class_lat,order_lat,family_lat,taxon_lat_full,taxon_lat,ge
 1916,Angiospermae,Magnoliopsida,Lamiales,Plantaginaceae,Plantago tenuiflora Waldst. et Kit.,Plantago tenuiflora,Plantago,őshonos,15,Th,G,CON,,Allium,5,2
 1917,Angiospermae,Liliopsida,Asparagales,Orchidaceae,Platanthera bifolia (L.) Rich.,Platanthera bifolia,Platanthera,őshonos,45,Ge,G,EUA,,Lycopodium,5,2
 1918,Angiospermae,Liliopsida,Asparagales,Orchidaceae,Platanthera chlorantha (Custer) Rchb. in Mössler,Platanthera chlorantha,Platanthera,őshonos,80,Ge,S,EUA,,Lycopodium,5,2
-1919,Angiospermae,Magnoliopsida,Proteales,Platanaceae,Platanus  hybrida Brot.,Platanus  hybrida,Platanus,idegenhonos,3500,MM,,,alkalmi faj,Zea,5,1
+1919,Angiospermae,Magnoliopsida,Proteales,Platanaceae,Platanus  hybrida Brot.,Platanus × hispanica,Platanus,idegenhonos,3500,MM,,,alkalmi faj,Zea,5,1
 1920,Angiospermae,Magnoliopsida,Apiales,Apiaceae,Pleurospermum austriacum (L.) Hoffm.,Pleurospermum austriacum,Pleurospermum,őshonos,100,He,S,CEA,,Allium,6,3
 1921,Angiospermae,Liliopsida,Poales,Poaceae,Poa angustifolia L.,Poa angustifolia,Poa,őshonos,60,He,DT,CIR,,Allium,5,2
 1922,Angiospermae,Liliopsida,Poales,Poaceae,Poa annua L.,Poa annua,Poa,őshonos,25,HT-He,RC,KOZ,,Allium,4,7
@@ -2406,7 +2406,7 @@ species_id,phylum_lat,class_lat,order_lat,family_lat,taxon_lat_full,taxon_lat,ge
 2405,Angiospermae,Liliopsida,Poales,Poaceae,Sorghum sudanense (Piper) Stapf,Sorghum sudanense,Sorghum,idegenhonos,150,Th,I,ADV,alkalmi faj,Allium,7,3
 2406,Angiospermae,Liliopsida,Poales,Typhaceae,Sparganium emersum Rehmann,Sparganium emersum,Sparganium,őshonos,60,HH,S,CIR,,Sparganium,6,2
 2407,Angiospermae,Liliopsida,Poales,Typhaceae,Sparganium erectum L.,Sparganium erectum,Sparganium,őshonos,100,HH,C,EUA,,Sparganium,6,4
-2408,Angiospermae,Liliopsida,Poales,Typhaceae,Sparganium natans L.,Sparganium natans,Sparganium,őshonos,80 (úszó)  20 (szf),HH,Sr,CIR,,Wolffia,6,3
+2408,Angiospermae,Liliopsida,Poales,Typhaceae,Sparganium natans L.,Sparganium natans,Sparganium,őshonos,80,HH,Sr,CIR,,Wolffia,6,3
 2409,Angiospermae,Magnoliopsida,Caryophyllales,Caryophyllaceae,Spergula arvensis L.,Spergula arvensis,Spergula,idegenhonos,50,Th,W,KOZ,meghonosodott faj,Allium,6,3
 2410,Angiospermae,Magnoliopsida,Caryophyllales,Caryophyllaceae,Spergula pentandra L.,Spergula pentandra,Spergula,őshonos,20,Th,NP,SAT,,Epilobium,4,2
 2411,Angiospermae,Magnoliopsida,Caryophyllales,Caryophyllaceae,Spergularia maritima (All.) Chiov.,Spergularia maritima,Spergularia,őshonos,20,He,NP,AsM,,Allium,7,3
@@ -2719,7 +2719,7 @@ species_id,phylum_lat,class_lat,order_lat,family_lat,taxon_lat_full,taxon_lat,ge
 2718,Angiospermae,Magnoliopsida,Malpighiales,Violaceae,Viola stagnina Kit.,Viola stagnina,Viola,őshonos,20,He,S,EUA,,Allium,5,2
 2719,Angiospermae,Magnoliopsida,Malpighiales,Violaceae,Viola suavis M. Bieb.,Viola suavis,Viola,őshonos,10,He,S,CON,,Allium,3,3
 2720,Angiospermae,Magnoliopsida,Malpighiales,Violaceae,Viola tricolor L.,Viola tricolor,Viola,őshonos,30,HT-Th-He,G,EUA,,Allium,3,7
-2721,Angiospermae,Magnoliopsida,Santalales,Loranthaceae,Viscum album L.,Viscum album,Viscum,őshonos,100,E,G,EUA,,Cornus,2,3
+2721,Angiospermae,Magnoliopsida,Santalales,Loranthaceae,Viscum album L.,Viscum album,Viscum,őshonos,100,Epi,G,EUA,,Cornus,2,3
 2722,Angiospermae,Magnoliopsida,Vitales,Vitaceae,Vitis labrusca L.,Vitis labrusca,Vitis,idegenhonos,1000,M,,,alkalmi faj,Cornus,5,2
 2723,Angiospermae,Magnoliopsida,Vitales,Vitaceae,Vitis rupestris Scheele,Vitis rupestris,Vitis,idegenhonos,1000,M,A,ADV,alkalmi faj,Cornus,5,2
 2724,Angiospermae,Magnoliopsida,Vitales,Vitaceae,Vitis sylvestris C.C. Gmel.,Vitis sylvestris,Vitis,őshonos,3000,M,S,PoM,,Cornus,6,2

@@ -19,12 +19,12 @@ layout: article
 
 {% assign eletforma = plant_data['Életforma'] %}
 {%if eletforma %}
-<p class="success">Életforma: <b>{{eletforma}}</b><br>{{dictionary[eletforma][0].title }}<br>{{ dictionary[eletforma][0].desc }}</p>
+<p class="success">Életforma: <b>{{eletforma}}</b> {{ dictionary[eletforma][0].title }}<br>{{ dictionary[eletforma][0].desc }}</p>
 {%endif%}
 
 {% assign szoc = plant_data['Szociális magatartási típus'] %}
 {%if szoc%}
-<p class="success">Szociális magatartási típus: <b>{{szoc}}</b><br>{{dictionary[szoc][0].title }}<br>{{dictionary[szoc][0].desc }}</p>
+<p class="success">Szociális magatartási típus: <b>{{szoc}}</b><br>{{dictionary[szoc][0].desc }}</p>
 {%endif%}
 
 {% assign floraelem = plant_data['Flóraelem besorolás'] %}
@@ -41,7 +41,7 @@ layout: article
 <p class="success">Terjedési stratégia: <b>{{terjedes}}</b> <br>{{dictionary[terjedes][0].desc }} </p>
 
 <script>
-    fetch("https://api.inaturalist.org/v1/taxa/autocomplete?q={{page.title}}&rank=species,subspecies,variation&locale=hu")
+    fetch("https://api.inaturalist.org/v1/taxa/autocomplete?q={{page.title}}&rank=species,subspecies,variation,hybrid&locale=hu")
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not ok');

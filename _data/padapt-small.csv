@@ -66,7 +66,7 @@ species_id,phylum_lat,class_lat,order_lat,family_lat,taxon_lat_full,taxon_lat,ge
 1500,Angiospermae,Magnoliopsida,Malpighiales,Linaceae,Linum austriacum L.,Linum austriacum,Linum,őshonos,60,He,G,PoM,,Allium,5,6
 1510,Angiospermae,Magnoliopsida,Magnoliales,Magnoliaceae,Liriodendron tulipifera L.,Liriodendron tulipifera,Liriodendron,idegenhonos,3000,MM,,,alkalmi faj,Zea,5,2
 1512,Angiospermae,Liliopsida,Poales,Poaceae,Lolium multiflorum Lam.,Lolium multiflorum,Lolium,idegenhonos,100,HT-He,W,KOZ,meghonosodott faj,Allium,6,3
-1520,Angiospermae,Magnoliopsida,Santalales,Loranthaceae,Loranthus europaeus Jacq.,Loranthus europaeus,Loranthus,őshonos,150,E,G,SMO,,Cornus,5,2
+1520,Angiospermae,Magnoliopsida,Santalales,Loranthaceae,Loranthus europaeus Jacq.,Loranthus europaeus,Loranthus,őshonos,150,Epi,G,SMO,,Cornus,5,2
 1586,Pterophyta,Polypodiopsida,Salviniales,Marsileaceae,Marsilea quadrifolia L.,Marsilea quadrifolia,Marsilea,őshonos,20,Ge-HH,S,CIR,,Lycopodium,9,2
 1589,Pterophyta,Polypodiopsida,Polypodiales,Onocleaceae,Matteuccia struthiopteris (L.) Tod.,Matteuccia struthiopteris,Matteuccia,őshonos,150,He,Sr,CIR,,Lycopodium,7,2
 1609,Angiospermae,Liliopsida,Poales,Poaceae,Melica altissima L.,Melica altissima,Melica,őshonos,150,He,S,CON,,Epilobium,6,2
@@ -98,7 +98,7 @@ species_id,phylum_lat,class_lat,order_lat,family_lat,taxon_lat_full,taxon_lat,ge
 1886,Angiospermae,Magnoliopsida,Caryophyllales,Phytolaccaceae,Phytolacca americana L.,Phytolacca americana,Phytolacca,idegenhonos,250,He,A,ADV,özönfaj,Cornus,7,2
 1895,Angiospermae,Magnoliopsida,Lamiales,Lentibulariaceae,Pinguicula alpina L.,Pinguicula alpina,Pinguicula,őshonos,15,He,Su,ALP,,Allium,5,1
 1902,Angiospermae,Liliopsida,Poales,Poaceae,Piptatherum virescens (Trin.) Boiss.,Piptatherum virescens,Piptatherum,őshonos,70,He,S,SMO,,Allium,5,2
-1919,Angiospermae,Magnoliopsida,Proteales,Platanaceae,Platanus  hybrida Brot.,Platanus  hybrida,Platanus,idegenhonos,3500,MM,,,alkalmi faj,Zea,5,1
+1919,Angiospermae,Magnoliopsida,Proteales,Platanaceae,Platanus × hispanica,Platanus × hispanica,Platanus,idegenhonos,3500,MM,,,alkalmi faj,Zea,5,1
 1921,Angiospermae,Liliopsida,Poales,Poaceae,Poa angustifolia L.,Poa angustifolia,Poa,őshonos,60,He,DT,CIR,,Allium,5,2
 1942,Angiospermae,Magnoliopsida,Fabales,Polygalaceae,Polygala amara L.,Polygala amara,Polygala,őshonos,20,He,S,EUR,,Allium,5,2
 1958,Pterophyta,Polypodiopsida,Polypodiales,Polypodiaceae,Polypodium interjectum Shivas,Polypodium interjectum,Polypodium,őshonos,60,Ge,G,SAT,,Lycopodium,8,2

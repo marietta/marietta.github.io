@@ -34,7 +34,7 @@ layout: article
 
     <script>
         (function (tax) {
-        fetch("https://api.inaturalist.org/v1/taxa/autocomplete?q="+ tax +"&rank=species&locale=hu")
+        fetch("https://api.inaturalist.org/v1/taxa/autocomplete?q="+ tax +"&rank=species,hybrid&locale=hu")
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
