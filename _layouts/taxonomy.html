@@ -44,7 +44,7 @@ layout: article
             <div class="card__content">
                 <div class="card__header">
                     {{ tax }}
-                    <h4><span id="preferred_common_name"></span><br><span id="english_common_name"></span></h4>
+                    <h4><span id="{{ tax }}-preferred_common_name"></span><br><span id="{{ tax }}-english_common_name"></span></h4>
                     <img id="{{ tax }}-cover" alt="{{ tax }}" class="lazyload" src="/assets/images/cover2.png" />
                 </div>
                 {%- include article-info.html article=docu show_date=false -%}
@@ -66,13 +66,13 @@ layout: article
                     if (data.results[0].preferred_common_name)
                         {
                             const preferredCommonName = data.results[0].preferred_common_name;
-                            document.getElementById('preferred_common_name').innerText = preferredCommonName.charAt(0).toUpperCase() + preferredCommonName.slice(1); // Capitalize the name
+                            document.getElementById('{{ tax }}-preferred_common_name').innerText = preferredCommonName.charAt(0).toUpperCase() + preferredCommonName.slice(1); // Capitalize the name
                         }
 
                     if (data.results[0].english_common_name)
                         {
                             const englishCommonName = data.results[0].english_common_name;
-                            document.getElementById('english_common_name').innerText = englishCommonName; // Display the name
+                            document.getElementById('{{ tax }}-english_common_name').innerText = englishCommonName; // Display the name
                         }
                     var imgElement = document.getElementById(tax + '-cover');
                     imgElement.src = data.results[0].default_photo.medium_url;

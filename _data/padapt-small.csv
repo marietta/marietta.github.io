@@ -47,6 +47,7 @@ species_id,phylum_lat,class_lat,order_lat,family_lat,taxon_lat_full,taxon_lat,ge
 1044,Angiospermae,Liliopsida,Poales,Poaceae,Festulolium loliaceum (Huds.) P. Fourn.,Festulolium loliaceum,Festulolium,őshonos,80,He,,,,Allium,5,5
 1119,Angiospermae,Liliopsida,Poales,Poaceae,Gaudinia fragilis (L.) P. Beauv.,Gaudinia fragilis,Gaudinia,idegenhonos,60,Th,A,ADV,alkalmi faj,Allium,5,2
 1162,Angiospermae,Liliopsida,Poales,Poaceae,Glyceria declinata Bréb.,Glyceria declinata,Glyceria,őshonos,60,He,Su,EUR,,Sparganium,6,3
+887,Gnetophyta,Gnetopsida,Ephedrales,Ephedraceae,Ephedra distachya L.,Ephedra distachya,Ephedra,őshonos,35,Ch,Sr,EUA,,Cornus,5,4
 1177,Angiospermae,Liliopsida,Alismatales,Potamogetonaceae,Groenlandia densa (L.) Fourr.,Groenlandia densa,Groenlandia,őshonos,30,HH,Sr,AsM,,Wolffia,6,3
 1191,Angiospermae,Magnoliopsida,Apiales,Araliaceae,Hedera helix agg.,Hedera helix,Hedera,őshonos,2000,M,G,AsM,,Cornus,9,3
 1202,Angiospermae,Liliopsida,Poales,Poaceae,Helictotrichon adsurgens (Schur ex Simonk.) Conert,Helictotrichon adsurgens,Helictotrichon,őshonos,80,He-Ge,G,,,Allium,5,3

@@ -40,6 +40,16 @@ layout: article
 {% assign terjedes = plant_data['Terjedési stratégia'] %}
 <p class="success">Terjedési stratégia: <b>{{terjedes}}</b> <br>{{dictionary[terjedes][0].desc }} </p>
 
+{% assign edible=site.data.toxic %}
+{% if edible[page.title] %}
+{% if edible[page.title][0].toxic %}
+<p class="error">Edible: <i class="fa-solid fa-skull-crossbones"></i><br>
+    {{edible[page.title][0].desc }} </p>
+{% else %}
+<p class="success">Edible:<br>{{edible[page.title][0].desc }} </p>
+{%endif%}
+{%endif%}
+
 <script>
     fetch("https://api.inaturalist.org/v1/taxa/autocomplete?q={{page.title}}&rank=species,subspecies,variation,hybrid&locale=hu")
   .then(response => {
