@@ -30,26 +30,9 @@ collections:
   padapt:
     output: true
 
-#page_gen:
-#  - data: 'padapt'
-#    template: 'padapt'
-#    name: 'name'
-#    dir: 'padapt'
-
-#  - data: 'padapt'
-#    template: 'taxonomy'
-#    name: 'order_lat'
-#    dir: 'taxonomy'
-#  - data: 'padapt'
-#    template: 'taxonomy'
-#    name: 'genus_lat'
-#    dir: 'taxonomy'
-
 
 defaults:
   - scope:
       path: ""
     values:
       image: /assets/images/cover.png
-
-

@@ -51,7 +51,7 @@ layout: article
 {%endif%}
 
 <script>
-    fetch("https://api.inaturalist.org/v1/taxa/autocomplete?q={{page.title}}&rank=species,subspecies,variation,hybrid&locale=hu")
+    fetch("https://api.inaturalist.org/v1/taxa/autocomplete?q={{page.title}}&rank=species,subspecies,hybrid&locale=hu")
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not ok');
@@ -67,11 +67,14 @@ layout: article
         const preferredCommonName = data.results[0].preferred_common_name;
         document.getElementById('title_preferred_common_name').innerText = preferredCommonName.charAt(0).toUpperCase() + preferredCommonName.slice(1); // Capitalize the name
       }
-
+      if (data.results[0].preferred_common_name && data.results[0].english_common_name)
+      {
+            document.getElementById('title_separator').innerText = " • "
+      }
       if (data.results[0].english_common_name)
       {
         const englishCommonName = data.results[0].english_common_name;
-        document.getElementById('title_english_common_name').innerText = englishCommonName; // Display the name
+        document.getElementById('title_english_common_name').innerText = englishCommonName.charAt(0).toUpperCase() + englishCommonName.slice(1); // Capitalize the name
       }
 
       const taxa_id = data.results[0].id; // Declare taxa_id here

@@ -102,6 +102,11 @@
             <i class="fa-solid fa-tree"></i>
           </li>
           {% endif %}
+          {% if phylum_lat == "Pterophyta" or phylum_lat == "Lycopodiophyta" %}
+          <li class="button button--height button--pill button--sm">
+            <i class="fa-brands fa-pagelines"></i>
+          </li>
+          {% endif %}
           {% if include.article.tags contains "Cornus" %}
           <li class="button button--height button--pill button--sm">
             <i class="fa-solid fa-apple-whole"></i>

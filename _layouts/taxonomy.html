@@ -53,7 +53,7 @@ layout: article
     </a>
     <script>
         (function (tax) {
-        fetch("https://api.inaturalist.org/v1/taxa/autocomplete?q="+ tax +"&rank=species,hybrid&locale=hu")
+        fetch("https://api.inaturalist.org/v1/taxa/autocomplete?q="+ tax +"&rank=species,subspecies,hybrid&locale=hu")
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -72,7 +72,7 @@ layout: article
                     if (data.results[0].english_common_name)
                         {
                             const englishCommonName = data.results[0].english_common_name;
-                            document.getElementById('{{ tax }}-english_common_name').innerText = englishCommonName; // Display the name
+                            document.getElementById('{{ tax }}-english_common_name').innerText = englishCommonName.charAt(0).toUpperCase() + englishCommonName.slice(1); // Capitalize the name
                         }
                     var imgElement = document.getElementById(tax + '-cover');
                     imgElement.src = data.results[0].default_photo.medium_url;

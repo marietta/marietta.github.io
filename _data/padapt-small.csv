@@ -48,6 +48,7 @@ species_id,phylum_lat,class_lat,order_lat,family_lat,taxon_lat_full,taxon_lat,ge
 1119,Angiospermae,Liliopsida,Poales,Poaceae,Gaudinia fragilis (L.) P. Beauv.,Gaudinia fragilis,Gaudinia,idegenhonos,60,Th,A,ADV,alkalmi faj,Allium,5,2
 1162,Angiospermae,Liliopsida,Poales,Poaceae,Glyceria declinata Bréb.,Glyceria declinata,Glyceria,őshonos,60,He,Su,EUR,,Sparganium,6,3
 887,Gnetophyta,Gnetopsida,Ephedrales,Ephedraceae,Ephedra distachya L.,Ephedra distachya,Ephedra,őshonos,35,Ch,Sr,EUA,,Cornus,5,4
+1725,Angiospermae,Magnoliopsida,Apiales,Apiaceae,Oenanthe banatica Heuff.,Oenanthe banatica,Oenanthe,őshonos,60,He,S,DAC,,Sparganium,5,3
 1177,Angiospermae,Liliopsida,Alismatales,Potamogetonaceae,Groenlandia densa (L.) Fourr.,Groenlandia densa,Groenlandia,őshonos,30,HH,Sr,AsM,,Wolffia,6,3
 1191,Angiospermae,Magnoliopsida,Apiales,Araliaceae,Hedera helix agg.,Hedera helix,Hedera,őshonos,2000,M,G,AsM,,Cornus,9,3
 1202,Angiospermae,Liliopsida,Poales,Poaceae,Helictotrichon adsurgens (Schur ex Simonk.) Conert,Helictotrichon adsurgens,Helictotrichon,őshonos,80,He-Ge,G,,,Allium,5,3
@@ -252,3 +253,4 @@ species_id,phylum_lat,class_lat,order_lat,family_lat,taxon_lat_full,taxon_lat,ge
 2277,Angiospermae,Liliopsida,Poales,Cyperaceae,Scirpus sylvaticus L.,Scirpus sylvaticus,Scirpus,őshonos,100,Ge,G,CIR,,Sparganium,5,3
 2542,Angiospermae,Liliopsida,Poales,Cyperaceae,Trichophorum alpinum (L.) Pers.,Trichophorum alpinum,Trichophorum,őshonos,30,He,Su,CIR,,Phragmites,4,2
 2543,Angiospermae,Liliopsida,Poales,Cyperaceae,Trichophorum caespitosum (L.) Hartm.,Trichophorum caespitosum,Trichophorum,nem megerősített,40,He,Su,CIR,,Phragmites,5,3
+2724,Angiospermae,Magnoliopsida,Vitales,Vitaceae,Vitis sylvestris C.C. Gmel.,Vitis sylvestris,Vitis,őshonos,3000,M,S,PoM,,Cornus,6,2

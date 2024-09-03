@@ -15,23 +15,31 @@
 
     <script>
         (function(genus) {
-            fetch("https://api.inaturalist.org/v1/taxa?q="+ genus +"&locale=hu&order=desc&order_by=observations_count&rank=genus")
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then(data => {
-                    // Check if results exist and if the first result has a default_photo
-                    if (data.results && data.results.length > 0 && data.results[0].default_photo) {
-                        var imgElement = document.getElementById(genus + '-cover');
-                        imgElement.src = data.results[0].default_photo.medium_url;
-                        imgElement.onload = function() {
-                            // Recalculate Masonry layout after the image has loaded
-                            msnry.layout();
-                        };
+            fetch("https://api.inaturalist.org/v1/taxa?q=" + genus + "&locale=hu&order=desc&order_by=observations_count&rank=genus")
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.results && data.results.length > 0) {
+                        // Filter results to include only those where iconic_taxon_name is "Plantae"
+                        var filteredResults = data.results.filter(function(result) {
+                            return result.iconic_taxon_name === "Plantae";
+                        });
 
+                        // Check if there are any filtered results
+                        if (filteredResults.length > 0 && filteredResults[0].default_photo) {
+                            var imgElement = document.getElementById(genus + '-cover');
+                            imgElement.src = filteredResults[0].default_photo.medium_url; // Use filtered results here
+                            imgElement.onload = function() {
+                                // Recalculate Masonry layout after the image has loaded
+                                msnry.layout();
+                            };
+                        } else {
+                            console.error('No results found for genus:', genus);
+                        }
                     } else {
                         console.error('No results found for genus:', genus);
                     }

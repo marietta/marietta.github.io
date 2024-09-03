@@ -17,7 +17,7 @@
     <div class="article__header">
       {%- if _show_title -%}
         <header><h1>{{ _article_title }}</h1>
-          <h4><span id="title_preferred_common_name"></span></h4><span id="title_english_common_name"></span>
+          <h4><span id="title_preferred_common_name"></span><span id="title_separator"></span><span id="title_english_common_name"></span></h4>
         </header>
       {%- endif -%}
       {%- if _show_edit_on_github -%}
@@ -49,3 +49,4 @@
 {%- if include.semantic != false -%}
   <meta itemprop="headline" content="{{ _article_title }}">
 {%- endif -%}
+
