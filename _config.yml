@@ -5,6 +5,12 @@ plugins:
   - jekyll-toc
   - kramdown
 
+search:
+  provider: default
+
+default:
+  page:
+    search: default
 
 theme: jekyll-text-theme
 timezone: Europe/Budapest
@@ -36,3 +42,4 @@ defaults:
       path: ""
     values:
       image: /assets/images/cover.png
+
