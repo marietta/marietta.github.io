@@ -12,13 +12,17 @@
           {%- assign _paths_root = site.paths.root | default: site.data.variables.default.paths.root  -%}
           {%- include snippets/get-nav-url.html path=_paths_root -%}
           {%- if site.title -%}
-            <a title="{%- if site.description -%}{{ site.description }}{%- endif -%}" href="{{ __return }}">{{ site.title }}</a>
+            <a href="{{ __return }}">{{ site.title }}</a>
           {%- endif -%}
+
+          <div class="search-box js-search-box js-search-toggle">
+            <div class="search-box__icon-search"><i class="fas fa-search"></i></div>
+            <input type="search" />
+          </div>
         </div>
-        {%- if site.search.provider -%}
-          <button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button>
-        {%- endif -%}
       </div>
+
+
       {%- if site.data.navigation.header -%}
       <nav class="navigation">
         <ul>
@@ -34,9 +38,6 @@
               <li class="navigation__item"><a href="{{ _nav_url }}">{%- if _item.title -%}{{ _item.title }}{%- else -%}{{ __return }}{%- endif -%}</a></li>
             {%- endif -%}
           {%- endfor -%}
-          {%- if site.search.provider -%}
-            <li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li>
-          {%- endif -%}
         </ul>
       </nav>
       {%- endif -%}

@@ -47,10 +47,10 @@ $footer-text-color: $text-color-3;
 $footer-background: $header-footer-light;
 
 // border and shadow colors
-$border-color: mix(#000, $background-color, 20%);
+$border-color: mix(#000, $background-color, 30%);
 $border-color-l: mix(#000, $background-color, 10%);
 $decorate-color: rgba(#000, .1);
-$mask-color: rgba(#000, .8);
+$mask-color: #eeece7e0;
 $select-color: rgba($main-color-1, .5);
 
 // function colors

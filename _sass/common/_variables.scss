@@ -63,10 +63,10 @@ $spacers: (
 );
 
 $z-indexes: (
+        sidebar: 9995,
         actions: 996,
         mask: 997,
-        sidebar: 998,
-        modal: 999
+        modal: 998,
 );
 
 $layout: (
@@ -89,8 +89,8 @@ $responsive: (
 );
 
 $animation: (
-        duration: .4s,
-        duration-sm: .2s,
+        duration: .1s,
+        duration-sm: .05s,
         timing-function: ease-in-out
 );
 
