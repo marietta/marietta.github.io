@@ -39,6 +39,7 @@ module Jekyll
       # Create a page for each unique tag
       tags.each do |tag|
         tag_page = TagPage.new(site, site.source, tag)
+        site.collections['tags'].docs << tag_page
         site.pages << tag_page
       end
     end
@@ -58,6 +59,7 @@ module Jekyll
       # Create a page for each unique tag
       tags.each do |tag|
         tag_page = TaxonomyPage.new(site, site.source, tag)
+        site.collections['taxonomy'].docs << tag_page
         site.pages << tag_page
       end
     end
