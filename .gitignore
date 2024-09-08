@@ -1,4 +1,6 @@
 Gemfile.lock
+.jekyll-metadata
+.jekyll-cache
 vendor/
 _site/
 .idea/
