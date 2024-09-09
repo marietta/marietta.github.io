@@ -86,6 +86,7 @@ species_id,phylum_lat,class_lat,order_lat,family_lat,taxon_lat_full,taxon_lat,ge
 1801,Angiospermae,Liliopsida,Poales,Poaceae,Oryza sativa L.,Oryza sativa,Oryza,csak ültetve,80,Th,,,,Zea,8,1
 1802,Pterophyta,Polypodiopsida,Osmundales,Osmundaceae,Osmunda regalis L.,Osmunda regalis,Osmunda,őshonos,150,He,Su,AsM,,Lycopodium,6,2
 1804,Angiospermae,Magnoliopsida,Oxalidales,Oxalidaceae,Oxalis acetosella L.,Oxalis acetosella,Oxalis,őshonos,15,Ge,C,CIR,,Allium,4,2
+1839,Angiospermae,Magnoliopsida,Rosales,Rosaceae,Persica vulgaris Mill.,Persica vulgaris,Persica,idegenhonos,800,MM,,,alkalmi faj,Cornus,4,2
 1808,Angiospermae,Magnoliopsida,Caryophyllales,Nyctaginaceae,Oxybaphus nyctagineus (Michx.) Sweet,Oxybaphus nyctagineus,Oxybaphus,idegenhonos,50,He,,ADV,özönfaj,Allium,5,3
 1812,Angiospermae,Magnoliopsida,Saxifragales,Paeoniaceae,Paeonia officinalis L. subsp. banatica (Rochel) Soó,Paeonia officinalis,Paeonia,őshonos,60,Ge,Su,PAN,,Allium,5,1
 1814,Angiospermae,Liliopsida,Poales,Poaceae,Panicum capillare agg.,Panicum capillare,Panicum,idegenhonos,75,Th,AC,ADV,özönfaj,Allium,6,4

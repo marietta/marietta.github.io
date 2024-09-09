@@ -667,7 +667,7 @@ species_id,phylum_lat,class_lat,order_lat,family_lat,taxon_lat_full,taxon_lat,ge
 666,Angiospermae,Liliopsida,Poales,Poaceae,Cleistogenes serotina (L.) Keng,Cleistogenes serotina,Cleistogenes,őshonos,60,He,S,SME,,Allium,8,3
 667,Angiospermae,Magnoliopsida,Ranunculales,Ranunculaceae,Clematis alpina (L.) Mill.,Clematis alpina,Clematis,őshonos,200,M,Sr,ALP,,Allium,5,2
 668,Angiospermae,Magnoliopsida,Ranunculales,Ranunculaceae,Clematis integrifolia L.,Clematis integrifolia,Clematis,őshonos,80,He,G,CON,,Allium,5,2
-669,Angiospermae,Magnoliopsida,Ranunculales,Ranunculaceae,Clematis × jackmannii Moore,Clematis × jackmannii,Clematis,idegenhonos,400,M,,,alkalmi faj,Zea,5,3
+669,Angiospermae,Magnoliopsida,Ranunculales,Ranunculaceae,Clematis × jackmanii Moore,Clematis × jackmanii,Clematis,idegenhonos,400,M,,,alkalmi faj,Zea,5,3
 670,Angiospermae,Magnoliopsida,Ranunculales,Ranunculaceae,Clematis recta L.,Clematis recta,Clematis,őshonos,150,He,G,PoM,,Allium,6,3
 671,Angiospermae,Magnoliopsida,Ranunculales,Ranunculaceae,Clematis vitalba L.,Clematis vitalba,Clematis,őshonos,2000,M,DT,SME,,Allium,5,4
 672,Angiospermae,Magnoliopsida,Ranunculales,Ranunculaceae,Clematis viticella L.,Clematis viticella,Clematis,idegenhonos,300,M,A,ADV,alkalmi faj,Zea,5,6
