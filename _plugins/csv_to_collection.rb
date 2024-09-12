@@ -7,7 +7,7 @@ module Jekyll
     priority :high
 
     def generate(site)
-      data = CSV.parse(File.read(site.in_source_dir('_data/padapt.csv')), headers: true)
+      data = CSV.parse(File.read(site.in_source_dir('_data/padapt.csv'), encoding: 'UTF-8'), headers: true)
 
       # Create member pages
       data.each_with_index do |row, index|
