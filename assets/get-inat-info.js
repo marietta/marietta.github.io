@@ -1,5 +1,5 @@
 function fetchFruitInfo(fruit) {
-    fetch("https://api.inaturalist.org/v1/taxa/autocomplete?q=" + fruit + "&rank=species,subspecies,hybrid&locale=hu")
+    fetch("https://api.inaturalist.org/v1/taxa/autocomplete?q=" + fruit + "&rank=species,subspecies,hybrid,variety&locale=hu")
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');

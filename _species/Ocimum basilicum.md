@@ -1,5 +1,5 @@
 ---
-layout: species
+layout: padapt
 taxonomy:
   - Plantae
   - Tracheophyta

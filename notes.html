@@ -1,8 +1,10 @@
 ---
 layout: page
 ---
-<div class="masonry-grid" data-masonry='{ "itemSelector": ".masonry-item","gutter": 16 }'>
-    {% for page in site.notes %}
+
+{% assign sorted_notes = site.notes | sort: 'date'  %}
+<div class="masonry-grid">
+    {% for page in sorted_notes %}
     <section>
         <div class="card masonry-item">
             <div class="card__content">
@@ -15,3 +17,22 @@ layout: page
     </section>
     {% endfor %}
 </div>
+
+<script>
+    var grid = document.querySelector('.masonry-grid');
+    var msnry = new Masonry(grid, {
+        itemSelector: '.masonry-item',
+        columnWidth: '.masonry-item',
+        transitionDuration: 0,
+        gutter: 16,
+    });
+    imagesLoaded(grid).on('progress', function () {
+        msnry.layout();
+    });
+    window.addEventListener('scroll', function () {
+        msnry.layout();
+    });
+    window.addEventListener('resize', function () {
+        msnry.layout();
+    });
+</script>

@@ -38,7 +38,9 @@ layout: article
 {%endif%}
 
 {% assign terjedes = plant_data['Terjedési stratégia'] %}
+{%if terjedes %}
 <p class="success">Terjedési stratégia: <b>{{terjedes}}</b> <br>{{dictionary[terjedes][0].desc }} </p>
+{%endif%}
 
 {% assign edible=site.data.toxic %}
 {% if edible[page.title] %}
