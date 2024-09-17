@@ -26,6 +26,17 @@
     @include box-shadow();
 }
 
+.card-big {
+    max-width: 620px;
+    height: fit-content;
+    background-color: $card-background-color;
+    border-top-left-radius: map-get($base, border-radius);
+    border-top-right-radius: map-get($base, border-radius);
+    border-bottom-right-radius: map-get($base, border-radius);
+    border-bottom-left-radius: map-get($base, border-radius);
+    @include box-shadow();
+}
+
 .card:hover, .card-small:hover{
   background-color: $card-hover-color;
 }

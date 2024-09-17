@@ -110,6 +110,7 @@ species_id,phylum_lat,class_lat,order_lat,family_lat,taxon_lat_full,taxon_lat,ge
 2744,Angiospermae,Liliopsida,Poales,Poaceae,Zea mays L.,Zea mays,Zea,idegenhonos,300,Th,,,alkalmi faj,Zea,6,3
 327,Angiospermae,Liliopsida,Poales,Cyperaceae,Blysmus compressus (L.) Panzer ex Link,Blysmus compressus,Blysmus,őshonos,40,He,G,EUA,,Allium,6,3
 328,Angiospermae,Liliopsida,Poales,Cyperaceae,Bolboschoenus glaucus (Lam.) S.G. Sm.,Bolboschoenus glaucus,Bolboschoenus,őshonos,150,Ge-HH,,,,Sparganium,6,3
+1702,Angiospermae,Magnoliopsida,Lamiales,Lamiaceae,Nepeta cataria L.,Nepeta cataria,Nepeta,idegenhonos,100,He,W,CON,meghonosodott faj,Allium,6,3
 329,Angiospermae,Liliopsida,Poales,Cyperaceae,Bolboschoenus laticarpus,Bolboschoenus laticarpus,Bolboschoenus,őshonos,110,Ge-HH,,,,Sparganium,6,3
 330,Angiospermae,Liliopsida,Poales,Cyperaceae,Bolboschoenus maritimus agg.,Bolboschoenus maritimus,Bolboschoenus,őshonos,100,Ge-HH,C,KOZ,,Sparganium,6,3
 331,Angiospermae,Liliopsida,Poales,Cyperaceae,Bolboschoenus planiculmis (F. Schmidt) T.V. Egorova,Bolboschoenus planiculmis,Bolboschoenus,őshonos,90,Ge-HH,,,,Sparganium,6,3

@@ -15,6 +15,8 @@ default:
 theme: jekyll-text-theme
 timezone: Europe/Budapest
 
+excerpt_separator: <!--more-->
+
 baseurl: ""
 url: "https://marietta.github.io"
 
