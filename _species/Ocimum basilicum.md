@@ -11,4 +11,5 @@ taxonomy:
   - Ocimum
 tags:
   - fűszer
+max_magassag: 60
 ---

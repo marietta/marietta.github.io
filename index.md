@@ -4,16 +4,20 @@ permalink: /
 ---
 
 <div class="masonry-grid">
-    {% for page in site.posts %}
+    {% for page in site.notes %}
     <section>
-        <div class="card-big masonry-item">
-            <div class="card__content">
-                <div class="card__header">{% assign page_title = page.title | default: page.name | filename_cleaner %}
-                    <a href="{{ page.url }}">{{ page.title }}</a>
+    {% if page.main_page %}
+        <section>
+            <div class="card-big masonry-item">
+                <div class="card__content">
+                    <div class="card__header">{% assign page_title = page.title | default: page.name | filename_cleaner %}
+                        <a href="{{ page.url }}">{{ page.title }}</a>
+                    </div>
+                    {{ page.excerpt }}
                 </div>
-                {{ page.excerpt }}
             </div>
-        </div>
+        </section>
+    {% endif %}
     </section>
     {% endfor %}
 </div>
