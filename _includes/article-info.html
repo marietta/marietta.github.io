@@ -228,15 +228,44 @@
             {% endfor %}
           {%- endif -%}
 
+          {% if include.article['LB'] %}
+          {% assign lbertek = include.article['LB'] %}
+          {% assign lbtag = "LB-" | append: lbertek %}
+          <li>
+              <a class="button button--secondary button--pill button--md"
+              href="/tags/{{ lbtag }}">
+                <i class="fa-regular fa-sun"></i> {{ lbertek }}
+              </a>
+          </li>
+          {%- endif -%}
 
+          {% if include.article['ELLS'] %}
+          {% assign lbertek = include.article['ELLS'] %}
+          {% assign lbtag = "ELLS-" | append: lbertek %}
+          <li>
+              <a class="button button--secondary button--pill button--md"
+              href="/tags/{{ lbtag }}">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#5f6368"><path d="M480-80q-137 0-228.5-94T160-408h80q0 107 68 177.5T480-160q104 0 172-70.5T720-408h80q0 140-91.5 234T480-80ZM200-480q-17 0-28.5-11.5T160-520q0-17 11.5-28.5T200-560q17 0 28.5 11.5T240-520q0 17-11.5 28.5T200-480Zm180 0q-17 0-28.5-11.5T340-520q0-17 11.5-28.5T380-560q17 0 28.5 11.5T420-520q0 17-11.5 28.5T380-480Zm200 0q-17 0-28.5-11.5T540-520q0-17 11.5-28.5T580-560q17 0 28.5 11.5T620-520q0 17-11.5 28.5T580-480Zm180 0q-17 0-28.5-11.5T720-520q0-17 11.5-28.5T760-560q17 0 28.5 11.5T800-520q0 17-11.5 28.5T760-480ZM290-590q-17 0-28.5-11.5T250-630q0-17 11.5-28.5T290-670q17 0 28.5 11.5T330-630q0 17-11.5 28.5T290-590Zm380 0q-17 0-28.5-11.5T630-630q0-17 11.5-28.5T670-670q17 0 28.5 11.5T710-630q0 17-11.5 28.5T670-590Zm-190-10q-17 0-28.5-11.5T440-640q0-17 11.5-28.5T480-680q17 0 28.5 11.5T520-640q0 17-11.5 28.5T480-600ZM380-700q-17 0-28.5-11.5T340-740q0-17 11.5-28.5T380-780q17 0 28.5 11.5T420-740q0 17-11.5 28.5T380-700Zm200 0q-17 0-28.5-11.5T540-740q0-17 11.5-28.5T580-780q17 0 28.5 11.5T620-740q0 17-11.5 28.5T580-700ZM480-800q-17 0-28.5-11.5T440-840q0-17 11.5-28.5T480-880q17 0 28.5 11.5T520-840q0 17-11.5 28.5T480-800Zm0 392Z"/></svg>
+                {{ lbertek }}
+              </a>
+          </li>
+          {%- endif -%}
+
+          {% if include.article['RZ'] %}
+          {% assign lbertek = include.article['RZ'] %}
+          {% assign lbtag = "RZ-" | append: lbertek %}
+          <li>
+              <a class="button button--secondary button--pill button--md"
+              href="/tags/{{ lbtag }}">
+                <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#5f6368"><path d="M380-81q-130-8-215-100T80-408q0-100 79.5-217.5T400-880q161 137 240.5 254.5T720-408v14q0 7-1 14h-60q1-7 1-14v-14q0-79-66.5-179.5T400-800Q273-688 206.5-587.5T140-408q0 108.76 68 183.88Q276-149 380-141v60Zm20-389Zm40 390v-240h152q20 0 34 14t14 34v64q0 20-14 34t-34 14H488v80h-48Zm238 0v-240h48v89h108v-89h48v240h-48v-103H726v103h-48ZM488-208h104v-64H488v64Z"/></svg>
+                {{ lbertek }}
+              </a>
+          </li>
+          {%- endif -%}
 
          </ul>
 
           <ul class="right-col menu">
-          {%- if _show_author  -%}
-            <li><i class="fas fa-user"></i> <span>{{ _author.name }}</span></li>
-          {%- endif -%}
-
           {%- if _show_date -%}
             <li>
               {%- include snippets/get-locale-string.html key='ARTICLE_DATE_FORMAT' -%}
@@ -260,9 +289,6 @@
 
 
 {%- if include.semantic != false -%}
-  {%- if _author -%}
-    <meta itemprop="author" content="{{ _author.name }}"/>
-  {%- endif -%}
   {%- if include.article.date -%}
     <meta itemprop="datePublished" content="{{ include.article.date | date_to_xmlschema }}">
   {%- endif -%}

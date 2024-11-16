@@ -52,6 +52,33 @@ layout: article
 {%endif%}
 {%endif%}
 
+{% assign lbertek = plant_data['LB'] %}
+{%if lbertek %}
+<p class="success">Fotoszintézis minimális fényigénye (1-9): <b>{{lbertek}}</b>
+    {% assign desc_key = "LB-" | append: lbertek %}
+    {% assign desc1 = dictionary[desc_key][0]['desc'] %}
+    <br>{{ desc1 }}
+</p>
+{%endif%}
+
+{% assign rzertek = plant_data['RZ'] %}
+{%if rzertek %}
+<p class="success">Talajreakció, Ca-igény (0-5): <b>{{rzertek}}</b>
+    {% assign desc_key = "RZ-" | append: rzertek %}
+    {% assign desc1 = dictionary[desc_key][0]['desc'] %}
+    <br>{{ desc1 }}
+</p>
+{%endif%}
+
+{% assign ellsertek = plant_data['ELLS'] %}
+{%if ellsertek %}
+<p class="success">Sótűrés (0-9): <b>{{ellsertek}}</b>
+    {% assign desc_key = "ELLS-" | append: ellsertek %}
+    {% assign desc1 = dictionary[desc_key][0]['desc'] %}
+    <br>{{ desc1 }}
+</p>
+{%endif%}
+
 <script>
     fetch("https://api.inaturalist.org/v1/taxa/autocomplete?q={{page.title}}&rank=species,subspecies,hybrid,variety&locale=hu")
   .then(response => {

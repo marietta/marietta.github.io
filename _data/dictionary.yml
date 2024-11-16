@@ -177,4 +177,59 @@ Th(-He):
   - desc: "A kifejlett növény földfelszín feletti részének magassága (beleértve a virágokat és egyéb, nem fotoszintetizáló szerveket is), illetve kúszónövények esetében a kúszó hajtások hossza cm-ben megadva. A minimum és maximum magasság a jellemző méretű kifejlett egyedek legkisebb, ill. legnagyobb magassága."
 
 
+"LB-1":
+  - title: "Mélyárnyék-növények"
+    desc: "Mélyárnyék-növények, még 1% relatív fénysugárzás mellett is fotoszintetizálnak"
+"LB-2":
+  - desc: "Erősen árnyéktűrő növények, fotoszintetikus minimumuk 1–5% relatív fénysugárzás között van"
+"LB-3":
+  - title: "Árnyéktűrő"
+    desc: "Árnyéktűrő növények, fotoszintetikus minimumuk <5%, de világosabb helyeken is megélnek"
+"LB-4":
+  - desc: "Árnyék-félárnyéknövények, fotoszintetikus minimumuk 5–10% között van"
+"LB-5":
+  - desc: "Félárnyéknövények, fotoszintetikus minimumuk >10% relatív sugárzásnál van, de teljes napfényen ritkák"
+"LB-6":
+  - desc: "Félárnyék-félnapfénynövények, fotoszintetikus minimumuk 10–40% relatív fénysugárzásnál van"
+"LB-7":
+  - desc: "Félnapfénynövények, többnyire teljes fényben élnek, de árnyéktűrők is"
+"LB-8":
+  - title: "Napfénynövények"
+    desc: "Napfénynövények, fotoszintetikus minimumuk >40%, csak kivételesen kevesebb"
+"LB-9":
+  - title: "Teljes napfénynövények"
+    desc: "Teljes napfénynövények, csak teljesen nyitott helyeken, fotoszintetikus minimumuk >50%"
 
+"RZ-0":
+  - desc: "Nem jellemző"
+"RZ-1":
+  - desc: "Savanyú talajokon fordul elő"
+"RZ-2":
+  - desc: "Gyengén savanyú talajokon fordul elő"
+"RZ-3":
+  - desc: "Semleges talajokon fordul elő"
+"RZ-4":
+  - desc: "Enyhén meszes talajokon fordul elő"
+"RZ-5":
+  - desc: "Meszes, bázikus talajokon fordul elő"
+
+"ELLS-0":
+  - desc: "Sós termőhelyekről teljesen hiányzó fajok"
+"ELLS-1":
+  - desc: "Gyengén sótűrő fajok, melyek képesek az életben maradásra só jelenlétében"
+"ELLS-2":
+  - desc: "Sós és sómentes talajokon is előforduló fajok"
+"ELLS-3":
+  - desc: "Főleg sós, tengerparti élőhelyek fajai, melyek előfordulnak sómentes talajokon is"
+"ELLS-4":
+  - desc: "Mérsékelten sós élőhelyeken előforduló fajok, kisebb sótartalmú tengerparti sósmocsarak fajai"
+"ELLS-5":
+  - desc: "Sós élőhelyeken előforduló fajok, pl. rendszeres sós vízpermetet kapó sziklák"
+"ELLS-6":
+  - desc: "Nagyobb sótartalmú sósmocsarak fajai"
+"ELLS-7":
+  - desc: "A legmagasabb sótartalmú sósmocsarak fajai"
+"ELLS-8":
+  - desc: "Jellemzően tengervízzel átitatott élőhelyek fajai"
+"ELLS-9":
+  - desc: "Extrémen sós, sókiválásos élőhelyek fajai"

@@ -26,7 +26,7 @@ A sötétzöld kúszó a napot, az utóbbiak inkább az árnyékot kedvelik, lá
 Eső után jó gyomlálni, mert elengedi a föld. Kapálni gyomot nem érdemes, 3x annyi feje nő vissza.  
 Az a stratégiám, hogy ami kiszárad, annak mennie kell. Maradjon az, ami bírja a klímát.
 Eddig a parlagfű nyer. A parlagfű számára ideális ez az aszályos időszak. Zöldell és eső után megszaporodik. A napon.  
-Az árnyékból legalább kiszorult. :smiley:
+Az árnyékból legalább kiszorult..
 
 
 

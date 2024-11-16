@@ -131,6 +131,9 @@ növények az erdőkertben [https://www.csodakertesz.hu/blog/novenyek-szintjei-a
 
 ## A permakultúra. Az ökológiai gazdálkodás.
 
+https://www.megyeriszabolcskerteszete.hu/blog/onfenntarto_kert_mely_egesz_evben_ellat_minket_elelemmel_1
+https://www.megyeriszabolcskerteszete.hu/blog/onfenntarto_kert_mely_egesz_evben_ellat_minket_elelemmel_2
+
 [A permakultura alapelvei](https://permakultura.hu/wp-content/uploads/2020/01/A_permakultura_alapelvei.pdf) PDF   
 
 [Gyulai Iván: Mélymulcs - ember és környezetkímélő kertgazdálkodás](https://permakultura.hu/wp-content/uploads/2020/01/A_permakultura_alapelvei.pdf) PDF   
@@ -153,6 +156,8 @@ Darazsak ellen: a fodormenta, a kakukkfű, az eukaliptusz, az üröm és a citro
 Szúnyogok ellen
 
 ## Ajánló
+
+https://www.megyeriszabolcskerteszete.hu
 
 [https://www.inaturalist.org/places/hungary](https://www.inaturalist.org/places/hungary) 
 

@@ -46,9 +46,9 @@
     max-width: unset;
   }
 }
-
+// body > div.root > div > div.page__main.js-page-main.page__viewport.cell.cell--auto > div > div.page__content > div > div > div.col-main.cell.cell--auto > article > div.js-article-content > div.masonry-grid > section:nth-child(5) > div > div > p:nth-child(4) > img
 .card__content {
-  padding: map-get($spacers, 2) map-get($spacers, 3);
+    padding: map-get($spacers, 2) map-get($spacers, 3);
 }
 
 .card__header, .card__header > a {

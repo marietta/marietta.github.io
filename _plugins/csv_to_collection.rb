@@ -34,6 +34,25 @@ module Jekyll
         tags.merge(row['Maximum magasság'].split(', ')) if row['Maximum magasság']
         tags.merge(row['invasion_status_hu'].split(', ')) if row['invasion_status_hu']
         tags.merge(row['nativeness_hu'].split(', ')) if row['nativeness_hu']
+
+        if row['LB']
+          row['LB'].split(', ').each do |tag|
+              tags.add("LB-#{tag}") if tag.size > 0
+          end
+        end
+
+        if row['RZ']
+          row['RZ'].split(', ').each do |tag|
+              tags.add("RZ-#{tag}") if tag.size > 0
+          end
+        end
+
+        if row['ELLS']
+          row['ELLS'].split(', ').each do |tag|
+            tags.add("ELLS-#{tag}") if tag.size > 0
+          end
+        end
+
       end
 
       # Create a page for each unique tag
@@ -84,7 +103,10 @@ module Jekyll
       # These will be included into tags
       self.data['tags'] = (data['Terjedési stratégia'] || '').split(', ') +
         (data['Szociális magatartási típus'] || '').split(', ')+
-        (data['Maximum magasság'] || '').split(', ')
+        (data['Maximum magasság'] || '').split(', ')+
+        ("LB-#{data['LB']}").split(', ')+
+        ("ELLS-#{data['ELLS']}").split(', ')+
+        ("RZ-#{data['RZ']}").split(', ')
 
       self.content = ""
     end

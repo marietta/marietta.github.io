@@ -1,11 +1,11 @@
 ---
 layout: home
 permalink: /
+show_date: false
 ---
-
+{% assign sorted_notes = site.notes | sort: "date|desc" %}
 <div class="masonry-grid">
-    {% for page in site.notes %}
-    <section>
+    {% for page in sorted_notes %}
     {% if page.main_page %}
         <section>
             <div class="card-big masonry-item">
@@ -13,12 +13,11 @@ permalink: /
                     <div class="card__header">{% assign page_title = page.title | default: page.name | filename_cleaner %}
                         <a href="{{ page.url }}">{{ page.title }}</a>
                     </div>
-                    {{ page.excerpt }}
+                    {{ page.excerpt | replace: '<img ', '<img class="card__image" ' | markdownify }}
                 </div>
             </div>
         </section>
     {% endif %}
-    </section>
     {% endfor %}
 </div>
 

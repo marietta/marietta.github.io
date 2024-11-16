@@ -1,12 +1,12 @@
 header:
 
-  - title: browse by classes
+  - title: life by classes
     url: /classes.html
 
-  - title: by orders
+  - title: life by orders
     url: /orders.html
 
-  - title: by tags
+  - title: life by tags
     url: /tags-list.html
 
   - title: Notes
