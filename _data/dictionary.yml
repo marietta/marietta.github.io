@@ -213,6 +213,11 @@ Th(-He):
 "RZ-5":
   - desc: "Meszes, bázikus talajokon fordul elő"
 
+"WZ-1":
+  - desc: "Vízigénye az extrém száraz élőhelynek megfelelő"
+"WZ-11":
+  - desc: "Vízigénye a vízi élőhelynek megfelelő"
+
 "ELLS-0":
   - desc: "Sós termőhelyekről teljesen hiányzó fajok"
 "ELLS-1":

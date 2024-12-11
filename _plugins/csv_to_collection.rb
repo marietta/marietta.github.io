@@ -36,20 +36,52 @@ module Jekyll
         tags.merge(row['nativeness_hu'].split(', ')) if row['nativeness_hu']
 
         if row['LB']
-          row['LB'].split(', ').each do |tag|
+          row['LB'].split(',').each do |tag|
               tags.add("LB-#{tag}") if tag.size > 0
           end
         end
 
         if row['RZ']
-          row['RZ'].split(', ').each do |tag|
+          row['RZ'].split(',').each do |tag|
               tags.add("RZ-#{tag}") if tag.size > 0
           end
         end
 
+        if row['WZ']
+          row['WZ'].split(',').each do |tag|
+              tags.add("WZ-#{tag}") if tag.size > 0
+          end
+        end
+        if row['WB']
+          row['WB'].split(',').each do |tag|
+              tags.add("merge-#{tag}") if tag.size > 0
+          end
+        end
+
+        if row['FS']
+          row['FS'].split(',').each do |tag|
+              tags.add("FS-#{tag}") if tag.size > 0
+          end
+        end
         if row['ELLS']
-          row['ELLS'].split(', ').each do |tag|
+          row['ELLS'].split(',').each do |tag|
             tags.add("ELLS-#{tag}") if tag.size > 0
+          end
+        end
+
+        if row['NS']
+          row['NS'].split(',').each do |tag|
+            tags.add("NS-#{tag}") if tag.size > 0
+          end
+        end
+        if row['NB']
+          row['NB'].split(',').each do |tag|
+            tags.add("NB-#{tag}") if tag.size > 0
+          end
+        end
+        if row['ELLN']
+          row['ELLN'].split(',').each do |tag|
+            tags.add("ELLN-#{tag}") if tag.size > 0
           end
         end
 
@@ -104,9 +136,15 @@ module Jekyll
       self.data['tags'] = (data['Terjedési stratégia'] || '').split(', ') +
         (data['Szociális magatartási típus'] || '').split(', ')+
         (data['Maximum magasság'] || '').split(', ')+
-        ("LB-#{data['LB']}").split(', ')+
-        ("ELLS-#{data['ELLS']}").split(', ')+
-        ("RZ-#{data['RZ']}").split(', ')
+        ("LB-#{data['LB']}").split(',')+
+        ("ELLS-#{data['ELLS']}").split(',')+
+        ("RZ-#{data['RZ']}").split(',')+
+        ("WZ-#{data['WZ']}").split(',')+
+        ("WB-#{data['WB']}").split(',')+
+        ("FS-#{data['FS']}").split(',')+
+        ("NB-#{data['NB']}").split(',')+
+        ("NS-#{data['NS']}").split(',')+
+        ("ELLN-#{data['ELLN']}").split(',')
 
       self.content = ""
     end
