@@ -12,6 +12,7 @@ Looking for woody plants, bushes, trees in central europe that do not have thorn
 I've asked LLM's to find me woody plants, bushes, trees in central europe that do _not have thorns_, do _not grow taller than 6 meters_, and bears fruit in the fall, for winter animals to eat. List english or latin names, with a few words about height and how long the berries stay in winter.  
 The things they've hallucinated 😱
 
+Here's a curated list of winter berries.
 
 {% assign sorbus_images = "
 https://static.inaturalist.org/photos/341591727/large.jpeg

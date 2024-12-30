@@ -10,16 +10,16 @@ show_title: false
 
 <img src="assets/images/succession.jpg" alt="szukcesszió ecological succession" width="80%">
 
-ahol nem volt növényzet: primer szukcesszió
+Ahol nem volt növényzet: primer szukcesszió
 
-ahol volt, de eltűnt: szekunder szukcesszió - talajban nyugvó magvak, vegetatív szaporítóképletek
+Ahol volt, de eltűnt: szekunder szukcesszió - talajban nyugvó magvak, vegetatív szaporítóképletek
 
-a szukcessziós folyamatok korai stádiumának fajai, a pionír fajok általában gyors növekedésűek, kis termetűek, rövid életűek, nagy területre képesek szaporítóképleteiket eljuttatni (r-stratégisták).
+A szukcessziós folyamatok korai stádiumának fajai, a pionír fajok általában gyors növekedésűek, kis termetűek, rövid életűek, nagy területre képesek szaporítóképleteiket eljuttatni (r-stratégisták).
 
-ökológiai megközelítés: a gyomok a talaj „bolygatásához”, műveléséhez legjobban alkalmazkodó növények. A növénytermesztés során a vegetációs idő alatt többször is bolygatják a talajt, így azok a növényfajok, melyek a háborítatlan talajt igénylik, nem tudnak megélni, viszont olyan növények szaporodnak el, amelyek rövidebb tenyészidejűek, gyors fejlődésűek, vagy olyan évelő fajok, melyek mélyen ülő gyökerei a talajművelés során okozott feldarabolódást nem sínylik meg, sőt az vegetatív szaporodásukat segíti. Ilyen módon a gyomnövények a másodlagos szukcesszió pionír fajainak tekinthetők.
+Ökológiai megközelítés: a gyomok a talaj „bolygatásához”, műveléséhez legjobban alkalmazkodó növények. A növénytermesztés során a vegetációs idő alatt többször is bolygatják a talajt, így azok a növényfajok, melyek a háborítatlan talajt igénylik, nem tudnak megélni, viszont olyan növények szaporodnak el, amelyek rövidebb tenyészidejűek, gyors fejlődésűek, vagy olyan évelő fajok, melyek mélyen ülő gyökerei a talajművelés során okozott feldarabolódást nem sínylik meg, sőt az vegetatív szaporodásukat segíti. Ilyen módon a gyomnövények a másodlagos szukcesszió pionír fajainak tekinthetők.
 
 
-## Pannonian Climate.
+## Pannonian Climate. A Kárpát-medence klímája
 
 [https://www.eea.europa.eu/publications/report_2002_0524_154909/biogeographical-regions-in-europe/pannonian.pdf](https://www.eea.europa.eu/publications/report_2002_0524_154909/biogeographical-regions-in-europe/pannonian.pdf)
 
@@ -86,11 +86,11 @@ A biodiverzitás [https://sokszinuvidek.24.hu/kertunk-portank/2021/04/16/erdoker
 
 Companion planting https://en.wikipedia.org/wiki/Companion_planting
 
-## Gyep, pázsit
+## Gyep és pázsit
 
-Gyep és pázsit. A gyep tömöttsége. A tarackkal terjedő fajták jól záródó pázsitot alkotnak, de igényesek. A csomósan terjedő fajták rosszul záródó pázsitot képeznek, de szárazságtűrőbbek, igénytelenebbek. A legtömöttebb gyepet a vörös csenkesz és a tarackos tippan adja, őket követi a sorban az angol perje és a réti perje.
+A tarackkal terjedő fajták jól záródó pázsitot alkotnak, de igényesek. A csomósan terjedő fajták rosszul záródó pázsitot képeznek, de szárazságtűrőbbek, igénytelenebbek. A legtömöttebb gyepet a vörös csenkesz és a tarackos tippan adja, őket követi a sorban az angol perje és a réti perje.  
 
-A pázsit rövidre nyírt, apró szálú és finom levelű füvekből álló, szőnyegszerű gyeptakaró. A pázsitot alkotó pázsitfüvek életképessége akkor a legmegfelelőbb, ha nem tapossák, ha nem nyírják túl mélyen. A pázsitok víz-, és tápanyag-, és nyírásigényesek.
+A pázsit rövidre nyírt, apró szálú és finom levelű füvekből álló, szőnyegszerű gyeptakaró. A pázsitot alkotó pázsitfüvek életképessége akkor a legmegfelelőbb, ha nem tapossák, ha nem nyírják túl mélyen. A pázsitok víz-, és tápanyag-, és nyírásigényesek.  
 
 A fűnyírás. A fű nyírásának hatása a talaj hőmérsékletére
 
@@ -98,7 +98,7 @@ A fűnyírás. A fű nyírásának hatása a talaj hőmérsékletére
 
 the no-mow lawn. grass alternatives. [https://lawnlove.com/blog/types-of-no-mow-grass-alternatives/](https://lawnlove.com/blog/types-of-no-mow-grass-alternatives/)
 
-## A fűfélék. Élőhelye és tulajdonságai
+## A fűfélék, élőhelye és tulajdonságai
 
 Kaszálók és magasfüvű rétek. [http://www.jgypk.hu/mentorhalo/tananyag/Biologia/73_a_fves_terletek_lvilga.html](http://www.jgypk.hu/mentorhalo/tananyag/Biologia/73_a_fves_terletek_lvilga.html)
 
@@ -149,17 +149,22 @@ permakultúra és erdőkert
 [https://archive2020.szie.hu/file/tti/archivum/Dorner_Zita_ertekezes.pdf](https://archive2020.szie.hu/file/tti/archivum/Dorner_Zita_ertekezes.pdf) PDF
 
 
-## Hasznos
+## Bio, Organic, Biodynamic, Demeter
 
-Darazsak ellen: a fodormenta, a kakukkfű, az eukaliptusz, az üröm és a citromfű
+Biodynamics is a holistic, ecological, and ethical approach to farming, gardening, food, and nutrition. [https://www.biodynamics.com/what-is-biodynamics](https://www.biodynamics.com/what-is-biodynamics)
 
-Szúnyogok ellen
+Bio- és biodinamikus vetőmagok a [Biokiskert](https://biokiskert.hu/biotermek/biovetomag-2/)en
+
+ReinSaat vetőmagok [https://www.reinsaat.at/EN/](https://www.reinsaat.at/EN/)
+
+What is Demeter? [https://demeter.net](https://demeter.net)
+
 
 ## Ajánló
 
-https://www.megyeriszabolcskerteszete.hu
-
 [https://www.inaturalist.org/places/hungary](https://www.inaturalist.org/places/hungary) 
+
+[https://www.megyeriszabolcskerteszete.hu](https://www.megyeriszabolcskerteszete.hu)
 
 [https://gyomok.blogspot.com](https://gyomok.blogspot.com)
 
@@ -171,4 +176,4 @@ https://www.megyeriszabolcskerteszete.hu
 
 [https://www.floralimages.co.uk/b_poaceae.htm](https://www.floralimages.co.uk/b_poaceae.htm)
 
-https://www.hainaultforest.net/nature-detective-winter-twigs
+[https://www.hainaultforest.net/nature-detective-winter-twigs] (https://www.hainaultforest.net/nature-detective-winter-twigs)

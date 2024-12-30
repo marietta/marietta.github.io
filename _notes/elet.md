@@ -1,6 +1,7 @@
 ---
 title: A növényi élet elemei
 layout: article
+main_page: 'yes'
 ---
 
 <img src="/assets/images/sundown.jpg" alt="" class="card__image">

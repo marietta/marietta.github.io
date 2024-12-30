@@ -5,7 +5,6 @@ tags:
   - schooloflife
 images:
   - https://storables.com/wp-content/uploads/2024/02/how-to-grow-loofah-1706873610.jpg
-  - /assets/images/loofah1.jpg
   - https://i.pinimg.com/originals/54/bd/b5/54bdb5a1ca81af59c55b4eab67fa881e.jpg
   - https://www.1000ecofarms.com/files/shop/0m/0k/514/8190-514.jpg
   - https://thehabitat.mblycdn.com/uploads/th/2020/11/shutterstock_1241590972-1_1340x800_acf_cropped.jpg
