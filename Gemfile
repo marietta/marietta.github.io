@@ -12,7 +12,7 @@ end
 
 gem "webrick", "~> 1.8"
 
-gem "sinatra", ">= 3", "< 4"
+gem "sinatra"
 
 gem "jekyll-text-theme"
 
