@@ -58,18 +58,19 @@
   @include link-colors($text-color-d, $text-color-d);
 }
 
+
 .card__image {
   position: relative;
-  width: 100%;
+  max-width: 100%;
   & > img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     border-radius: inherit;
   }
   & > .overlay {
     position: absolute;
-    width: 100%;
+    max-width: 100%;
     max-height: 100%;
     padding: map-get($spacers, 2);
     a {
