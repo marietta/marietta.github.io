@@ -1,7 +1,6 @@
 ---
 title: November Pressure Heatmap
 layout: article
-main_page: 'yes'
 tags:
   - pressure
 ---

@@ -1,7 +1,6 @@
 ---
 title: October Pressure Heatmap
 layout: article
-main_page: 'yes'
 tags:
   - pressure
 ---
