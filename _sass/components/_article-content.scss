@@ -63,7 +63,8 @@
   }
 
   img:not(.emoji) {
-    max-width: 100%;
+      max-width: 40rem;
+      max-height: 40rem;
     vertical-align: middle;
   }
 
