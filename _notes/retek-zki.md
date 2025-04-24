@@ -2,6 +2,8 @@
 title: Retek
 layout: article
 main_page: 'yes'
+tags:
+  - kert
 ---
 Szombaton kezdtem csíráztatni papírtörlő között.  
 Vasárnap este már a magok kb fele kidugta a lábacskáit.  
